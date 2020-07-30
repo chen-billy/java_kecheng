@@ -1,38 +1,38 @@
 package Ex0324;
 
 /*
- * å¤šæ€ä¸­çš„è½¬å‹
+ * ¶àÌ¬ÖĞµÄ×ªĞÍ
  */
-//å®šä¹‰Animalæ¥å£
+//¶¨ÒåAnimal½Ó¿Ú
 interface Animal02 {
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•shoutï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨shout£¨£©
 	public abstract void shout();
 }
 
-//å®šä¹‰Catç±»å®ç°Animalæ¥å£
+//¶¨ÒåCatÀàÊµÏÖAnimal½Ó¿Ú
 class Cat02 implements Animal02 {
-	// å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖshout£¨£©·½·¨
 	public void shout() {
-		System.out.println("å–µå–µ...");
+		System.out.println("ß÷ß÷...");
 	}
 
-	// å®šä¹‰sleepï¼ˆï¼‰æ–¹æ³•
+	// ¶¨Òåsleep£¨£©·½·¨
 	public void sleep() {
-		System.out.println("çŒ«ç¡è§‰...");
+		System.out.println("Ã¨Ë¯¾õ...");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex02 {
 	public static void main(String[] args) {
-		Cat02 cat = new Cat02();// åˆ›å»ºCatç±»çš„å¯¹è±¡
-		animalShout02(cat);// è°ƒç”¨animalShoutï¼ˆï¼‰æ–¹æ³•ï¼Œå°†catä½œä¸ºå‚æ•°ä¼ å…¥
+		Cat02 cat = new Cat02();// ´´½¨CatÀàµÄ¶ÔÏó
+		animalShout02(cat);// µ÷ÓÃanimalShout£¨£©·½·¨£¬½«cat×÷Îª²ÎÊı´«Èë
 	}
 
-	// å®šä¹‰é™æ€æ–¹æ³•animalShoutï¼ˆï¼‰ï¼Œæ¥æ”¶ä¸€ä¸ªAnimalç±»å‹çš„å‚æ•°
+	// ¶¨Òå¾²Ì¬·½·¨animalShout£¨£©£¬½ÓÊÕÒ»¸öAnimalÀàĞÍµÄ²ÎÊı
 	public static void animalShout02(Animal02 animal) {
-		animal.shout();// è°ƒç”¨ä¼ å…¥å‚æ•°Animalçš„Shoutï¼ˆï¼‰æ–¹æ³•
-		//animal.sleep();// ä¸èƒ½è°ƒç”¨å­ç±»çš„ç‰¹æœ‰æ–¹æ³•
+		animal.shout();// µ÷ÓÃ´«Èë²ÎÊıAnimalµÄShout£¨£©·½·¨
+		//animal.sleep();// ²»ÄÜµ÷ÓÃ×ÓÀàµÄÌØÓĞ·½·¨
 		
 		Cat02 cat = (Cat02)animal;
 		cat.sleep();

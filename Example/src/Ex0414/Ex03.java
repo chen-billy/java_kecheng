@@ -4,16 +4,16 @@ import java.util.*;
 
 public class Ex03 {
 	public static void main(String[] args) {
-		Map map = new HashMap();// åˆ›å»ºMapå¯¹è±¡
-		map.put("1", "Jack");// å­˜å‚¨é”®å’Œå€¼
+		Map map = new HashMap();// ´´½¨Map¶ÔÏó
+		map.put("1", "Jack");// ´æ´¢¼üºÍÖµ
 		map.put("2", "Rose");
 		map.put("3", "Lucy");
 		Set entrySet = map.entrySet();
-		Iterator it = entrySet.iterator();// è·å–Iteratorå¯¹è±¡
+		Iterator it = entrySet.iterator();// »ñÈ¡Iterator¶ÔÏó
 		while (it.hasNext()) {
-			Map.Entry entry = (Map.Entry) (it.next());// è·å–é›†åˆä¸­é”®å€¼å¯¹æ˜ å°„
-			Object key = entry.getKey();// è·å–Entryä¸­çš„é”®
-			Object value = entry.getValue();// è·å–Entryä¸­çš„å€¼
+			Map.Entry entry = (Map.Entry) (it.next());// »ñÈ¡¼¯ºÏÖĞ¼üÖµ¶ÔÓ³Éä
+			Object key = entry.getKey();// »ñÈ¡EntryÖĞµÄ¼ü
+			Object value = entry.getValue();// »ñÈ¡EntryÖĞµÄÖµ
 			System.out.println(key + ":" + value);
 		}
 	}

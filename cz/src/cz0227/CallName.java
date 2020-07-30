@@ -5,58 +5,58 @@ import java.util.Scanner;
 
 public class CallName {
 	/**
-	 * 1.å­˜å‚¨å…¨ç­åŒå­¦å§“å åˆ›å»ºä¸€ä¸ªå­˜å‚¨å¤šä¸ªåŒå­¦å§“åçš„å®¹å™¨ï¼ˆæ•°ç»„ï¼‰ é”®ç›˜è¾“å…¥æ¯ä¸ªåŒå­¦çš„åå­—ï¼Œå­˜å‚¨åˆ°å®¹å™¨ï¼ˆæ•°ç»„ï¼‰ä¸­
+	 * 1.´æ´¢È«°àÍ¬Ñ§ĞÕÃû ´´½¨Ò»¸ö´æ´¢¶à¸öÍ¬Ñ§ĞÕÃûµÄÈİÆ÷£¨Êı×é£© ¼üÅÌÊäÈëÃ¿¸öÍ¬Ñ§µÄÃû×Ö£¬´æ´¢µ½ÈİÆ÷£¨Êı×é£©ÖĞ
 	 */
 	public static void addStudentName(String[] students) {
-		// é”®ç›˜è¾“å…¥å¤šä¸ªåŒå­¦å§“åå­˜å‚¨åˆ°å®¹å™¨ä¸­
+		// ¼üÅÌÊäÈë¶à¸öÍ¬Ñ§ĞÕÃû´æ´¢µ½ÈİÆ÷ÖĞ
 		Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < students.length; i++) {
-			System.out.println("å­˜å‚¨ç¬¬" + (i + 1) + "å§“å");
-			// æ¥æ”¶æ§åˆ¶å°å½•å…¥çš„å§“åå­—ç¬¦ä¸²
+			System.out.println("´æ´¢µÚ" + (i + 1) + "ĞÕÃû");
+			// ½ÓÊÕ¿ØÖÆÌ¨Â¼ÈëµÄĞÕÃû×Ö·û´®
 			students[i] = sc.next();
 		}
 	}
 
 	/**
-	 * 2.æ€»è§ˆå…¨ç­åŒå­¦å§“å
+	 * 2.×ÜÀÀÈ«°àÍ¬Ñ§ĞÕÃû
 	 */
 	public static void printStudentName(String[] students) {
-		// éå†æ•°ç»„ï¼Œå¾—åˆ°æ¯ä¸ªåŒå­¦å§“å
+		// ±éÀúÊı×é£¬µÃµ½Ã¿¸öÍ¬Ñ§ĞÕÃû
 		for (int i = 0; i < students.length; i++) {
 			String name = students[i];
-			// æ‰“å°åŒå­¦å§“å
-			System.out.println("ç¬¬" + (i + 1) + "ä¸ªå­¦ç”Ÿå§“åï¼š" + name);
+			// ´òÓ¡Í¬Ñ§ĞÕÃû
+			System.out.println("µÚ" + (i + 1) + "¸öÑ§ÉúĞÕÃû£º" + name);
 		}
 	}
 
 	/**
-	 * 3.éšæœºç‚¹åå…¶ä¸­ä¸€äºº
+	 * 3.Ëæ»úµãÃûÆäÖĞÒ»ÈË
 	 */
 	public static String randomStudentName(String[] students) {
-		// æ ¹æ®æ•°ç»„é•¿åº¦ï¼Œè·å–éšæœºç´¢å¼•
+		// ¸ù¾İÊı×é³¤¶È£¬»ñÈ¡Ëæ»úË÷Òı
 		int index = new Random().nextInt(students.length);
-		// é€šè¿‡éšæœºç´¢å¼•ä»æ•°ç»„ä¸­è·å–å§“å
+		// Í¨¹ıËæ»úË÷Òı´ÓÊı×éÖĞ»ñÈ¡ĞÕÃû
 		String name = students[index];
-		// è¿”å›éšæœºç‚¹åˆ°çš„å§“å
+		// ·µ»ØËæ»úµãµ½µÄĞÕÃû
 		return name;
 	}
 
 	public static void main(String[] args) {
-		System.out.println("--------éšæœºç‚¹åå™¨--------");
-		// åˆ›å»ºä¸€ä¸ªå¯ä»¥å­˜å‚¨å¤šä¸ªåŒå­¦å§“åçš„å®¹é‡å™¨ï¼ˆæ•°ç»„ï¼‰
+		System.out.println("--------Ëæ»úµãÃûÆ÷--------");
+		// ´´½¨Ò»¸ö¿ÉÒÔ´æ´¢¶à¸öÍ¬Ñ§ĞÕÃûµÄÈİÁ¿Æ÷£¨Êı×é£©
 		String[] students = new String[3];
 		/*
-		 * 1.å­˜å‚¨å…¨ç­åŒå­¦å§“å
+		 * 1.´æ´¢È«°àÍ¬Ñ§ĞÕÃû
 		 */
 		addStudentName(students);
 		/*
-		 * 2.æ€»è§ˆå…¨ç­åŒå­¦å§“å
+		 * 2.×ÜÀÀÈ«°àÍ¬Ñ§ĞÕÃû
 		 */
 		printStudentName(students);
 		/*
-		 * 3. éšæœºç‚¹åå…¶ä¸­ä¸€äºº
+		 * 3. Ëæ»úµãÃûÆäÖĞÒ»ÈË
 		 */
 		String randomName = randomStudentName(students);
-		System.out.println("è¢«ç‚¹åˆ°åçš„åŒå­¦æ˜¯ï¼š" + randomName);
+		System.out.println("±»µãµ½ÃûµÄÍ¬Ñ§ÊÇ£º" + randomName);
 	}
 }

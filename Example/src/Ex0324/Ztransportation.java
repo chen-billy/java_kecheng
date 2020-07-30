@@ -1,26 +1,26 @@
 package Ex0324;
 
 /*
- * ä¸“ç”¨è¿è¾“è½¦ç±»
+ * ×¨ÓÃÔËÊä³µÀà
  */
 public class Ztransportation extends Transportation implements Careable {
-	// æ— å‚æ„é€ 
+	// ÎŞ²Î¹¹Ôì
 	public Ztransportation() {
 		super();
 	}
 
-	// æœ‰å‚æ„é€ ï¼šè½¦è¾†ç¼–ç ã€å‹å·ã€è´Ÿè´£äºº
+	// ÓĞ²Î¹¹Ôì£º³µÁ¾±àÂë¡¢ĞÍºÅ¡¢¸ºÔğÈË
 	public Ztransportation(String number, String model, String admin) {
 		super(number, model, admin);
 	}
 
-	// è¿è¾“æ–¹æ³•
+	// ÔËÊä·½·¨
 	public void transport() {
-		System.out.println("è¿è¾“è¿›è¡Œä¸­ã€‚ã€‚ã€‚");
+		System.out.println("ÔËÊä½øĞĞÖĞ¡£¡£¡£");
 	}
 
-	// é‡å†™è½¦è¾†ä¿å…»æ–¹æ³•
+	// ÖØĞ´³µÁ¾±£Ñø·½·¨
 	public void upKeep() {
-		System.out.println("è´§ç‰©è¿è¾“è½¦è¾†ä¿å…»å®Œæ¯•ï¼");
+		System.out.println("»õÎïÔËÊä³µÁ¾±£ÑøÍê±Ï£¡");
 	}
 }

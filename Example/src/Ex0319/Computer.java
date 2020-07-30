@@ -1,48 +1,48 @@
 package Ex0319;
 
 /*
- * ç”µè„‘ç±»
- *  æœ‰å¾ˆå¤šUSBæ’æ§½
- *  è¿žæŽ¥USBè®¾å¤‡åŠŸèƒ½
- *  å¼€æœºåŠŸèƒ½ï¼Œå…³æœºåŠŸèƒ½
+ * µçÄÔÀà
+ *  ÓÐºÜ¶àUSB²å²Û
+ *  Á¬½ÓUSBÉè±¸¹¦ÄÜ
+ *  ¿ª»ú¹¦ÄÜ£¬¹Ø»ú¹¦ÄÜ
  */
 public class Computer {
-	// ç”µè„‘ä¸Šçš„USBæ’æ§½
+	// µçÄÔÉÏµÄUSB²å²Û
 	private USB[] usbArr = new USB[4];
 
-	// å‘ç”µè„‘ä¸Šè¿žæŽ¥USBè®¾å¤‡
+	// ÏòµçÄÔÉÏÁ¬½ÓUSBÉè±¸
 	public void add(USB usb) {
-		// éåŽ†æ•°ç»„ï¼ŒèŽ·å–æ‰€ä»¥çš„æ’æ§½
+		// ±éÀúÊý×é£¬»ñÈ¡ËùÒÔµÄ²å²Û
 		for (int i = 0; i < usbArr.length; i++) {
 			if (usbArr[i] == null) {
-				// å°†è®¾å¤‡è¿žæŽ¥åœ¨USBæ’æ§½ä¸Š
-				// å°†USBæŽ¥å£å®žçŽ°ç±»å¯¹è±¡ï¼Œå­˜å‚¨åˆ°äº†USBçš„æ•°ç»„ä¸­
+				// ½«Éè±¸Á¬½ÓÔÚUSB²å²ÛÉÏ
+				// ½«USB½Ó¿ÚÊµÏÖÀà¶ÔÏó£¬´æ´¢µ½ÁËUSBµÄÊý×éÖÐ
 				usbArr[i] = usb;
 				break;
 			}
 		}
 	}
 
-	// ç”µè„‘çš„å¼€æœºåŠŸèƒ½
+	// µçÄÔµÄ¿ª»ú¹¦ÄÜ
 	public void powerOn() {
-		// å¾ªçŽ¯éåŽ†æ‰€ä»¥æ’æ§½
+		// Ñ­»·±éÀúËùÒÔ²å²Û
 		for (int i = 0; i < usbArr.length; i++) {
-			// å¦‚æžœå‘çŽ°æ•°ç»„ä¸­å­˜å‚¨äº†USBæŽ¥å£å®žçŽ°ç±»å¯¹è±¡
+			// Èç¹û·¢ÏÖÊý×éÖÐ´æ´¢ÁËUSB½Ó¿ÚÊµÏÖÀà¶ÔÏó
 			if (usbArr[i] != null) {
-				// è°ƒç”¨è®¾å¤‡ä¸Šçš„å¼€å¯åŠŸèƒ½
+				// µ÷ÓÃÉè±¸ÉÏµÄ¿ªÆô¹¦ÄÜ
 				usbArr[i].turnOn();
 			}
 		}
-		System.out.println("ç”µè„‘å¼€æœºæˆåŠŸ");
+		System.out.println("µçÄÔ¿ª»ú³É¹¦");
 	}
 
-	// ç”µè„‘å…³æœºåŠŸèƒ½
+	// µçÄÔ¹Ø»ú¹¦ÄÜ
 	public void powerOff() {
 		for (int i = 0; i < usbArr.length; i++) {
 			if (usbArr[i] != null) {
 				usbArr[i].turnOff();
 			}
 		}
-		System.out.println("ç”µè„‘å…³æœºæˆåŠŸ");
+		System.out.println("µçÄÔ¹Ø»ú³É¹¦");
 	}
 }

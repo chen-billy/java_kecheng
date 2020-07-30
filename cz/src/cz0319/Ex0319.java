@@ -1,54 +1,54 @@
 package cz0319;
 
-//å®šä¹‰USBæ¥å£
+//¶¨ÒåUSB½Ó¿Ú
 interface USB {
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•turnOnï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨turnOn£¨£©
 	public abstract void turnOn();
 
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•turnOffï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨turnOff£¨£©
 	public abstract void turnOff();
 }
 
-//å®šä¹‰é¼ æ ‡ç±»
+//¶¨ÒåÊó±êÀà
 class Mouse implements USB {
-	// å®ç°turnOnï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOn£¨£©·½·¨
 	public void turnOn() {
-		System.out.println("é¼ æ ‡å¯åŠ¨äº†");
+		System.out.println("Êó±êÆô¶¯ÁË");
 	}
 
-	// å®ç°turnOffï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOff£¨£©·½·¨
 	public void turnOff() {
-		System.out.println("é¼ æ ‡å…³é—­äº†");
+		System.out.println("Êó±ê¹Ø±ÕÁË");
 	}
 }
 
-//å®šä¹‰é”®ç›˜ç±»
+//¶¨Òå¼üÅÌÀà
 class KeyBoard implements USB {
-	// å®ç°turnOnï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOn£¨£©·½·¨
 	public void turnOn() {
-		System.out.println("é”®ç›˜å¯åŠ¨äº†");
+		System.out.println("¼üÅÌÆô¶¯ÁË");
 	}
 
-	// å®ç°turnOffï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOff£¨£©·½·¨
 	public void turnOff() {
-		System.out.println("é”®ç›˜å…³é—­äº†");
+		System.out.println("¼üÅÌ¹Ø±ÕÁË");
 	}
 }
 
-//å®šä¹‰éº¦å…‹é£ç±»
+//¶¨ÒåÂó¿Ë·çÀà
 class MicroPhone implements USB {
-	// å®ç°turnOnï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOn£¨£©·½·¨
 	public void turnOn() {
-		System.out.println("éº¦å…‹é£å¯åŠ¨äº†");
+		System.out.println("Âó¿Ë·çÆô¶¯ÁË");
 	}
 
-	// å®ç°turnOffï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖturnOff£¨£©·½·¨
 	public void turnOff() {
-		System.out.println("éº¦å…‹é£å…³é—­äº†");
+		System.out.println("Âó¿Ë·ç¹Ø±ÕÁË");
 	}
 }
 
-//å®šä¹‰è®¡ç®—æœºç±»
+//¶¨Òå¼ÆËã»úÀà
 class Computer {
 	private USB[] usbArr = new USB[4];
 
@@ -67,7 +67,7 @@ class Computer {
 				usbArr[i].turnOn();
 			}
 		}
-		System.out.println("è®¡ç®—æœºå¼€æœºæˆåŠŸ");
+		System.out.println("¼ÆËã»ú¿ª»ú³É¹¦");
 	}
 
 	public void powerOff() {
@@ -76,11 +76,11 @@ class Computer {
 				usbArr[i].turnOff();
 			}
 		}
-		System.out.println("è®¡ç®—æœºå…³æœºæˆåŠŸ");
+		System.out.println("¼ÆËã»ú¹Ø»ú³É¹¦");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex0319 {
 	public static void main(String[] args) {
 		Computer c = new Computer();

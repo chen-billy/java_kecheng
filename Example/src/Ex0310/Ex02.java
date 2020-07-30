@@ -1,24 +1,24 @@
 package Ex0310;
 
 /*
- * æœ‰å‚æ„é€ æ–¹æ³•
+ * ÓĞ²Î¹¹Ôì·½·¨
  */
 class Per02 {
 	private int age;
 
-	// å®šä¹‰æœ‰å‚æ„é€ æ–¹æ³•
+	// ¶¨ÒåÓĞ²Î¹¹Ôì·½·¨
 	public Per02(int a) {
 		age = a;
 	}
 
 	public void speak() {
-		System.out.println("æˆ‘ä»Šå¹´å·²ç»" + age + "å²äº†ï¼");
+		System.out.println("ÎÒ½ñÄêÒÑ¾­" + age + "ËêÁË£¡");
 	}
 }
 
 public class Ex02 {
 	public static void main(String[] args) {
-		Per02 p = new Per02(20);// å®ä¾‹åŒ–Perå¯¹è±¡ï¼Œä¼ é€’æ„é€ æ–¹æ³•å®é™…å‚æ•°
+		Per02 p = new Per02(20);// ÊµÀı»¯Per¶ÔÏó£¬´«µİ¹¹Ôì·½·¨Êµ¼Ê²ÎÊı
 		p.speak();
 	}
 }

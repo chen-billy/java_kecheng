@@ -4,13 +4,13 @@ import java.util.*;
 
 public class Ex01 {
 	public static void main(String[] args) {
-		HashSet set = new HashSet();// åˆ›å»ºHashSeté›†åˆ
-		set.add("Jack");// å‘è¯¥Seté›†åˆä¸­æ·»åŠ å­—ç¬¦ä¸²
+		HashSet set = new HashSet();// ´´½¨HashSet¼¯ºÏ
+		set.add("Jack");// Ïò¸ÃSet¼¯ºÏÖĞÌí¼Ó×Ö·û´®
 		set.add("Eve");
 		set.add("Rose");
-		set.add("Rose");// å‘è¯¥Seté›†åˆä¸­æ·»åŠ é‡å¤å…ƒç´ 
-		Iterator it = set.iterator();// è·å–Iteratorå¯¹è±¡
-		while (it.hasNext()) {// é€šè¿‡whileå¾ªç¯ï¼Œåˆ¤æ–­é›†åˆä¸­æ˜¯å¦ç”±å…ƒç´ 
+		set.add("Rose");// Ïò¸ÃSet¼¯ºÏÖĞÌí¼ÓÖØ¸´ÔªËØ
+		Iterator it = set.iterator();// »ñÈ¡Iterator¶ÔÏó
+		while (it.hasNext()) {// Í¨¹ıwhileÑ­»·£¬ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓÉÔªËØ
 			Object obj = it.next();
 			System.out.println(obj);
 		}

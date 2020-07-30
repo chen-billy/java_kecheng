@@ -4,18 +4,18 @@ import java.util.LinkedList;
 
 public class Ex02 {
 	public static void main(String[] args) {
-		LinkedList link = new LinkedList();// åˆ›å»ºLinkedListé›†åˆ
+		LinkedList link = new LinkedList();// ´´½¨LinkedList¼¯ºÏ
 		link.add("stu1");
 		link.add("stu2");
 		link.add("stu3");
 		link.add("stu4");
-		System.out.println(link.toString());// å–å‡ºå¹¶æ‰“å°è¯¥é›†åˆä¸­çš„å…ƒç´ 
-		link.add(3, "Student");// å‘è¯¥é›†åˆä¸­æŒ‡å®šä½ç½®æ’å…¥å…ƒç´ 
-		link.addFirst("First");// å‘è¯¥é›†åˆç¬¬ä¸€ä¸ªä½ç½®æ’å…¥å…ƒç´ 
+		System.out.println(link.toString());// È¡³ö²¢´òÓ¡¸Ã¼¯ºÏÖĞµÄÔªËØ
+		link.add(3, "Student");// Ïò¸Ã¼¯ºÏÖĞÖ¸¶¨Î»ÖÃ²åÈëÔªËØ
+		link.addFirst("First");// Ïò¸Ã¼¯ºÏµÚÒ»¸öÎ»ÖÃ²åÈëÔªËØ
 		System.out.println(link);
-		System.out.println(link.getFirst());// å–å‡ºè¯¥é›†åˆä¸­ç¬¬ä¸€ä¸ªå…ƒç´ 
-		link.remove(3);// ç§»é™¤è¯¥é›†åˆä¸­æŒ‡å®šä½ç½®çš„å…ƒç´ 
-		link.removeFirst();// ç§»é™¤è¯¥é›†åˆä¸­ç¬¬ä¸€å…ƒç´ 
+		System.out.println(link.getFirst());// È¡³ö¸Ã¼¯ºÏÖĞµÚÒ»¸öÔªËØ
+		link.remove(3);// ÒÆ³ı¸Ã¼¯ºÏÖĞÖ¸¶¨Î»ÖÃµÄÔªËØ
+		link.removeFirst();// ÒÆ³ı¸Ã¼¯ºÏÖĞµÚÒ»ÔªËØ
 		System.out.println(link);
 	}
 }

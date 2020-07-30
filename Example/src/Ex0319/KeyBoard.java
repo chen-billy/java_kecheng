@@ -1,16 +1,16 @@
 package Ex0319;
 
 /*
- * é”®ç›˜
+ * ¼üÅÌ
  */
 public class KeyBoard implements USB {
 
 	public void turnOn() {
-		System.out.println("é”®ç›˜å¯åŠ¨äº†");
+		System.out.println("¼üÅÌÆô¶¯ÁË");
 	}
 
 	public void turnOff() {
-		System.out.println("é”®ç›˜å…³é—­äº†");
+		System.out.println("¼üÅÌ¹Ø±ÕÁË");
 	}
 
 }

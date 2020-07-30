@@ -1,43 +1,43 @@
 package cz0324;
 
-//å®šä¹‰Animalæ¥å£
+//¶¨ÒåAnimal½Ó¿Ú
 interface Animal {
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•shoutï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨shout£¨£©
 	public abstract void shout();
 }
 
-//å®šä¹‰Catç±»å®ç°Animalæ¥å£
+//¶¨ÒåCatÀàÊµÏÖAnimal½Ó¿Ú
 class Cat implements Animal {
-	// å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖshout£¨£©·½·¨
 	public void shout() {
-		System.out.println("å–µå–µ...");
+		System.out.println("ß÷ß÷...");
 	}
 
-	// å®šä¹‰sleepï¼ˆï¼‰æ–¹æ³•
+	// ¶¨Òåsleep£¨£©·½·¨
 	public void sleep() {
-		System.out.println("çŒ«ç¡è§‰...");
+		System.out.println("Ã¨Ë¯¾õ...");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex0324 {
-	// å®šä¹‰ä¸€ä¸ªé™æ€animalShoutï¼ˆAnimal anï¼‰æ–¹æ³•
+	// ¶¨ÒåÒ»¸ö¾²Ì¬animalShout£¨Animal an£©·½·¨
 	public static void animalShout(Animal an) {
 		an.shout();
 	}
 
 	public static void main(String[] args) {
-		// å®šä¹‰ä¸€ä¸ªå†…éƒ¨ç±»Dogå®ç°Animalæ¥å£
+		// ¶¨ÒåÒ»¸öÄÚ²¿ÀàDogÊµÏÖAnimal½Ó¿Ú
 		class Dog implements Animal {
-			// å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+			// ÊµÏÖshout£¨£©·½·¨
 			public void shout() {
-				System.out.println("æ±ªæ±ª...");
+				System.out.println("ÍôÍô...");
 			}
 		}
-		animalShout(new Dog());// è°ƒç”¨animalShotï¼ˆï¼‰æ–¹æ³•è¾“å‡ºå«å£°
-		Cat c1 = new Cat();// åˆ›å»ºCatç±»çš„å®ä¾‹å¯¹è±¡c1
-		animalShout(c1);// è°ƒç”¨animalShoutï¼ˆï¼‰æ–¹æ³•
-		c1.sleep();// è°ƒç”¨sleepï¼ˆï¼‰æ–¹æ³•
-		System.out.println(c1.toString());// è°ƒç”¨toStringï¼ˆï¼‰å¹¶æ‰“å°
+		animalShout(new Dog());// µ÷ÓÃanimalShot£¨£©·½·¨Êä³ö½ĞÉù
+		Cat c1 = new Cat();// ´´½¨CatÀàµÄÊµÀı¶ÔÏóc1
+		animalShout(c1);// µ÷ÓÃanimalShout£¨£©·½·¨
+		c1.sleep();// µ÷ÓÃsleep£¨£©·½·¨
+		System.out.println(c1.toString());// µ÷ÓÃtoString£¨£©²¢´òÓ¡
 	}
 }

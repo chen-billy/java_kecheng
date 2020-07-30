@@ -9,11 +9,11 @@ public class Example11 {
 		case 3:
 		case 4:
 		case 5:
-			System.out.println("浠婂ぉ鏄伐浣滄棩");
+			System.out.println("今天是工作日");
 			break;
 		case 6:
 		case 7:
-			System.out.println("浠婂ぉ鏄紤鎭棩");
+			System.out.println("今天是休息日");
 			break;
 		}
 	}

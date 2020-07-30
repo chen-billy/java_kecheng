@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * for寰幆閬嶅巻鏁扮粍
+ * for循环遍历数组
  */
 public class Ex29 {
 	public static void main(String[] args) {

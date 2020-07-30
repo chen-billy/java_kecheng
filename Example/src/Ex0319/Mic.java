@@ -1,16 +1,16 @@
 package Ex0319;
 
 /*
- * éº¦å…‹é£
+ * Âó¿Ë·ç
  */
 public class Mic implements USB {
 
 	public void turnOn() {
-		System.out.println("éº¦å…‹é£å¯åŠ¨äº†");
+		System.out.println("Âó¿Ë·çÆô¶¯ÁË");
 	}
 
 	public void turnOff() {
-		System.out.println("éº¦å…‹é£å…³é—­äº†");
+		System.out.println("Âó¿Ë·ç¹Ø±ÕÁË");
 	}
 
 }

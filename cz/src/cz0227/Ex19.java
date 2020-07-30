@@ -1,11 +1,11 @@
 package cz0227;
 
 /*
- * ä¸ä½¿ç”¨æ–¹æ³•æ—¶æ‰“å°ä¸‰ä¸ªé•¿å®½ä¸åŒçš„çŸ©å½¢
+ * ²»Ê¹ÓÃ·½·¨Ê±´òÓ¡Èı¸ö³¤¿í²»Í¬µÄ¾ØĞÎ
  */
 public class Ex19 {
 	public static void main(String[] args) {
-		// ç”¨*æ‰“å°å®½ä¸º3ï¼Œé«˜ä¸º5çš„é•¿æ–¹å½¢
+		// ÓÃ*´òÓ¡¿íÎª3£¬¸ßÎª5µÄ³¤·½ĞÎ
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 5; j++) {
 				System.out.print("*");
@@ -13,7 +13,7 @@ public class Ex19 {
 			System.out.print("\n");
 		}
 		System.out.print("\n");
-		// ç”¨*æ‰“å°å®½ä¸º2ï¼Œé«˜ä¸º4çš„é•¿æ–¹å½¢
+		// ÓÃ*´òÓ¡¿íÎª2£¬¸ßÎª4µÄ³¤·½ĞÎ
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0; j < 4; j++) {
 				System.out.print("*");
@@ -21,7 +21,7 @@ public class Ex19 {
 			System.out.print("\n");
 		}
 		System.out.print("\n");
-		// ç”¨*æ‰“å°å®½ä¸º6ï¼Œé«˜ä¸º10çš„é•¿æ–¹å½¢
+		// ÓÃ*´òÓ¡¿íÎª6£¬¸ßÎª10µÄ³¤·½ĞÎ
 		for (int i = 0; i < 6; i++) {
 			for (int j = 0; j < 10; j++) {
 				System.out.print("*");

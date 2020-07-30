@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * äºŒç»´æ•°ç»„çš„ä½¿ç”¨
+ * ¶şÎ¬Êı×éµÄÊ¹ÓÃ
  */
 public class Ex32 {
 	public static void main(String[] args) {
@@ -16,8 +16,8 @@ public class Ex32 {
 				groupSum = groupSum + arr[i][j];
 			}
 			sum = sum + groupSum;
-			System.out.println("ç¬¬" + (i + 1) + "å°ç»„é”€å”®é¢ä¸ºï¼š" + groupSum + "ä¸‡å…ƒã€‚");
+			System.out.println("µÚ" + (i + 1) + "Ğ¡×éÏúÊÛ¶îÎª£º" + groupSum + "ÍòÔª¡£");
 		}
-		System.out.println("æ€»é”€å”®é¢ä¸ºï¼š" + sum + "ä¸‡å…ƒã€‚");
+		System.out.println("×ÜÏúÊÛ¶îÎª£º" + sum + "ÍòÔª¡£");
 	}
 }

@@ -1,9 +1,9 @@
 package Ex0324;
 
 /*
- * å®šä¹‰GPSæ¥å£ï¼Œå…·å¤‡GPSå®šä½åŠŸèƒ½
+ * ¶¨ÒåGPS½Ó¿Ú£¬¾ß±¸GPS¶¨Î»¹¦ÄÜ
  */
 public interface GPS {
-	// æ˜¾ç¤ºåæ ‡çš„æ–¹æ³•
+	// ÏÔÊ¾×ø±êµÄ·½·¨
 	public String showCoordinate();
 }

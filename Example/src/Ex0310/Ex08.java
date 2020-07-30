@@ -1,19 +1,19 @@
 package Ex0310;
 
 /*
- *é™æ€çš„å˜é‡ 
+ *¾²Ì¬µÄ±äÁ¿ 
  */
 class Per08 {
-	static String shoolName;// å®šä¹‰é™æ€å˜é‡shollName
+	static String shoolName;// ¶¨Òå¾²Ì¬±äÁ¿shollName
 }
 
 public class Ex08 {
 	public static void main(String[] args) {
-		Per08 stu1 = new Per08();// åˆ›å»ºå­¦ç”Ÿå¯¹è±¡
+		Per08 stu1 = new Per08();// ´´½¨Ñ§Éú¶ÔÏó
 		Per08 stu2 = new Per08();
-		// é™æ€æˆå‘˜çš„è°ƒç”¨æ–¹æ³•ï¼Œç±»å.å¯¹è±¡
-		Per08.shoolName = "æµ‹è¯•ç±»";
-		System.out.println("æˆ‘çš„å­¦æ ¡æ˜¯ï¼š" + stu1.shoolName);// æ‰“å°ç¬¬ä¸€ä¸ªå­¦ç”Ÿå¯¹è±¡çš„å­¦æ ¡å
-		System.out.println("æˆ‘çš„å­¦æ ¡æ˜¯ï¼š" + stu2.shoolName);// æ‰“å°ç¬¬äºŒä¸ªå­¦ç”Ÿå¯¹è±¡çš„å­¦æ ¡å
+		// ¾²Ì¬³ÉÔ±µÄµ÷ÓÃ·½·¨£¬ÀàÃû.¶ÔÏó
+		Per08.shoolName = "²âÊÔÀà";
+		System.out.println("ÎÒµÄÑ§Ğ£ÊÇ£º" + stu1.shoolName);// ´òÓ¡µÚÒ»¸öÑ§Éú¶ÔÏóµÄÑ§Ğ£Ãû
+		System.out.println("ÎÒµÄÑ§Ğ£ÊÇ£º" + stu2.shoolName);// ´òÓ¡µÚ¶ş¸öÑ§Éú¶ÔÏóµÄÑ§Ğ£Ãû
 	}
 }

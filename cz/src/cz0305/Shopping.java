@@ -2,31 +2,31 @@ package cz0305;
 
 public class Shopping {
 	public static void main(String[] args) {
-		// åˆ›å»ºå•†å“å¯¹è±¡ï¼Œç»™å•†å“åå­—èµ‹å€¼
+		// ´´½¨ÉÌÆ·¶ÔÏó£¬¸øÉÌÆ·Ãû×Ö¸³Öµ
 		Product p1 = new Product();
 		Product p2 = new Product();
 		Product p3 = new Product();
 		Product p4 = new Product();
 		Product p5 = new Product();
-		p1.setProName("ç”µè§†æœº");
-		p2.setProName("æ´—è¡£æœº");
-		p3.setProName("è±†æµ†æœº");
-		p4.setProName("ç©ºè°ƒæœº");
-		p5.setProName("å¹é£æœº");
-		// åˆ›å»ºè¶…å¸‚å¯¹è±¡ï¼Œç»™è¶…å¸‚åå­—èµ‹å€¼ï¼Œç»™ä»“åº“èµ‹å€¼
+		p1.setProName("µçÊÓ»ú");
+		p2.setProName("Ï´ÒÂ»ú");
+		p3.setProName("¶¹½¬»ú");
+		p4.setProName("¿Õµ÷»ú");
+		p5.setProName("´µ·ç»ú");
+		// ´´½¨³¬ÊĞ¶ÔÏó£¬¸ø³¬ÊĞÃû×Ö¸³Öµ£¬¸ø²Ö¿â¸³Öµ
 		Market m = new Market();
-		m.setMarketName("å®¶ä¹ç¦");
+		m.setMarketName("¼ÒÀÖ¸£");
 		m.setProductArr(new Product[] { p1, p2, p3, p4, p5 });
-		// åˆ›å»ºäººå¯¹è±¡ï¼Œç»™åå­—èµ‹å€¼
+		// ´´½¨ÈË¶ÔÏó£¬¸øÃû×Ö¸³Öµ
 		Person p = new Person();
-		p.setName("å°éŸ©");
-		// è°ƒç”¨è´­ç‰©æ–¹æ³•ï¼ŒæŒ‡å®šè¶…å¸‚å’Œå•†å“åï¼Œå¾—åˆ°è´­ç‰©ç»“æœ
-		Product result = p.shooping(m, "è±†æµ†æœº");
-		// æ ¹æ®ç»“æœè¿›è¡Œåˆ¤æ–­
+		p.setName("Ğ¡º«");
+		// µ÷ÓÃ¹ºÎï·½·¨£¬Ö¸¶¨³¬ÊĞºÍÉÌÆ·Ãû£¬µÃµ½¹ºÎï½á¹û
+		Product result = p.shooping(m, "¶¹½¬»ú");
+		// ¸ù¾İ½á¹û½øĞĞÅĞ¶Ï
 		if (result != null) {
-			System.out.println(p.getName() + "åœ¨" + m.getMarketName() + "ä¹°åˆ°äº†" + result.getProNmae());
+			System.out.println(p.getName() + "ÔÚ" + m.getMarketName() + "Âòµ½ÁË" + result.getProNmae());
 		} else {
-			System.out.println(p.getName() + "ç™½è·‘äº†ä¸€è¶Ÿï¼Œåœ¨" + m.getMarketName() + "ä»€ä¹ˆéƒ½æ²¡ä¹°åˆ°");
+			System.out.println(p.getName() + "°×ÅÜÁËÒ»ÌË£¬ÔÚ" + m.getMarketName() + "Ê²Ã´¶¼Ã»Âòµ½");
 		}
 	}
 }

@@ -4,12 +4,12 @@ import java.util.*;
 
 public class Ex04 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList(); // åˆ›å»ºArrayListé›†åˆ
-		list.add("Jack"); // å‘é›†åˆä¸­æ·»åŠ å­—ç¬¦ä¸²å…ƒç´ 
+		ArrayList list = new ArrayList(); // ´´½¨ArrayList¼¯ºÏ
+		list.add("Jack"); // Ïò¼¯ºÏÖĞÌí¼Ó×Ö·û´®ÔªËØ
 		list.add("Rose");
 		list.add("Tom");
-		for (Object obj : list) {// ä½¿ç”¨foreachå¾ªç¯éå†é›†åˆ
-			System.out.println(obj);// å–å‡ºå¹¶æ‰“å°é›†åˆä¸­çš„å…ƒç´ 
+		for (Object obj : list) {// Ê¹ÓÃforeachÑ­»·±éÀú¼¯ºÏ
+			System.out.println(obj);// È¡³ö²¢´òÓ¡¼¯ºÏÖĞµÄÔªËØ
 		}
 	}
 }

@@ -11,13 +11,13 @@ public class Ex06 {
 		System.out.println(numStr.toString());
 	}
 	private static String sortStringNumber(String numStr) {
-		// 1,å°†å­—ç¬¦ä¸²å˜æˆå­—ç¬¦æ•°ç»„
+		// 1,½«×Ö·û´®±ä³É×Ö·ûÊı×é
 		String[] str_arr = stringToArray(numStr);
-		// 2,å°†å­—ç¬¦ä¸²æ•°ç»„å˜æˆintæ•°ç»„
+		// 2,½«×Ö·û´®Êı×é±ä³ÉintÊı×é
 		int[] num_arr = toIntArray(str_arr);
-		// 3,å¯¹intæ•°ç»„æ’åº
+		// 3,¶ÔintÊı×éÅÅĞò
 		mySorArray(num_arr);
-		// 4,å°†æ’åºåçš„intæ•°ç»„å˜æˆå­—ç¬¦ä¸²
+		// 4,½«ÅÅĞòºóµÄintÊı×é±ä³É×Ö·û´®
 		String trmp = arrayToString(num_arr);
 		return trmp;
 	}

@@ -1,27 +1,27 @@
 package cz0303;
 
 class Person {
-	int age;// å®šä¹‰intç±»å‹çš„å˜é‡age
-	// å®šä¹‰ speakï¼ˆï¼‰æ–¹æ³•
+	int age;// ¶¨ÒåintÀàĞÍµÄ±äÁ¿age
+	// ¶¨Òå speak£¨£©·½·¨
 
 	public void speak() {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘ä»Šå¹´" + age + "å²");
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½ñÄê" + age + "Ëê");
 	}
 
-	// åˆ›å»ºsay()æ–¹æ³•ï¼Œè¾“å‡ºä¸€å¥è¯â€œæˆ‘æ˜¯ä¸€ä¸ªäººâ€
+	// ´´½¨say()·½·¨£¬Êä³öÒ»¾ä»°¡°ÎÒÊÇÒ»¸öÈË¡±
 	public void say() {
-		System.out.println("æˆ‘æ˜¯ä¸€ä¸ªäººï¼");
+		System.out.println("ÎÒÊÇÒ»¸öÈË£¡");
 	}
 }
 
 public class Ex301 {
 	public static void main(String[] args) {
-		Person p1 = new Person();// åˆ›å»ºç¬¬ä¸€ä¸ªPersonå¯¹è±¡
-		Person p2 = new Person();// åˆ›å»ºç¬¬äºŒä¸ªPersonå¯¹è±¡
-		p1.age = 44;// ä¸ºp1çš„ageå±æ€§èµ‹å€¼
-		p1.speak();// p1è°ƒç”¨å¯¹è±¡çš„speakæ–¹æ³•
-		p1.say();// p1è°ƒç”¨say()æ–¹æ³•
-		p2.speak();// p2è°ƒç”¨å¯¹è±¡çš„speakæ–¹æ³•
-		p2.say();// p2è°ƒç”¨say()æ–¹æ³•
+		Person p1 = new Person();// ´´½¨µÚÒ»¸öPerson¶ÔÏó
+		Person p2 = new Person();// ´´½¨µÚ¶ş¸öPerson¶ÔÏó
+		p1.age = 44;// Îªp1µÄageÊôĞÔ¸³Öµ
+		p1.speak();// p1µ÷ÓÃ¶ÔÏóµÄspeak·½·¨
+		p1.say();// p1µ÷ÓÃsay()·½·¨
+		p2.speak();// p2µ÷ÓÃ¶ÔÏóµÄspeak·½·¨
+		p2.say();// p2µ÷ÓÃsay()·½·¨
 	}
 }

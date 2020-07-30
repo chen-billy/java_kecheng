@@ -2,12 +2,12 @@ package cz0402;
 
 public class Ex03 {
 	public static void main(String[] args) {
-		System.out.println("è®¡ç®—ç»å¯¹å€¼çš„ç»“æœï¼š" + Math.abs(-1));
-		System.out.println("æ±‚å¤§äºå‚æ•°çš„æœ€å°æ•´æ•°ï¼š" + Math.ceil(5.6));
-		System.out.println("æ±‚å°äºå‚æ•°çš„æœ€å¤§æ•´æ•°ï¼š" + Math.floor(-4.2));
-		System.out.println("å¯¹å°æ•°è¿›è¡Œå››èˆäº”å…¥åçš„ç»“æœï¼š" + Math.round(-4.6));
-		System.out.println("æ±‚ä¸¤ä¸ªæ•°çš„è¾ƒå¤§å€¼ï¼š" + Math.max(2.1, -2.1));
-		System.out.println("æ±‚ä¸¤ä¸ªæ•°çš„è¾ƒå°å€¼ï¼š" + Math.min(2.1, -2.1));
-		System.out.println("ç”Ÿæˆä¸€ä¸ªå¤§é›¨ç­‰äº0.0å°äº1.0éšæœºå€¼ï¼š" + Math.random());
+		System.out.println("¼ÆËã¾ø¶ÔÖµµÄ½á¹û£º" + Math.abs(-1));
+		System.out.println("Çó´óÓÚ²ÎÊıµÄ×îĞ¡ÕûÊı£º" + Math.ceil(5.6));
+		System.out.println("ÇóĞ¡ÓÚ²ÎÊıµÄ×î´óÕûÊı£º" + Math.floor(-4.2));
+		System.out.println("¶ÔĞ¡Êı½øĞĞËÄÉáÎåÈëºóµÄ½á¹û£º" + Math.round(-4.6));
+		System.out.println("ÇóÁ½¸öÊıµÄ½Ï´óÖµ£º" + Math.max(2.1, -2.1));
+		System.out.println("ÇóÁ½¸öÊıµÄ½ÏĞ¡Öµ£º" + Math.min(2.1, -2.1));
+		System.out.println("Éú³ÉÒ»¸ö´óÓêµÈÓÚ0.0Ğ¡ÓÚ1.0Ëæ»úÖµ£º" + Math.random());
 	}
 }

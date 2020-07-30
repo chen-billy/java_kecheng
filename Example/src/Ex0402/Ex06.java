@@ -1,14 +1,14 @@
 package Ex0402;
 
 /*
- * æ‰“å¼€è®°äº‹æœ¬å¹¶åœ¨3ç§’åè‡ªåŠ¨å…³é—­
- * 	public Process execï¼ˆString commandï¼‰åœ¨å•ç‹¬çš„è¿›ç¨‹ä¸­æ‰§è¡ŒæŒ‡å®šçš„å­—ç¬¦ä¸²å‘½ä»¤
+ * ´ò¿ª¼ÇÊÂ±¾²¢ÔÚ3Ãëºó×Ô¶¯¹Ø±Õ
+ * 	public Process exec£¨String command£©ÔÚµ¥¶ÀµÄ½ø³ÌÖĞÖ´ĞĞÖ¸¶¨µÄ×Ö·û´®ÃüÁî
  */
 public class Ex06 {
 	public static void main(String[] args) throws Exception {
-		Runtime rt = Runtime.getRuntime();// åˆ›å»ºä¸€ä¸ªRuntimeå®ä¾‹å¯¹è±¡
-		Process process = rt.exec("notepad.exe");// å¾—åˆ°è¡¨ç¤ºè¿›ç¨‹çš„processå¯¹è±¡
-		Thread.sleep(3000);// ç¨‹åºä¼‘çœ 3ç§’
-		process.destroy();// æ€æ‰è¿›ç¨‹
+		Runtime rt = Runtime.getRuntime();// ´´½¨Ò»¸öRuntimeÊµÀı¶ÔÏó
+		Process process = rt.exec("notepad.exe");// µÃµ½±íÊ¾½ø³ÌµÄprocess¶ÔÏó
+		Thread.sleep(3000);// ³ÌĞòĞİÃß3Ãë
+		process.destroy();// É±µô½ø³Ì
 	}
 }

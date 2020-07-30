@@ -1,25 +1,25 @@
 package Ex0324;
 
-//å®šä¹‰Animalæ¥å£
+//¶¨ÒåAnimal½Ó¿Ú
 interface Animal06 {
-	public abstract void shout();// å®šä¹‰æŠ½è±¡æ–¹æ³•
+	public abstract void shout();// ¶¨Òå³éÏó·½·¨
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex06 {
 	public static void main(String[] args) {
-		// å®šä¹‰ä¸€ä¸ªå†…éƒ¨ç±»Catå®ç°Animalæ¥å£
+		// ¶¨ÒåÒ»¸öÄÚ²¿ÀàCatÊµÏÖAnimal½Ó¿Ú
 		class Cat implements Animal06 {
-			// å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+			// ÊµÏÖshout£¨£©·½·¨
 			public void shout() {
-				System.out.println("å–µå–µ...");
+				System.out.println("ß÷ß÷...");
 			}
 		}
-		animalShout(new Cat());// è°ƒç”¨animalShoutï¼ˆï¼‰æ–¹æ³•å¹¶ä¼ å…¥Catå¯¹è±¡
+		animalShout(new Cat());// µ÷ÓÃanimalShout£¨£©·½·¨²¢´«ÈëCat¶ÔÏó
 	}
 
-	// å®šä¹‰é™æ€æ–¹æ³•animalShoutï¼ˆï¼‰
+	// ¶¨Òå¾²Ì¬·½·¨animalShout£¨£©
 	public static void animalShout(Animal06 an) {
-		an.shout();// è°ƒç”¨ä¼ å…¥å¯¹è±¡ançš„shoutï¼ˆï¼‰æ–¹æ³•
+		an.shout();// µ÷ÓÃ´«Èë¶ÔÏóanµÄshout£¨£©·½·¨
 	}
 }

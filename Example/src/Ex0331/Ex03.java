@@ -1,29 +1,29 @@
 package Ex0331;
 
 /*
- * Stringç±»çš„è½¬æ¢æ“ä½œ
- * 	ç¨‹åºå¼€å‘ä¸­ï¼Œç»å¸¸éœ€è¦å¯¹å­—ç¬¦ä¸²è¿›è¡Œæ“ä½œï¼Œä¾‹å¦‚å°†å­—ç¬¦ä¸²è½¬æ¢æˆæ•°ç»„çš„å½¢å¼ï¼Œå°†å­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦è¿›è¡Œå¤§å°å†™è½¬æ¢ç­‰
- * 	public char[] toCharArryï¼ˆï¼‰å°†æ­¤å­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„
- * 	public static String valueOfï¼ˆint nï¼‰å°†æŒ‡å®šintå€¼è½¬æ¢æˆStringç±»å‹
- *  public String toUpperCaseï¼ˆï¼‰å°†æ­¤å­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦å…¨éƒ¨è½¬æ¢æˆå¤§å†™å­—æ¯ï¼Œä¼šè¿”å›ä¸€ä¸ªæ–°çš„å­—ç¬¦ä¸²
+ * StringÀàµÄ×ª»»²Ù×÷
+ * 	³ÌĞò¿ª·¢ÖĞ£¬¾­³£ĞèÒª¶Ô×Ö·û´®½øĞĞ²Ù×÷£¬ÀıÈç½«×Ö·û´®×ª»»³ÉÊı×éµÄĞÎÊ½£¬½«×Ö·û´®ÖĞµÄ×Ö·û½øĞĞ´óĞ¡Ğ´×ª»»µÈ
+ * 	public char[] toCharArry£¨£©½«´Ë×Ö·û´®×ª»»³É×Ö·ûÊı×é
+ * 	public static String valueOf£¨int n£©½«Ö¸¶¨intÖµ×ª»»³ÉStringÀàĞÍ
+ *  public String toUpperCase£¨£©½«´Ë×Ö·û´®ÖĞµÄ×Ö·ûÈ«²¿×ª»»³É´óĞ´×ÖÄ¸£¬»á·µ»ØÒ»¸öĞÂµÄ×Ö·û´®
  */
 public class Ex03 {
 	public static void main(String[] args) {
-		// å£°æ˜ä¸€ä¸ªå­—ç¬¦ä¸²
+		// ÉùÃ÷Ò»¸ö×Ö·û´®
 		String str = "abcd";
-		// å°†æ­¤å­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„
-		System.out.print("å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„åçš„ç»“æœï¼š");
-		char[] charArray = str.toCharArray();// å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+		// ½«´Ë×Ö·û´®×ª»»³É×Ö·ûÊı×é
+		System.out.print("½«×Ö·û´®×ª»»Îª×Ö·ûÊı×éºóµÄ½á¹û£º");
+		char[] charArray = str.toCharArray();// ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
 		for (int i = 0; i < charArray.length; i++) {
 			if (i != charArray.length - 1) {
-				// å¦‚æœä¸æ˜¯æ•°ç»„çš„æœ€åä¸€ä¸ªå…ƒç´ ï¼Œåœ¨å…ƒç´ åé¢åŠ é€—å·
+				// Èç¹û²»ÊÇÊı×éµÄ×îºóÒ»¸öÔªËØ£¬ÔÚÔªËØºóÃæ¼Ó¶ººÅ
 				System.out.print(charArray[i] + ",");
 			} else {
-				// æ•°ç»„çš„æœ€åä¸€ä¸ªå…ƒç´ åä¸åŠ é€—å·
+				// Êı×éµÄ×îºóÒ»¸öÔªËØºó²»¼Ó¶ººÅ
 				System.out.println(charArray[i]);
 			}
 		}
-		System.out.println("å°†intå€¼è½¬æ¢ä¸ºStringç±»å‹ä¹‹åçš„ç»“æœï¼š" + String.valueOf(12));
-		System.out.println("å°†å­—ç¬¦ä¸²è½¬æ¢æˆå¤§å†™ä¹‹åçš„ç»“æœï¼š" + str.toUpperCase());
+		System.out.println("½«intÖµ×ª»»ÎªStringÀàĞÍÖ®ºóµÄ½á¹û£º" + String.valueOf(12));
+		System.out.println("½«×Ö·û´®×ª»»³É´óĞ´Ö®ºóµÄ½á¹û£º" + str.toUpperCase());
 	}
 }

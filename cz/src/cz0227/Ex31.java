@@ -1,19 +1,19 @@
 package cz0227;
 
 /*
- * å†’æ³¡æ’åº
+ * Ã°ÅİÅÅĞò
  */
 public class Ex31 {
 	public static void main(String[] args) {
 		int[] arr = { 9, 8, 3, 5, 2 };
-		System.out.print("å†’æ³¡æ’åºå‰ï¼š");
+		System.out.print("Ã°ÅİÅÅĞòÇ°£º");
 		printArray(arr);
 		bubbleSort(arr);
-		System.out.print("å†’æ³¡æ’åºåï¼š");
+		System.out.print("Ã°ÅİÅÅĞòºó£º");
 		printArray(arr);
 	}
 
-	// å®šä¹‰æ‰“å°æ•°ç»„å…ƒç´ çš„æ–¹æ³•
+	// ¶¨Òå´òÓ¡Êı×éÔªËØµÄ·½·¨
 	public static void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
@@ -21,7 +21,7 @@ public class Ex31 {
 		System.out.print("\n");
 	}
 
-	// å®šä¹‰å¯¹æ•°ç»„æ’åºçš„æ–¹æ³•
+	// ¶¨Òå¶ÔÊı×éÅÅĞòµÄ·½·¨
 	public static void bubbleSort(int[] arr) {
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = 0; j < arr.length - i - 1; j++) {
@@ -31,7 +31,7 @@ public class Ex31 {
 					arr[j + 1] = temp;
 				}
 			}
-			System.out.print("ç¬¬" + (i + 1) + "è½®æ’åºåï¼š");
+			System.out.print("µÚ" + (i + 1) + "ÂÖÅÅĞòºó£º");
 			printArray(arr);
 		}
 	}

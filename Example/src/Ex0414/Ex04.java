@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Ex04 {
 	public static void main(String[] args) {
-		Map map = new HashMap();// åˆ›å»ºMapå¯¹è±¡
-		map.put("1", "Jack");// å­˜å‚¨é”®å’Œå€¼
+		Map map = new HashMap();// ´´½¨Map¶ÔÏó
+		map.put("1", "Jack");// ´æ´¢¼üºÍÖµ
 		map.put("2", "Rose");
 		map.put("3", "Lucy");
 		Collection values = map.values();

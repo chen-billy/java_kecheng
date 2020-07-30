@@ -5,33 +5,33 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class UserRegister {
-	public static HashSet<User> USER_DATA = new HashSet<User>();// ç”¨æˆ·æ•°æ®
+	public static HashSet<User> USER_DATA = new HashSet<User>();// ÓÃ»§Êı¾İ
 
 	public static void main(String[] args) {
-		initData();// åˆå§‹åŒ–äººå‘˜ä¿¡æ¯
+		initData();// ³õÊ¼»¯ÈËÔ±ĞÅÏ¢
 		Scanner scan = new Scanner(System.in);
-		System.out.print("è¯·è¾“å…¥ç”¨æˆ·å");
-		String userName = scan.nextLine();// è·å–ç”¨æˆ·å
-		System.out.print("è¯·è¾“å…¥å¯†ç ");
-		String password = scan.nextLine();// è·å–å¯†ç 
-		System.out.print("è¯·è¾“å…¥é‡å¤å¯†ç ");
-		String repassword = scan.nextLine();// è·å–é‡å¤å¯†ç 
-		System.out.print("å‡ºç”Ÿæ—¥æœŸ");
-		String birthday = scan.nextLine();// è·å–å‡ºç”Ÿæ—¥æœŸ
-		System.out.print("æ‰‹æœºå·ç ");
-		String telNumber = scan.nextLine();// è·å–æ‰‹æœºå·ç 
-		System.out.print("ç”µå­é‚®ç®±");
-		String email = scan.nextLine();// è·å–ç”µå­é‚®ç®±
-		// æ ¡éªŒç”¨æˆ·ä¿¡æ¯ï¼Œè¿”å›ç™»å½•çŠ¶æ€ä¿¡æ¯
+		System.out.print("ÇëÊäÈëÓÃ»§Ãû");
+		String userName = scan.nextLine();// »ñÈ¡ÓÃ»§Ãû
+		System.out.print("ÇëÊäÈëÃÜÂë");
+		String password = scan.nextLine();// »ñÈ¡ÃÜÂë
+		System.out.print("ÇëÊäÈëÖØ¸´ÃÜÂë");
+		String repassword = scan.nextLine();// »ñÈ¡ÖØ¸´ÃÜÂë
+		System.out.print("³öÉúÈÕÆÚ");
+		String birthday = scan.nextLine();// »ñÈ¡³öÉúÈÕÆÚ
+		System.out.print("ÊÖ»úºÅÂë");
+		String telNumber = scan.nextLine();// »ñÈ¡ÊÖ»úºÅÂë
+		System.out.print("µç×ÓÓÊÏä");
+		String email = scan.nextLine();// »ñÈ¡µç×ÓÓÊÏä
+		// Ğ£ÑéÓÃ»§ĞÅÏ¢£¬·µ»ØµÇÂ¼×´Ì¬ĞÅÏ¢
 		CheckInfo checkInfo = new CheckInfo(USER_DATA);
 		String result = checkInfo.checkAction(userName, password, repassword, birthday, telNumber, email);
-		System.out.println("æ³¨å†Œç»“æœï¼š" + result);
+		System.out.println("×¢²á½á¹û£º" + result);
 	}
 
-	// åˆå§‹åŒ–æ•°æ®ï¼Œåˆ›å»ºä¸¤ä¸ªå·²å­˜åœ¨çš„ç”¨æˆ·ä¿¡æ¯
+	// ³õÊ¼»¯Êı¾İ£¬´´½¨Á½¸öÒÑ´æÔÚµÄÓÃ»§ĞÅÏ¢
 	private static void initData() {
-		User user = new User("å¼ æ­£", "zz,123", new Date(), "18810319240", "zhangzheng@itcast.cn");
-		User user1 = new User("å‘¨ç¦", "zq,123", new Date(), "18618121193", "zhouqi@itcast.cn");
+		User user = new User("ÕÅÕı", "zz,123", new Date(), "18810319240", "zhangzheng@itcast.cn");
+		User user1 = new User("ÖÜçù", "zq,123", new Date(), "18618121193", "zhouqi@itcast.cn");
 		USER_DATA.add(user);
 		USER_DATA.add(user1);
 	}

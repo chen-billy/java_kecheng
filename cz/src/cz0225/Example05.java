@@ -1,7 +1,7 @@
 package cz0225;
 
 /*
- * 璧嬪�艰繍绠楃涓殑鑷姩绫诲瀷杞崲
+ * 赋值运算符中的自动类型转换
  */
 public class Example05 {
 	public static void main(String[] args) {

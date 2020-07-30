@@ -5,92 +5,92 @@ import java.util.Scanner;
 
 public class KTV_LinkedList {
 	public static void main(String[] args) {
-		System.out.println("----------æ¬¢è¿æ¥åˆ°ç‚¹æ­Œç³»ç»Ÿ---------------");
-		System.out.println("0.æ·»åŠ æ­Œæ›²è‡³åˆ—è¡¨");
-		System.out.println("1.å°†æ­Œæ›²ç½®é¡¶");
-		System.out.println("2.å°†æ­Œæ›²å‰ç§»ä¸€ä½");
-		System.out.println("3.é€€å‡º");
-		LinkedList lineUpList = new LinkedList();// åˆ›å»ºæ­Œæ›²åˆ—è¡¨
-		addMusicList(lineUpList);// æ·»åŠ ä¸€éƒ¨åˆ†æ­Œæ›²è‡³æ­Œæ›²åˆ—è¡¨
+		System.out.println("----------»¶Ó­À´µ½µã¸èÏµÍ³---------------");
+		System.out.println("0.Ìí¼Ó¸èÇúÖÁÁĞ±í");
+		System.out.println("1.½«¸èÇúÖÃ¶¥");
+		System.out.println("2.½«¸èÇúÇ°ÒÆÒ»Î»");
+		System.out.println("3.ÍË³ö");
+		LinkedList lineUpList = new LinkedList();// ´´½¨¸èÇúÁĞ±í
+		addMusicList(lineUpList);// Ìí¼ÓÒ»²¿·Ö¸èÇúÖÁ¸èÇúÁĞ±í
 		while (true) {
-			System.out.print("è¾“å…¥è¦æ‰§è¡Œçš„æ“ä½œçš„åºå·ï¼š");
+			System.out.print("ÊäÈëÒªÖ´ĞĞµÄ²Ù×÷µÄĞòºÅ£º");
 			java.util.Scanner scan = new Scanner(System.in);
-			int command = scan.nextInt();// æ¥æ”¶é”®ç›˜è¾“å…¥çš„åŠŸèƒ½é€‰é¡¹åºå·
-			// æ‰§è¡Œåºå·å¯¹åº”çš„åŠŸèƒ½
+			int command = scan.nextInt();// ½ÓÊÕ¼üÅÌÊäÈëµÄ¹¦ÄÜÑ¡ÏîĞòºÅ
+			// Ö´ĞĞĞòºÅ¶ÔÓ¦µÄ¹¦ÄÜ
 			switch (command) {
-			case 0:// æ·»åŠ æ­Œæ›²è‡³åˆ—è¡¨
+			case 0:// Ìí¼Ó¸èÇúÖÁÁĞ±í
 				addMusic(lineUpList);
 				break;
-			case 1:// å°†æ­Œæ›²ç½®é¡¶
+			case 1:// ½«¸èÇúÖÃ¶¥
 				setTop(lineUpList);
 				break;
-			case 2:// å°†æ­Œæ›²å‰ç§»ä¸€ä½
+			case 2:// ½«¸èÇúÇ°ÒÆÒ»Î»
 				setBefore(lineUpList);
 				break;
-			case 3:// é€€å‡º
+			case 3:// ÍË³ö
 				exit();
 				break;
 			default:
 				System.out.println("------------------------------");
-				System.out.println("åŠŸèƒ½é€‰æ‹©æœ‰è¯¯ï¼Œè¯·è¾“å…¥æ­£ç¡®çš„åŠŸèƒ½åºå·ï¼");
+				System.out.println("¹¦ÄÜÑ¡ÔñÓĞÎó£¬ÇëÊäÈëÕıÈ·µÄ¹¦ÄÜĞòºÅ£¡");
 				break;
 			}
-			System.out.println("å½“å‰æ­Œæ›²åˆ—è¡¨ï¼š" + lineUpList);
+			System.out.println("µ±Ç°¸èÇúÁĞ±í£º" + lineUpList);
 		}
 	}
 
-	// åˆå§‹æ—¶æ·»åŠ æ­Œæ›²åç§°
+	// ³õÊ¼Ê±Ìí¼Ó¸èÇúÃû³Æ
 	private static void addMusicList(LinkedList lineUpList) {
-		lineUpList.add("å–œæ¬¢ä½ ");
-		lineUpList.add("å…³é”®å­—");
-		lineUpList.add("å¥³å„¿å›½");
-		lineUpList.add("å‡ºå±±");
-		lineUpList.add("å¤œè‰²");
-		System.out.println("åˆå§‹æ­Œæ›²åˆ—è¡¨ï¼š" + lineUpList);
+		lineUpList.add("Ï²»¶Äã");
+		lineUpList.add("¹Ø¼ü×Ö");
+		lineUpList.add("Å®¶ù¹ú");
+		lineUpList.add("³öÉ½");
+		lineUpList.add("Ò¹É«");
+		System.out.println("³õÊ¼¸èÇúÁĞ±í£º" + lineUpList);
 	}
 
-	// æ‰§è¡Œæ·»åŠ æ­Œæ›²
+	// Ö´ĞĞÌí¼Ó¸èÇú
 	private static void addMusic(LinkedList lineUpList) {
-		System.out.print("è¯·è¾“å…¥è¦æ·»åŠ çš„æ­Œæ›²åç§°ï¼š");
+		System.out.print("ÇëÊäÈëÒªÌí¼ÓµÄ¸èÇúÃû³Æ£º");
 		String musicName = new Scanner(System.in).nextLine();
-		lineUpList.addLast(musicName);// æ·»åŠ æ­Œæ›²åˆ°åˆ—è¡¨çš„æœ€å
-		System.out.println("å·²æ·»åŠ æ­Œæ›²ï¼š" + musicName);
+		lineUpList.addLast(musicName);// Ìí¼Ó¸èÇúµ½ÁĞ±íµÄ×îºó
+		System.out.println("ÒÑÌí¼Ó¸èÇú£º" + musicName);
 	}
 
-	// æ‰§è¡Œå°†æ­Œæ›²ç½®é¡¶
+	// Ö´ĞĞ½«¸èÇúÖÃ¶¥
 	private static void setTop(LinkedList lineUpList) {
-		System.out.print("è¯·è¾“å…¥è¦ç½®é¡¶çš„æ­Œæ›²åç§°ï¼š");
+		System.out.print("ÇëÊäÈëÒªÖÃ¶¥µÄ¸èÇúÃû³Æ£º");
 		String musicName = new Scanner(System.in).nextLine();
-		int postion = lineUpList.indexOf(musicName);// æŸ¥æ‰¾æŒ‡å®šæ­Œæ›²ä½ç½®
-		if (postion < 0) {// åˆ¤æ–­è¾“å…¥æ­Œæ›²æ˜¯å¦å­˜åœ¨
-			System.out.println("å½“å‰åˆ—è¡¨ä¸­æ²¡æœ‰è¾“å…¥çš„æ­Œæ›²ï¼");
+		int postion = lineUpList.indexOf(musicName);// ²éÕÒÖ¸¶¨¸èÇúÎ»ÖÃ
+		if (postion < 0) {// ÅĞ¶ÏÊäÈë¸èÇúÊÇ·ñ´æÔÚ
+			System.out.println("µ±Ç°ÁĞ±íÖĞÃ»ÓĞÊäÈëµÄ¸èÇú£¡");
 		} else {
-			lineUpList.remove(musicName);// ç§»é™¤æŒ‡å®šçš„æ­Œæ›²
-			lineUpList.addFirst(musicName);// å°†æŒ‡å®šçš„æ­Œæ›²æ”¾åˆ°ç¬¬ä¸€ä½
+			lineUpList.remove(musicName);// ÒÆ³ıÖ¸¶¨µÄ¸èÇú
+			lineUpList.addFirst(musicName);// ½«Ö¸¶¨µÄ¸èÇú·Åµ½µÚÒ»Î»
 		}
-		System.out.println("å·²å°†æ­Œæ›²" + musicName + "ç½®é¡¶");
+		System.out.println("ÒÑ½«¸èÇú" + musicName + "ÖÃ¶¥");
 	}
 
-	// æ‰§è¡Œå°†æ­Œæ›²ç½®å‰ä¸€ä½
+	// Ö´ĞĞ½«¸èÇúÖÃÇ°Ò»Î»
 	private static void setBefore(LinkedList lineUpList) {
-		System.out.print("è¯·è¾“å…¥è¦ç½®å‰çš„æ­Œæ›²åç§°ï¼š");
+		System.out.print("ÇëÊäÈëÒªÖÃÇ°µÄ¸èÇúÃû³Æ£º");
 		String musicName = new Scanner(System.in).nextLine();
-		int postion = lineUpList.indexOf(musicName);// æŸ¥æ‰¾æŒ‡å®šæ­Œæ›²ä½ç½®
-		if (postion < 0) {// åˆ¤æ–­è¾“å…¥æ­Œæ›²æ˜¯å¦å­˜åœ¨
-			System.out.println("å½“å‰åˆ—è¡¨ä¸­æ²¡æœ‰è¾“å…¥çš„æ­Œæ›²ï¼");
+		int postion = lineUpList.indexOf(musicName);// ²éÕÒÖ¸¶¨¸èÇúÎ»ÖÃ
+		if (postion < 0) {// ÅĞ¶ÏÊäÈë¸èÇúÊÇ·ñ´æÔÚ
+			System.out.println("µ±Ç°ÁĞ±íÖĞÃ»ÓĞÊäÈëµÄ¸èÇú£¡");
 		} else if (postion == 0) {
-			System.out.println("å½“å‰æ­Œæ›²å·²ç»åœ¨æœ€é¡¶éƒ¨ï¼");
+			System.out.println("µ±Ç°¸èÇúÒÑ¾­ÔÚ×î¶¥²¿£¡");
 		} else {
-			lineUpList.remove(musicName);// ç§»é™¤æŒ‡å®šçš„æ­Œæ›²
-			lineUpList.addFirst(musicName);// å°†æŒ‡å®šçš„æ­Œæ›²æ”¾åˆ°å‰ä¸€ä½
+			lineUpList.remove(musicName);// ÒÆ³ıÖ¸¶¨µÄ¸èÇú
+			lineUpList.addFirst(musicName);// ½«Ö¸¶¨µÄ¸èÇú·Åµ½Ç°Ò»Î»
 		}
-		System.out.println("å·²å°†æ­Œæ›²" + musicName + "ç½®å‰ä¸€ä½");
+		System.out.println("ÒÑ½«¸èÇú" + musicName + "ÖÃÇ°Ò»Î»");
 	}
 
-	// é€€å‡º
+	// ÍË³ö
 	private static void exit() {
-		System.out.println("---------------é€€å‡º---------------");
-		System.out.println("æ‚¨å·²é€€å‡ºç³»ç»Ÿ");
+		System.out.println("---------------ÍË³ö---------------");
+		System.out.println("ÄúÒÑÍË³öÏµÍ³");
 		System.exit(0);
 	}
 }

@@ -1,13 +1,13 @@
 package cz0312;
 
-//å®šä¹‰é“¶è¡Œç±»
+//¶¨ÒåÒøĞĞÀà
 class Bank {
-	static String bankName;// å®šä¹‰é™æ€å˜é‡é“¶è¡Œåç§°
-	private String name;// å‚¨æˆ·å§“å
-	private String password;// å¯†ç 
-	private double balance;// è´¦æˆ·ä½™é¢
-	private double turnover;// äº¤æ˜“é¢
-	// å®šä¹‰ç§æœ‰æˆå‘˜nameå…¬æœ‰çš„è®¿é—®æˆå‘˜çš„getXxx()æ–¹æ³•å’ŒsetXxx()æ–¹æ³•
+	static String bankName;// ¶¨Òå¾²Ì¬±äÁ¿ÒøĞĞÃû³Æ
+	private String name;// ´¢»§ĞÕÃû
+	private String password;// ÃÜÂë
+	private double balance;// ÕË»§Óà¶î
+	private double turnover;// ½»Ò×¶î
+	// ¶¨ÒåË½ÓĞ³ÉÔ±name¹«ÓĞµÄ·ÃÎÊ³ÉÔ±µÄgetXxx()·½·¨ºÍsetXxx()·½·¨
 
 	public String getName() {
 		return name;
@@ -17,7 +17,7 @@ class Bank {
 		this.name = name;
 	}
 
-	// å®šä¹‰ç§æœ‰æˆå‘˜passwordå…¬æœ‰çš„è®¿é—®æˆå‘˜çš„getXxx()æ–¹æ³•å’ŒsetXxx()æ–¹æ³•
+	// ¶¨ÒåË½ÓĞ³ÉÔ±password¹«ÓĞµÄ·ÃÎÊ³ÉÔ±µÄgetXxx()·½·¨ºÍsetXxx()·½·¨
 	public String getPassword() {
 		return password;
 	}
@@ -26,7 +26,7 @@ class Bank {
 		this.password = password;
 	}
 
-	// å®šä¹‰ç§æœ‰æˆå‘˜balanceå…¬æœ‰çš„è®¿é—®æˆå‘˜çš„getXxx()æ–¹æ³•å’ŒsetXxx()æ–¹æ³•
+	// ¶¨ÒåË½ÓĞ³ÉÔ±balance¹«ÓĞµÄ·ÃÎÊ³ÉÔ±µÄgetXxx()·½·¨ºÍsetXxx()·½·¨
 	public double getBalance() {
 		return balance;
 	}
@@ -35,69 +35,69 @@ class Bank {
 		this.balance = balance;
 	}
 
-	// é™æ€æ–¹æ³•ï¼Œæ‰“å‡ºé“¶è¡Œæ¬¢è¿è¯­å¥
+	// ¾²Ì¬·½·¨£¬´ò³öÒøĞĞ»¶Ó­Óï¾ä
 	public static void welcome() {
-		System.out.println("æ¬¢è¿æ¥åˆ°" + bankName);
+		System.out.println("»¶Ó­À´µ½" + bankName);
 	}
 
-	// å®šä¹‰æ— å‚çš„æ„é€ æ–¹æ³•
+	// ¶¨ÒåÎŞ²ÎµÄ¹¹Ôì·½·¨
 	public Bank() {
 	}
 
-	// å®šä¹‰å¸¦æœ‰nameï¼Œpasswordï¼Œturnoverå‚æ•°çš„æ„é€ æ–¹æ³•ï¼ˆå¼€æˆ·ï¼‰
+	// ¶¨Òå´øÓĞname£¬password£¬turnover²ÎÊıµÄ¹¹Ôì·½·¨£¨¿ª»§£©
 	public Bank(String name, String password, double turnover) {
 		this.name = name;
 		this.password = password;
 		balance = balance + turnover - 10;
-		System.out.println(name + "å¼€æˆ·æˆåŠŸï¼Œè´¦æˆ·ä½™é¢ä¸º" + balance + "å¼€æˆ·æ‰‹ç»­è´¹ä¸º10");
+		System.out.println(name + "¿ª»§³É¹¦£¬ÕË»§Óà¶îÎª" + balance + "¿ª»§ÊÖĞø·ÑÎª10");
 	}
 
-	// å­˜æ¬¾åŠŸèƒ½
+	// ´æ¿î¹¦ÄÜ
 	public double deposit(double turnover) {
 		balance += turnover;
-		System.out.println(name + "æ‚¨å¥½ï¼Œä½ çš„è´¦æˆ·å·²ç»å­˜å…¥" + turnover + "å…ƒï¼Œ" + "ä½™é¢ä¸º" + balance + "å…ƒ");
+		System.out.println(name + "ÄúºÃ£¬ÄãµÄÕË»§ÒÑ¾­´æÈë" + turnover + "Ôª£¬" + "Óà¶îÎª" + balance + "Ôª");
 		return balance;
 	}
 
-	// å–æ¬¾åŠŸèƒ½
+	// È¡¿î¹¦ÄÜ
 	public void withdrawal(String password, double turnove) {
-		// åˆ¤æ–­å¯†ç æ˜¯å¦æ­£ç¡®
+		// ÅĞ¶ÏÃÜÂëÊÇ·ñÕıÈ·
 		if (this.password != password) {
-			System.out.println("æ‚¨è¾“å…¥çš„å¯†ç é”™è¯¯");
+			System.out.println("ÄúÊäÈëµÄÃÜÂë´íÎó");
 			return;
 		}
-		// åˆ¤æ–­ä½™é¢æ˜¯å¦å……è¶³
+		// ÅĞ¶ÏÓà¶îÊÇ·ñ³ä×ã
 		if (balance >= turnove) {
 			balance -= turnove;
-			System.out.println(name + "æ‚¨å¥½ï¼Œæ‚¨çš„è´¦æˆ·å·²å–å‡º" + turnove + "å…ƒï¼Œ" + "å½“å‰ä½™é¢" + balance + "å…ƒ");
+			System.out.println(name + "ÄúºÃ£¬ÄúµÄÕË»§ÒÑÈ¡³ö" + turnove + "Ôª£¬" + "µ±Ç°Óà¶î" + balance + "Ôª");
 		} else {
-			System.out.println("å¯¹ä¸èµ·ï¼Œè´¦æˆ·ä½™é¢ä¸è¶³");
+			System.out.println("¶Ô²»Æğ£¬ÕË»§Óà¶î²»×ã");
 		}
 	}
 
-	// é™æ€æ–¹æ³•ï¼Œæ‰“å°å‡ºé“¶è¡Œæ¬¢è¿ä¸‹æ¬¡å…‰ä¸´
+	// ¾²Ì¬·½·¨£¬´òÓ¡³öÒøĞĞ»¶Ó­ÏÂ´Î¹âÁÙ
 	public static void welcomeNext() {
-		System.out.println("è¯·æºå¸¦å¥½éšèº«è´¢ç‰©ï¼Œæ¬¢è¿ä¸‹æ¬¡å…‰ä¸´" + bankName);
+		System.out.println("ÇëĞ¯´øºÃËæÉí²ÆÎï£¬»¶Ó­ÏÂ´Î¹âÁÙ" + bankName);
 	}
 }
 
 public class Trade {
 	public static void main(String[] args) {
-		// å®šä¹‰ä¸€å®¶é“¶è¡Œç»™é™æ€å˜é‡ï¼ˆé“¶è¡Œåç§°ï¼‰èµ‹å€¼
-		Bank.bankName = "æµ‹è¯•ç±»é“¶è¡Œ";
-		// é“¶è¡Œæ‰“å°æ¬¢è¿è¯­å¥
+		// ¶¨ÒåÒ»¼ÒÒøĞĞ¸ø¾²Ì¬±äÁ¿£¨ÒøĞĞÃû³Æ£©¸³Öµ
+		Bank.bankName = "²âÊÔÀàÒøĞĞ";
+		// ÒøĞĞ´òÓ¡»¶Ó­Óï¾ä
 		Bank.welcome();
-		// å¼€æˆ·æ“ä½œ
-		Bank zs = new Bank("é™ˆå–†", "654321", 1000.0);
-		// è¿›è¡Œå­˜æ¬¾æ“ä½œ
+		// ¿ª»§²Ù×÷
+		Bank zs = new Bank("³Â†´", "654321", 1000.0);
+		// ½øĞĞ´æ¿î²Ù×÷
 		zs.deposit(500.0);
-		// å–æ¬¾æ—¶å¯†ç è¾“å…¥é”™è¯¯ï¼Œå–æ¬¾å¤±è´¥
+		// È¡¿îÊ±ÃÜÂëÊäÈë´íÎó£¬È¡¿îÊ§°Ü
 		zs.withdrawal("123456", 200.0);
-		// å–æ¬¾æ—¶ä½™é¢ä¸è¶³ï¼Œå–æ¬¾å¤±è´¥
+		// È¡¿îÊ±Óà¶î²»×ã£¬È¡¿îÊ§°Ü
 		zs.withdrawal("654321", 1500.0);
-		// å–æ¬¾æ—¶å¯†ç æ­£ç¡®ï¼Œä½™é¢å……è¶³ï¼Œå–æ¬¾æˆåŠŸ
+		// È¡¿îÊ±ÃÜÂëÕıÈ·£¬Óà¶î³ä×ã£¬È¡¿î³É¹¦
 		zs.withdrawal("654321", 200.0);
-		// é“¶è¡Œæ‰“å°é“åˆ«è¯­å¥
+		// ÒøĞĞ´òÓ¡µÀ±ğÓï¾ä
 		Bank.welcomeNext();
 	}
 }

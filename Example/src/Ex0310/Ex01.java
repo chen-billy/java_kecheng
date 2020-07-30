@@ -1,16 +1,16 @@
 package Ex0310;
 
 /*
- * æ„é€ æ–¹æ³•å®šä¹‰
+ * ¹¹Ôì·½·¨¶¨Òå
  */
 class Per01 {
 	public Per01() {
-		System.out.println("æ— å‚çš„æ„é€ æ–¹æ³•è¢«è°ƒç”¨äº†ã€‚ã€‚ã€‚");
+		System.out.println("ÎŞ²ÎµÄ¹¹Ôì·½·¨±»µ÷ÓÃÁË¡£¡£¡£");
 	}
 }
 
 public class Ex01 {
 	public static void main(String[] args) {
-		Per01 p = new Per01();// å®ä¾‹åŒ–Personå¯¹è±¡
+		Per01 p = new Per01();// ÊµÀı»¯Person¶ÔÏó
 	}
 }

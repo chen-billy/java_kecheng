@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Ex01 {
 	public static void main(String[] args) {
-		// getPropertiesï¼ˆï¼‰æ–¹æ³•
+		// getProperties£¨£©·½·¨
 		Properties properties = System.getProperties();
 		System.out.println(properties);
 		Set<String> propertyNAmes = properties.stringPropertyNames();
@@ -12,15 +12,15 @@ public class Ex01 {
 			String value = System.getProperty(Key);
 			System.out.println(Key + "--->" + value);
 		}
-		// currentTimeMilliss()æ–¹æ³•
-		long startTime = System.currentTimeMillis();// å¾ªç¯å¼€å§‹æ—¶çš„å½“å‰æ—¶é—´
+		// currentTimeMilliss()·½·¨
+		long startTime = System.currentTimeMillis();// Ñ­»·¿ªÊ¼Ê±µÄµ±Ç°Ê±¼ä
 		int sum = 0;
 		for (int i = 0; i < 100000000; i++) {
 			sum += i;
 		}
-		long endTime = System.currentTimeMillis();// å¾ªç¯ç»“æŸçš„å½“å‰æ—¶é—´
-		System.out.println("ç¨‹åºè¿è¡Œçš„æ—¶é—´ä¸ºï¼š" + (endTime - startTime) + "æ¯«ç§’");
-		// arraycopyï¼ˆï¼‰æ–¹æ³•
+		long endTime = System.currentTimeMillis();// Ñ­»·½áÊøµÄµ±Ç°Ê±¼ä
+		System.out.println("³ÌĞòÔËĞĞµÄÊ±¼äÎª£º" + (endTime - startTime) + "ºÁÃë");
+		// arraycopy£¨£©·½·¨
 		int[] fromArray = { 101, 102, 103, 104, 105, 106 };
 		int[] toArray = { 201, 202, 203, 204, 205, 206, 207 };
 		System.arraycopy(fromArray, 2, toArray, 3, 4);

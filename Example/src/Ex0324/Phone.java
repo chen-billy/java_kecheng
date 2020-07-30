@@ -1,14 +1,14 @@
 package Ex0324;
 
 /*
- * å®šä¹‰ä¸€ä¸ªæ‰‹æœºç±»ï¼Œå®ç°GPSæ¥å£ï¼Œæ‹¥æœ‰å®šä½åŠŸèƒ½
+ * ¶¨ÒåÒ»¸öÊÖ»úÀà£¬ÊµÏÖGPS½Ó¿Ú£¬ÓµÓĞ¶¨Î»¹¦ÄÜ
  */
 public class Phone implements GPS {
-	public Phone() {// ç©ºå‚æ„é€ 
+	public Phone() {// ¿Õ²Î¹¹Ôì
 		super();
 	}
 
-	// å®šä¹‰æ–¹æ³•
+	// ¶¨Òå·½·¨
 	public String showCoordinate() {
 		String location = "193.485";
 		return location;

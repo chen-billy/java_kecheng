@@ -1,11 +1,11 @@
 package Ex0324;
 
 /*
- * å¿«é€’ä»»åŠ¡ç±»
+ * ¿ìµİÈÎÎñÀà
  */
 public class SendTask {
-	private String number;// å¿«é€’å•å·
-	private double goodsWeight;// è´§ç‰©é‡é‡
+	private String number;// ¿ìµİµ¥ºÅ
+	private double goodsWeight;// »õÎïÖØÁ¿
 
 	public SendTask() {
 		super();
@@ -17,27 +17,27 @@ public class SendTask {
 		this.goodsWeight = goodsWeight;
 	}
 
-	// é€å‰å‡†å¤‡
+	// ËÍÇ°×¼±¸
 	public void sendBefore() {
-		System.out.println("è®¢å•å¼€å§‹å¤„ç†ï¼Œä»“åº“éªŒè´§ä¸­ã€‚ã€‚ã€‚");
-		System.out.println("è´§ç‰©é‡é‡ï¼š" + this.getGoodsWeight() + "kg");
-		System.out.println("è´§ç‰©æ£€éªŒå®Œæ¯•");
-		System.out.println("è´§ç‰©è£…å¡«å®Œæ¯•");
-		System.out.println("å¿«é€’å•å·ï¼š" + this.getNumber());
+		System.out.println("¶©µ¥¿ªÊ¼´¦Àí£¬²Ö¿âÑé»õÖĞ¡£¡£¡£");
+		System.out.println("»õÎïÖØÁ¿£º" + this.getGoodsWeight() + "kg");
+		System.out.println("»õÎï¼ìÑéÍê±Ï");
+		System.out.println("»õÎï×°ÌîÍê±Ï");
+		System.out.println("¿ìµİµ¥ºÅ£º" + this.getNumber());
 	}
 
-	// å‘é€è´§ç‰©
+	// ·¢ËÍ»õÎï
 	public void send(Transportation t, GPS tool) {
-		System.out.println("è¿è´§äºº" + t.getAdmin() + "æ­£åœ¨é©¾é©¶ç¼–å·ä¸º" + t.getNumber() + "çš„" + t.getModel() + "å‘é€è´§ç‰©ï¼");
+		System.out.println("ÔË»õÈË" + t.getAdmin() + "ÕıÔÚ¼İÊ»±àºÅÎª" + t.getNumber() + "µÄ" + t.getModel() + "·¢ËÍ»õÎï£¡");
 		t.transport();
 		String showCoordiante = tool.showCoordinate();
-		System.out.println("è´§ç‰©å½“å‰çš„åæ ‡ä¸ºï¼š" + showCoordiante);
+		System.out.println("»õÎïµ±Ç°µÄ×ø±êÎª£º" + showCoordiante);
 	}
 
-	// é€è´§æ“ä½œ
+	// ËÍ»õ²Ù×÷
 	public void sendAfter(Transportation t) {
-		System.out.println("è´§ç‰©è¿è¾“ä»»åŠ¡å·²å®Œæˆï¼");
-		System.out.println("è¿è´§äºº" + t.getAdmin() + "æ‰€é©¾é©¶ç¼–å·ä¸º" + t.getNumber() + "çš„" + t.getModel() + "å·²å½’è¿˜ï¼");
+		System.out.println("»õÎïÔËÊäÈÎÎñÒÑÍê³É£¡");
+		System.out.println("ÔË»õÈË" + t.getAdmin() + "Ëù¼İÊ»±àºÅÎª" + t.getNumber() + "µÄ" + t.getModel() + "ÒÑ¹é»¹£¡");
 	}
 
 	public String getNumber() {

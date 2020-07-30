@@ -4,15 +4,15 @@ public class Ex05 {
 	static String[] strs = { "aaa", "bbb", "ccc" };
 
 	public static void main(String[] args) {
-		// foreachå¾ªç¯éå†æ•°ç»„
+		// foreachÑ­»·±éÀúÊı×é
 		for (String str : strs) {
 			str = "ddd";
 		}
-		System.out.println("foreachå¾ªç¯ä¿®æ”¹åçš„æ•°ç»„ï¼š" + strs[0] + "," + strs[1] + "," + strs[2]);
-		// forå¾ªç¯éå†æ•°ç»„
+		System.out.println("foreachÑ­»·ĞŞ¸ÄºóµÄÊı×é£º" + strs[0] + "," + strs[1] + "," + strs[2]);
+		// forÑ­»·±éÀúÊı×é
 		for (int i = 0; i < strs.length; i++) {
 			strs[i] = "ddd";
 		}
-		System.out.println("æ™®é€šforå¾ªç¯ä¿®æ”¹åçš„æ•°ç»„ï¼š" + strs[0] + "," + strs[1] + "," + strs[2]);
+		System.out.println("ÆÕÍ¨forÑ­»·ĞŞ¸ÄºóµÄÊı×é£º" + strs[0] + "," + strs[1] + "," + strs[2]);
 	}
 }

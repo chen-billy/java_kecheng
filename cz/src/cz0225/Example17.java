@@ -1,19 +1,19 @@
 package cz0225;
 
 /*
- * break璇彞锛堣烦鍑哄灞傚惊鐜級
+ * break语句（跳出外层循环）
  */
 public class Example17 {
 	public static void main(String[] args) {
-		int i, j;// 瀹氫箟涓や釜寰幆鍙橀噺
-		itcast: for (i = 1; i <= 9; i++) {// 澶栧眰寰幆
-			for (j = 1; j <= i; j++) {// 鍐呭眰寰幆
+		int i, j;// 定义两个循环变量
+		itcast: for (i = 1; i <= 9; i++) {// 外层循环
+			for (j = 1; j <= i; j++) {// 内层循环
 				if (i > 4) {
 					break itcast;
 				}
-				System.out.print("*");// 鎵撳嵃
+				System.out.print("*");// 打印
 			}
-			System.out.print("\n");// 鎹㈣
+			System.out.print("\n");// 换行
 		}
 	}
 }

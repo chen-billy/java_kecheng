@@ -1,14 +1,14 @@
 package cz0225;
 
 /*
- * doã€‚ã€‚ã€‚whileå¾ªç¯
+ * do¡£¡£¡£whileÑ­»·
  */
 public class Example13 {
 	public static void main(String[] args) {
-		int x = 1; // å®šä¹‰å˜é‡xï¼Œåˆå§‹å€¼ä¸º1
+		int x = 1; // ¶¨Òå±äÁ¿x£¬³õÊ¼ÖµÎª1
 		do {
-			System.out.println("x = " + x); // æ‰“å°xçš„å€¼
-			x++; // å°†xçš„å€¼è‡ªå¢
-		} while (x <= 4); // å¾ªç¯æ¡ä»¶
+			System.out.println("x = " + x); // ´òÓ¡xµÄÖµ
+			x++; // ½«xµÄÖµ×ÔÔö
+		} while (x <= 4); // Ñ­»·Ìõ¼ş
 	}
 }

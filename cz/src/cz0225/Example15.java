@@ -1,16 +1,16 @@
 package cz0225;
 
 /*
- * forå¾ªç¯ï¼ˆä½¿ç”¨*æ‰“å°ç›´è§’ä¸‰è§’å½¢ï¼‰
+ * forÑ­»·£¨Ê¹ÓÃ*´òÓ¡Ö±½ÇÈı½ÇĞÎ£©
  */
 public class Example15 {
 	public static void main(String[] args) {
-		int i, j;// å®šä¹‰ä¸¤ä¸ªå¾ªç¯å˜é‡
-		for (i = 1; i <= 9; i++) {// å¤–å±‚å¾ªç¯
-			for (j = 1; j <= i; j++) {// å†…å±‚å¾ªç¯
-				System.out.print("*");// æ‰“å°*
+		int i, j;// ¶¨ÒåÁ½¸öÑ­»·±äÁ¿
+		for (i = 1; i <= 9; i++) {// Íâ²ãÑ­»·
+			for (j = 1; j <= i; j++) {// ÄÚ²ãÑ­»·
+				System.out.print("*");// ´òÓ¡*
 			}
-			System.out.print("\n");// æ¢è¡Œ
+			System.out.print("\n");// »»ĞĞ
 		}
 	}
 }

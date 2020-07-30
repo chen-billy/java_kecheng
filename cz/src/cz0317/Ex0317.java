@@ -1,55 +1,55 @@
 package cz0317;
 
 class Animal {
-	String name;// å®šä¹‰Stringå‹çš„nameå˜é‡
+	String name;// ¶¨ÒåStringĞÍµÄname±äÁ¿
 
-	// å®šä¹‰Animalçš„æ— å‚æ„é€ æ–¹æ³•
+	// ¶¨ÒåAnimalµÄÎŞ²Î¹¹Ôì·½·¨
 	public Animal() {
-		System.out.println("æˆ‘æ˜¯ä¸€åªåŠ¨ç‰©");
+		System.out.println("ÎÒÊÇÒ»Ö»¶¯Îï");
 	}
 
-	// å®šä¹‰Animalçš„æœ‰å‚æ„é€ æ–¹æ³•
+	// ¶¨ÒåAnimalµÄÓĞ²Î¹¹Ôì·½·¨
 	public Animal(String name) {
-		System.out.println("æˆ‘æ˜¯ä¸€åª" + name);
+		System.out.println("ÎÒÊÇÒ»Ö»" + name);
 	}
 
-	// å®šä¹‰åŠ¨ç‰©å«çš„æ–¹æ³•shoutï¼ˆï¼‰
+	// ¶¨Òå¶¯Îï½ĞµÄ·½·¨shout£¨£©
 	public void shout() {
-		System.out.println("åŠ¨ç‰©å‘å‡ºå«å£°");
+		System.out.println("¶¯Îï·¢³ö½ĞÉù");
 	}
 }
 
-//å®šä¹‰Dogç±»ç»§æ‰¿Animalç±»
+//¶¨ÒåDogÀà¼Ì³ĞAnimalÀà
 class Dog extends Animal {
-	// å®šä¹‰ä¸€ä¸ªæ‰“å°nameå±æ€§çš„æ–¹æ³•printNameï¼ˆï¼‰
+	// ¶¨ÒåÒ»¸ö´òÓ¡nameÊôĞÔµÄ·½·¨printName£¨£©
 	public void printName() {
 		System.out.println("name=" + name);
 	}
 
-	// é‡å†™çˆ¶ç±»çš„shoutï¼ˆï¼‰æ–¹æ³•
+	// ÖØĞ´¸¸ÀàµÄshout£¨£©·½·¨
 	public void shout() {
-		System.out.println("æ±ªæ±ªæ±ª...");
+		System.out.println("ÍôÍôÍô...");
 	}
 
-	// å®šä¹‰Dogçš„æ— å‚æ„é€ æ–¹æ³•
+	// ¶¨ÒåDogµÄÎŞ²Î¹¹Ôì·½·¨
 	public Dog() {
-		super("æ²™çš®ç‹—");
+		super("É³Æ¤¹·");
 	}
 
-	// å®šä¹‰Dogçš„æœ‰å‚æ„é€ æ–¹æ³•
+	// ¶¨ÒåDogµÄÓĞ²Î¹¹Ôì·½·¨
 	public Dog(String name) {
 		super(name);
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»Ex0317
+//¶¨Òå²âÊÔÀàEx0317
 public class Ex0317 {
 	public static void main(String[] args) {
 		Dog d1 = new Dog();
-		// d1.name = "æ²™çš®ç‹—";
+		// d1.name = "É³Æ¤¹·";
 		d1.printName();
 		d1.shout();
-		Dog d2 = new Dog("åœŸç‹—");
+		Dog d2 = new Dog("ÍÁ¹·");
 		d2.shout();
 	}
 }

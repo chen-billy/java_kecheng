@@ -4,32 +4,32 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
- * çŒœæ•°å­—çš„æ¸¸æˆ
+ * ²ÂÊı×ÖµÄÓÎÏ·
  */
 public class GuessNumber {
 	public static void main(String[] args) {
-		// 1.é€šè¿‡Randomç±»ä¸­çš„nextIntï¼ˆnï¼‰ æ–¹æ³•ï¼Œç”Ÿæˆä¸€ä¸ª0~9çš„éšæœºæ•°
+		// 1.Í¨¹ıRandomÀàÖĞµÄnextInt£¨n£© ·½·¨£¬Éú³ÉÒ»¸ö0~9µÄËæ»úÊı
 		int randomNumber = new Random().nextInt(10);
-		System.out.println("éšæœºæ•°å·²ç”Ÿæˆï¼");
-		// 2.è¾“å…¥çŒœçš„æ•°å­—
-		System.out.println("----è¯·è¾“å…¥æ‚¨çŒœçš„æ•°å­—ï¼š----");
+		System.out.println("Ëæ»úÊıÒÑÉú³É£¡");
+		// 2.ÊäÈë²ÂµÄÊı×Ö
+		System.out.println("----ÇëÊäÈëÄú²ÂµÄÊı×Ö£º----");
 		Scanner sc = new Scanner(System.in);
 		int enterNumber = sc.nextInt();
-		// 3.é€šè¿‡whileå¾ªç¯ï¼Œè¿›è¡ŒçŒœæ•°å­—å¯¹é”™åˆ¤æ–­
-		// çŒœå¯¹ï¼Œè·³å‡ºå¾ªç¯ï¼Œæ¸¸æˆç»“æŸ
+		// 3.Í¨¹ıwhileÑ­»·£¬½øĞĞ²ÂÊı×Ö¶Ô´íÅĞ¶Ï
+		// ²Â¶Ô£¬Ìø³öÑ­»·£¬ÓÎÏ·½áÊø
 		while (enterNumber != randomNumber) {
-			// çŒœé”™äº†ï¼Œæ ¹æ®ç»“æœï¼Œç»™å‡ºæç¤ºï¼Œæ¥ç€çŒœæ•°å­—ï¼Œæ¸¸æˆç»§ç»­
+			// ²Â´íÁË£¬¸ù¾İ½á¹û£¬¸ø³öÌáÊ¾£¬½Ó×Å²ÂÊı×Ö£¬ÓÎÏ·¼ÌĞø
 			if (enterNumber > randomNumber) {
-				// å¦‚æœçŒœå¤§äº†ï¼Œæ‰“å°sorryï¼Œæ‚¨çŒœå¤§äº†ï¼ç»§ç»­ä¸‹ä¸€æ¬¡å¾ªç¯
-				System.out.println("soory,æ‚¨çŒœå¤§äº†ï¼");
+				// Èç¹û²Â´óÁË£¬´òÓ¡sorry£¬Äú²Â´óÁË£¡¼ÌĞøÏÂÒ»´ÎÑ­»·
+				System.out.println("soory,Äú²Â´óÁË£¡");
 			} else {
-				// å¦‚æœçŒœå°äº†ï¼Œæ‰“å°sorryï¼Œæ‚¨çŒœå°äº†ï¼ç»§ç»­ä¸‹ä¸€æ¬¡å¾ªç¯
-				System.out.println("sorry,æ‚¨çŒœå°äº†ï¼");
+				// Èç¹û²ÂĞ¡ÁË£¬´òÓ¡sorry£¬Äú²ÂĞ¡ÁË£¡¼ÌĞøÏÂÒ»´ÎÑ­»·
+				System.out.println("sorry,Äú²ÂĞ¡ÁË£¡");
 			}
-			// è¾“å…¥çŒœçš„æ•°å­—
-			System.out.println("---è¯·è¾“å…¥æ‚¨çŒœçš„æ•°å­—ï¼š----");
+			// ÊäÈë²ÂµÄÊı×Ö
+			System.out.println("---ÇëÊäÈëÄú²ÂµÄÊı×Ö£º----");
 			enterNumber = sc.nextInt();
 		}
-		System.out.println("æ­å–œæ‚¨ï¼Œç­”å¯¹äº†ï¼");
+		System.out.println("¹§Ï²Äú£¬´ğ¶ÔÁË£¡");
 	}
 }

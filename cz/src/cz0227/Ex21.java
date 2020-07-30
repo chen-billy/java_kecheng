@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * 浣跨敤鏈夎繑鍥炲�肩殑鏂规硶
+ * 使用有返回值的方法
  */
 public class Ex21 {
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Ex21 {
 		System.out.println("The area is " + area);
 	}
 
-	// 姹傜煩褰㈤潰绉殑鏂规硶
+	// 求矩形面积的方法
 	public static int getArea(int x, int y) {
 		int temp = x * y;
 		return temp;

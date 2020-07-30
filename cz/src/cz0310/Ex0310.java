@@ -1,12 +1,12 @@
 package cz0310;
 
-//å®šä¹‰Personç±»è¡¨ç¤ºäºº
+//¶¨ÒåPersonÀà±íÊ¾ÈË
 class Person {
-	// ä¸ºPersonç±»å®šä¹‰Stringå‹çš„nameï¼ˆå§“åï¼‰å’Œintå‹çš„ageï¼ˆå¹´é¾„ï¼‰çš„æˆå‘˜å˜é‡
+	// ÎªPersonÀà¶¨ÒåStringĞÍµÄname£¨ĞÕÃû£©ºÍintĞÍµÄage£¨ÄêÁä£©µÄ³ÉÔ±±äÁ¿
 	String name;
 	int age;
 
-	// ä¸ºnameå’Œageåˆ†åˆ«å®šä¹‰è®¿é—®æ–¹æ³•å’Œä¿®æ”¹æ–¹æ³•
+	// ÎªnameºÍage·Ö±ğ¶¨Òå·ÃÎÊ·½·¨ºÍĞŞ¸Ä·½·¨
 	public String getName() {
 		return name;
 	}
@@ -23,7 +23,7 @@ class Person {
 		age = setAge;
 	}
 
-	// ä¸ºPersonå®šä¹‰æ„é€ æ–¹æ³•
+	// ÎªPerson¶¨Òå¹¹Ôì·½·¨
 	public Person() {
 		return;
 	}
@@ -37,40 +37,40 @@ class Person {
 		this.age = age;
 	}
 
-	// ä¸ºPersonå®šä¹‰toStringï¼ˆï¼‰çš„æ–¹æ³•
+	// ÎªPerson¶¨ÒåtoString£¨£©µÄ·½·¨
 	public String toString() {
-		return "å§“å=" + name + ",å¹´é¾„=" + age;
+		return "ĞÕÃû=" + name + ",ÄêÁä=" + age;
 	}
 
-	// å®šä¹‰ä¸€ä¸ªvoid Speakï¼ˆï¼‰çš„æˆå‘˜æ–¹æ³•ï¼Œè¯¥æ–¹æ³•å¸¦ä¸€ä¸ªStringå‹çš„nameï¼ˆå§“åï¼‰å‚æ•°ï¼Œæ–¹æ³•çš„ä½œç”¨æ˜¯è¾“å‡ºnameå€¼
+	// ¶¨ÒåÒ»¸övoid Speak£¨£©µÄ³ÉÔ±·½·¨£¬¸Ã·½·¨´øÒ»¸öStringĞÍµÄname£¨ĞÕÃû£©²ÎÊı£¬·½·¨µÄ×÷ÓÃÊÇÊä³önameÖµ
 	public void Speak(String name) {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name + "ã€‚");
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name + "¡£");
 	}
 
-	// å®šä¹‰ä¸€ä¸ªvoid
-	// Speakï¼ˆï¼‰çš„æˆå‘˜æ–¹æ³•ï¼Œè¯¥æ–¹æ³•å¸¦ä¸€ä¸ªStringå‹çš„nameï¼ˆå§“åï¼‰å’Œä¸€ä¸ªintå‹çš„ageï¼ˆå¹´é¾„ï¼‰å‚æ•°ï¼Œæ–¹æ³•çš„ä½œç”¨æ˜¯è¾“å‡ºnameå’Œageå€¼
+	// ¶¨ÒåÒ»¸övoid
+	// Speak£¨£©µÄ³ÉÔ±·½·¨£¬¸Ã·½·¨´øÒ»¸öStringĞÍµÄname£¨ĞÕÃû£©ºÍÒ»¸öintĞÍµÄage£¨ÄêÁä£©²ÎÊı£¬·½·¨µÄ×÷ÓÃÊÇÊä³önameºÍageÖµ
 	public void Speak(String name, int age) {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name + "ï¼Œä»Šå¹´" + age + "å²äº†ï¼");
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name + "£¬½ñÄê" + age + "ËêÁË£¡");
 	}
 
-	// å®šä¹‰ä¸€ä¸ªvoid
-	// Speakï¼ˆï¼‰çš„æˆå‘˜æ–¹æ³•ï¼Œè¯¥æ–¹æ³•å¸¦ä¸€ä¸ªStringå‹çš„nameï¼ˆå§“åï¼‰ã€ä¸€ä¸ªStringå‹çš„sexï¼ˆæ€§åˆ«ï¼‰å’Œä¸€ä¸ªintå‹çš„ageï¼ˆå¹´é¾„ï¼‰å‚æ•°ï¼Œæ–¹æ³•çš„ä½œç”¨æ˜¯è¾“å‡ºnameã€sexå’Œageå€¼
+	// ¶¨ÒåÒ»¸övoid
+	// Speak£¨£©µÄ³ÉÔ±·½·¨£¬¸Ã·½·¨´øÒ»¸öStringĞÍµÄname£¨ĞÕÃû£©¡¢Ò»¸öStringĞÍµÄsex£¨ĞÔ±ğ£©ºÍÒ»¸öintĞÍµÄage£¨ÄêÁä£©²ÎÊı£¬·½·¨µÄ×÷ÓÃÊÇÊä³öname¡¢sexºÍageÖµ
 	public void Speak(String name, String sex, int age) {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name + "ï¼Œæ˜¯" + sex + "ï¼Œä»Šå¹´" + age + "å²äº†ï¼");
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name + "£¬ÊÇ" + sex + "£¬½ñÄê" + age + "ËêÁË£¡");
 	}
 }
 
-//æµ‹è¯•ä»¥ä¸Šæ‰€æœ‰æ„é€ æ–¹æ³•å’Œæˆå‘˜æ–¹æ³•
+//²âÊÔÒÔÉÏËùÓĞ¹¹Ôì·½·¨ºÍ³ÉÔ±·½·¨
 public class Ex0310 {
 	public static void main(String[] args) {
 		Person p1 = new Person();
-		Person p2 = new Person("é™ˆå–†");
-		Person p3 = new Person("é™ˆå–†", 21);
-		System.out.println("ç¬¬ä¸€ä½ï¼š" + p1.toString());
-		System.out.println("ç¬¬äºŒä½ï¼š" + p2.toString());
-		System.out.println("ç¬¬ä¸‰ä½ï¼š" + p3.toString());
-		p1.Speak("é™ˆå–†");
-		p1.Speak("é™ˆå–†", 21);
-		p1.Speak("é™ˆå–†", "ç”·ç”Ÿ", 21);
+		Person p2 = new Person("³Â†´");
+		Person p3 = new Person("³Â†´", 21);
+		System.out.println("µÚÒ»Î»£º" + p1.toString());
+		System.out.println("µÚ¶şÎ»£º" + p2.toString());
+		System.out.println("µÚÈıÎ»£º" + p3.toString());
+		p1.Speak("³Â†´");
+		p1.Speak("³Â†´", 21);
+		p1.Speak("³Â†´", "ÄĞÉú", 21);
 	}
 }

@@ -5,28 +5,28 @@ public class Example10 {
 		int week = 5;
 		switch (week) {
 		case 1:
-			System.out.println("æ˜ŸæœŸä¸€");
+			System.out.println("ĞÇÆÚÒ»");
 			break;
 		case 2:
-			System.out.println("æ˜ŸæœŸäºŒ");
+			System.out.println("ĞÇÆÚ¶ş");
 			break;
 		case 3:
-			System.out.println("æ˜ŸæœŸä¸‰");
+			System.out.println("ĞÇÆÚÈı");
 			break;
 		case 4:
-			System.out.println("æ˜ŸæœŸå››");
+			System.out.println("ĞÇÆÚËÄ");
 			break;
 		case 5:
-			System.out.println("æ˜ŸæœŸäº”");
+			System.out.println("ĞÇÆÚÎå");
 			break;
 		case 6:
-			System.out.println("æ˜ŸæœŸå…­");
+			System.out.println("ĞÇÆÚÁù");
 			break;
 		case 7:
-			System.out.println("æ˜ŸæœŸæ—¥");
+			System.out.println("ĞÇÆÚÈÕ");
 			break;
 		default:
-			System.out.println("è¾“å…¥çš„æ•°å­—ä¸æ­£ç¡®ã€‚ã€‚ã€‚");
+			System.out.println("ÊäÈëµÄÊı×Ö²»ÕıÈ·¡£¡£¡£");
 			break;
 		}
 	}

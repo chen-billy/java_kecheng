@@ -1,7 +1,7 @@
 package cz0225;
 
 /*
- * ifè¯­å¥çš„ä½¿ç”¨
+ * ifÓï¾äµÄÊ¹ÓÃ
  */
 public class Example07 {
 	public static void main(String[] args) {

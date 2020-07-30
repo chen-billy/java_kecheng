@@ -2,41 +2,41 @@ package cz0225;
 
 public class StoreList {
 	public static void main(String[] args) {
-		// è‹¹æœç¬”è®°æœ¬ç”µè„‘
+		// Æ»¹û±Ê¼Ç±¾µçÄÔ
 		String macBrand = "MacBookAir";
 		double macSize = 13.3;
 		double macPrice = 6988.88;
-		String macConfig = "i5å¤„ç†4GBå†…å­˜128Gå›ºæ€ç¡¬ç›˜";
+		String macConfig = "i5´¦Àí4GBÄÚ´æ128G¹ÌÌ¬Ó²ÅÌ";
 		int macCount = 5;
-		// è”æƒ³ Thinkpad ç¬”è®°æœ¬ç”µè„‘
+		// ÁªÏë Thinkpad ±Ê¼Ç±¾µçÄÔ
 		String thinkpadBrand = "ThinkpadT450";
 		double thinkpadSize = 14.0;
 		double thinkpadPrice = 5999.99;
-		String thinkpadConfig = "i5å¤„ç†å™¨ 4GBå†…å­˜500Gç¡¬ç›˜";
+		String thinkpadConfig = "i5´¦ÀíÆ÷ 4GBÄÚ´æ500GÓ²ÅÌ";
 		int thinkpadCount = 10;
-		// åç¡•ASUSç¬”è®°æœ¬ç”µè„‘
+		// »ªË¶ASUS±Ê¼Ç±¾µçÄÔ
 		String ASUSBrand = "ASUS-FL5800";
 		double ASUSSize = 15.6;
 		double ASUSPrice = 4999.51;
-		String ASUSConfig = "i7å¤„ç†å™¨4GBå†…å­˜128Gå›ºæ€ç¡¬ç›˜";
+		String ASUSConfig = "i7´¦ÀíÆ÷4GBÄÚ´æ128G¹ÌÌ¬Ó²ÅÌ";
 		int ASUSCount = 18;
-		// åˆ—è¡¨é¡¶éƒ¨
-		System.out.println("--------------------------å•†åŸåº“å­˜æ¸…å•--------------------------");
+		// ÁĞ±í¶¥²¿
+		System.out.println("--------------------------ÉÌ³Ç¿â´æÇåµ¥--------------------------");
 		System.out.println(
-				"å“ç‰Œå‹å·                                   å°ºå¯¸            ä»·æ ¼                          é…ç½®                                                                      åº“å­˜æ•°");
-		// åˆ—è¡¨ä¸­éƒ¨
+				"Æ·ÅÆĞÍºÅ                                   ³ß´ç            ¼Û¸ñ                          ÅäÖÃ                                                                      ¿â´æÊı");
+		// ÁĞ±íÖĞ²¿
 		System.out.println(
 				macBrand + "     " + macSize + "  " + macPrice + "   " + macConfig + "            " + macCount);
 		System.out.println(thinkpadBrand + "   " + thinkpadSize + "  " + thinkpadPrice + "   " + thinkpadConfig
 				+ "               " + thinkpadCount);
 		System.out
 				.println(ASUSBrand + "    " + ASUSSize + "  " + ASUSPrice + "   " + ASUSConfig + "       " + ASUSCount);
-		// ç»Ÿè®¡æ€»åº“å­˜æ•°ã€åº“å­˜æ€»é‡‘é¢
+		// Í³¼Æ×Ü¿â´æÊı¡¢¿â´æ×Ü½ğ¶î
 		int totalCount = macCount + thinkpadCount + ASUSCount;
 		double totalMoney = (macCount * macPrice) + (thinkpadCount * thinkpadPrice) + (ASUSCount * ASUSPrice);
-		// åˆ—è¡¨åº•éƒ¨
+		// ÁĞ±íµ×²¿
 		System.out.println("------------------------------------------------------------");
-		System.out.println("æ€»åº“å­˜æ•°ï¼š" + totalCount);
-		System.out.println("åº“å­˜å•†å“æ€»é‡‘é¢ï¼š" + totalMoney);
+		System.out.println("×Ü¿â´æÊı£º" + totalCount);
+		System.out.println("¿â´æÉÌÆ·×Ü½ğ¶î£º" + totalMoney);
 	}
 }

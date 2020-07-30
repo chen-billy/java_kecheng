@@ -1,9 +1,9 @@
 package Ex0324;
 
 /*
- * å®šä¹‰ä¿å…»æ¥å£ï¼Œå…·å¤‡ä¿å…»åŠŸèƒ½
+ * ¶¨Òå±£Ñø½Ó¿Ú£¬¾ß±¸±£Ñø¹¦ÄÜ
  */
 public interface Careable {
-	// ä¿å…»æ–¹æ³•
+	// ±£Ñø·½·¨
 	public abstract void upKeep();
 }

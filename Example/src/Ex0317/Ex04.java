@@ -1,26 +1,26 @@
 package Ex0317;
 
 /*
- * superï¼ˆçˆ¶ç±»æ„é€ æ–¹æ³•çš„å‚æ•°ï¼‰è®¿é—®çˆ¶ç±»çš„æ„é€ æ–¹æ³•ï¼šå¿…é¡»æ˜¯å­ç±»æ„é€ æ–¹æ³•ï¼Œæ‰èƒ½è°ƒç”¨çˆ¶ç±»æ„é€ æ–¹æ³•
+ * super£¨¸¸Àà¹¹Ôì·½·¨µÄ²ÎÊı£©·ÃÎÊ¸¸ÀàµÄ¹¹Ôì·½·¨£º±ØĞëÊÇ×ÓÀà¹¹Ôì·½·¨£¬²ÅÄÜµ÷ÓÃ¸¸Àà¹¹Ôì·½·¨
  */
-//å®šä¹‰Animalä½œä¸ºçˆ¶ç±»
+//¶¨ÒåAnimal×÷Îª¸¸Àà
 class Animal04 {
-	// å®šä¹‰Animalç±»æœ‰å‚çš„æ„é€ æ–¹æ³•
+	// ¶¨ÒåAnimalÀàÓĞ²ÎµÄ¹¹Ôì·½·¨
 	public Animal04(String name) {
-		System.out.println("æˆ‘æ˜¯ä¸€åª" + name);
+		System.out.println("ÎÒÊÇÒ»Ö»" + name);
 	}
 }
 
-//å®šä¹‰Dogç±»ç»§æ‰¿Animalçˆ¶ç±»
+//¶¨ÒåDogÀà¼Ì³ĞAnimal¸¸Àà
 class Dog04 extends Animal04 {
 	public Dog04() {
-		super("æ²™çš®ç‹—");
+		super("É³Æ¤¹·");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex04 {
 	public static void main(String[] args) {
-		Dog04 dog = new Dog04();// åˆ›å»ºDogç±»çš„å¯¹è±¡ï¼Œå­ç±»å¯¹è±¡
+		Dog04 dog = new Dog04();// ´´½¨DogÀàµÄ¶ÔÏó£¬×ÓÀà¶ÔÏó
 	}
 }

@@ -1,15 +1,15 @@
 package cz0305;
 
 /*
- * å®šä¹‰è¶…å¸‚ç±»
- * æè¿°è¶…å¸‚äº‹ç‰©
- * è¶…å¸‚å
- * è¶…å¸‚çš„ä»“åº“ï¼Œå­˜å‚¨å•†å“
- * å”®è´§æ–¹æ³•
+ * ¶¨Òå³¬ÊĞÀà
+ * ÃèÊö³¬ÊĞÊÂÎï
+ * ³¬ÊĞÃû
+ * ³¬ÊĞµÄ²Ö¿â£¬´æ´¢ÉÌÆ·
+ * ÊÛ»õ·½·¨
  */
 public class Market {
-	private String marketName;// è¶…å¸‚å
-	private Product[] productArr;// ä»“åº“ï¼Œå­˜å‚¨å•†å“ï¼Œé‡Œé¢å­˜å‚¨è‹¥å¹²å•†å“
+	private String marketName;// ³¬ÊĞÃû
+	private Product[] productArr;// ²Ö¿â£¬´æ´¢ÉÌÆ·£¬ÀïÃæ´æ´¢Èô¸ÉÉÌÆ·
 
 	public String getMarketName() {
 		return marketName;

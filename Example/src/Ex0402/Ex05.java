@@ -1,13 +1,13 @@
 package Ex0402;
 
 /*
- * Runtimeç±»ä¸­æä¾›ä¸€ä¸ªexecï¼ˆï¼‰æ–¹æ³•ï¼Œè¯¥æ–¹æ³•ç”¨äºz'xä¸€ä¸ªdoså‘½ä»¤ï¼Œä»è€Œå®ç°å’Œå‘½ä»¤çª—å£ä¸­è¾“å…¥doså‘½ä»¤åŒæ ·çš„æ•ˆæœ
+ * RuntimeÀàÖĞÌá¹©Ò»¸öexec£¨£©·½·¨£¬¸Ã·½·¨ÓÃÓÚz'xÒ»¸ödosÃüÁî£¬´Ó¶øÊµÏÖºÍÃüÁî´°¿ÚÖĞÊäÈëdosÃüÁîÍ¬ÑùµÄĞ§¹û
  */
 import java.io.IOException;
 
 public class Ex05 {
 	public static void main(String[] args) throws IOException {
-		Runtime rt = Runtime.getRuntime();// åˆ›å»ºRuntimeå®ä¾‹å¯¹è±¡
-		rt.exec("notepad.exe");// è°ƒç”¨execï¼ˆï¼‰æ–¹æ³•
+		Runtime rt = Runtime.getRuntime();// ´´½¨RuntimeÊµÀı¶ÔÏó
+		rt.exec("notepad.exe");// µ÷ÓÃexec£¨£©·½·¨
 	}
 }

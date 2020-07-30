@@ -1,7 +1,7 @@
 package cz0225;
 
 /*
- * 寮哄埗绫诲瀷杞崲
+ * 强制类型转换
  */
 public class Example01 {
 	public static void main(String[] args) {

@@ -1,14 +1,14 @@
 package Ex0303;
 
 /*
- * æè¿°äººäº‹ç‰©
- * éƒ½æ˜¯äººçš„å…±æ€§
+ * ÃèÊöÈËÊÂÎï
+ * ¶¼ÊÇÈËµÄ¹²ĞÔ
  */
 public class Ex01 {
-	int age; // å®šä¹‰intç±»å‹å˜é‡age
-	// å®šä¹‰speakï¼ˆï¼‰æ–¹æ³•
+	int age; // ¶¨ÒåintÀàĞÍ±äÁ¿age
+	// ¶¨Òåspeak£¨£©·½·¨
 
 	public void speak() {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘ä»Šå¹´" + age + "å²");
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½ñÄê" + age + "Ëê");
 	}
 }

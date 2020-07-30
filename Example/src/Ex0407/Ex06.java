@@ -4,16 +4,16 @@ import java.util.*;
 
 public class Ex06 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();// åˆ›å»ºArrayListé›†åˆ
+		ArrayList list = new ArrayList();// ´´½¨ArrayList¼¯ºÏ
 		list.add("Jack");
 		list.add("Annie");
 		list.add("Rose");
 		list.add("Tom");
-		Iterator it = list.iterator(); // è·å¾—Iteratorå¯¹è±¡
-		while (it.hasNext()) {// åˆ¤æ–­è¯¥é›†åˆæ˜¯å¦æœ‰ä¸‹ä¸€ä¸ªå…ƒç´ 
-			Object obj = it.next();// è·å–è¯¥é›†åˆä¸­çš„å…ƒç´ 
-			if ("Annie".equals(obj)) {// åˆ¤æ–­è¯¥é›†åˆä¸­å…ƒç´ æ˜¯å¦ä¸ºAnnie
-				list.remove(obj);// åˆ é™¤è¯¥é›†åˆä¸­çš„å…ƒç´ 
+		Iterator it = list.iterator(); // »ñµÃIterator¶ÔÏó
+		while (it.hasNext()) {// ÅĞ¶Ï¸Ã¼¯ºÏÊÇ·ñÓĞÏÂÒ»¸öÔªËØ
+			Object obj = it.next();// »ñÈ¡¸Ã¼¯ºÏÖĞµÄÔªËØ
+			if ("Annie".equals(obj)) {// ÅĞ¶Ï¸Ã¼¯ºÏÖĞÔªËØÊÇ·ñÎªAnnie
+				list.remove(obj);// É¾³ı¸Ã¼¯ºÏÖĞµÄÔªËØ
 				break;
 			}
 		}

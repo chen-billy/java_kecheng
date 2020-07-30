@@ -1,23 +1,23 @@
 package Ex0331;
 
 /*
- * Stringç±»çš„åŸºæœ¬æ“ä½œ
- * 	åœ¨ç¨‹åºä¸­ï¼Œéœ€è¦å­—ç¬¦ä¸²è¿›è¡Œä¸€äº›åŸºæœ¬æ“ä½œï¼Œå¦‚æœè·å¾—å­—ç¬¦ä¸²é•¿åº¦ã€è·å¾—æŒ‡å®šä½ç½®çš„å­—ç¬¦ç­‰
- * 	public int lengthï¼ˆï¼‰è·å–å­—ç¬¦ä¸²çš„é•¿åº¦
- * 	public char charAtï¼ˆint indexï¼‰è·å–å­—ç¬¦ä¸²ä¸­æŒ‡å®šä½ç½®ä¸Šçš„å­—ç¬¦
- * 	public int indexOfï¼ˆchar chï¼‰è·å–æŒ‡å®šå­—ç¬¦åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
- * 	public int lastIndexOfï¼ˆchar chï¼‰è·å–æŒ‡å®šå­—ç¬¦åœ¨å­—ç¬¦ä¸²ä¸­æœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®
- * 	public int indexOfï¼ˆSting strï¼‰è·å–æŒ‡å®šå­ä¸²åœ¨å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®
- * 	public int lastIndexOfï¼ˆString strï¼‰è·å–æŒ‡å®šå­ä¸²åœ¨å­—ç¬¦ä¸²ä¸­æœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®
+ * StringÀàµÄ»ù±¾²Ù×÷
+ * 	ÔÚ³ÌĞòÖĞ£¬ĞèÒª×Ö·û´®½øĞĞÒ»Ğ©»ù±¾²Ù×÷£¬Èç¹û»ñµÃ×Ö·û´®³¤¶È¡¢»ñµÃÖ¸¶¨Î»ÖÃµÄ×Ö·ûµÈ
+ * 	public int length£¨£©»ñÈ¡×Ö·û´®µÄ³¤¶È
+ * 	public char charAt£¨int index£©»ñÈ¡×Ö·û´®ÖĞÖ¸¶¨Î»ÖÃÉÏµÄ×Ö·û
+ * 	public int indexOf£¨char ch£©»ñÈ¡Ö¸¶¨×Ö·ûÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
+ * 	public int lastIndexOf£¨char ch£©»ñÈ¡Ö¸¶¨×Ö·ûÔÚ×Ö·û´®ÖĞ×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ
+ * 	public int indexOf£¨Sting str£©»ñÈ¡Ö¸¶¨×Ó´®ÔÚ×Ö·û´®ÖĞµÚÒ»´Î³öÏÖµÄÎ»ÖÃ
+ * 	public int lastIndexOf£¨String str£©»ñÈ¡Ö¸¶¨×Ó´®ÔÚ×Ö·û´®ÖĞ×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ
 */
 public class Ex02 {
 	public static void main(String[] args) {
-		String s = "ababcdedcba";// å£°æ˜å­—ç¬¦ä¸²
-		System.out.println("å­—ç¬¦ä¸²çš„é•¿åº¦ä¸ºï¼š" + s.length());// è·å–å­—ç¬¦ä¸²é•¿åº¦ï¼Œå³å­—ç¬¦ä¸ªæ•°
-		System.out.println("å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å­—ç¬¦ï¼š" + s.charAt(0));
-		System.out.println("å­—ç¬¦cç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + s.indexOf('c'));
-		System.out.println("å­—ç¬¦cæœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + s.lastIndexOf('c'));
-		System.out.println("å­å­—ç¬¦ä¸²ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + s.indexOf("ab"));
-		System.out.println("å­å­—ç¬¦ä¸²æœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + s.lastIndexOf("ab"));
+		String s = "ababcdedcba";// ÉùÃ÷×Ö·û´®
+		System.out.println("×Ö·û´®µÄ³¤¶ÈÎª£º" + s.length());// »ñÈ¡×Ö·û´®³¤¶È£¬¼´×Ö·û¸öÊı
+		System.out.println("×Ö·û´®ÖĞµÚÒ»´Î×Ö·û£º" + s.charAt(0));
+		System.out.println("×Ö·ûcµÚÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + s.indexOf('c'));
+		System.out.println("×Ö·ûc×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + s.lastIndexOf('c'));
+		System.out.println("×Ó×Ö·û´®µÚÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + s.indexOf("ab"));
+		System.out.println("×Ó×Ö·û´®×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + s.lastIndexOf("ab"));
 	}
 }

@@ -1,14 +1,14 @@
 package cz0225;
 
 /*
- * &ä¸Ž&&çš„ä½¿ç”¨
+ * &Óë&&µÄÊ¹ÓÃ
  */
 public class Example06 {
 	public static void main(String[] args) {
-		int x = 0; // å®šä¹‰å˜é‡xï¼Œèµ‹å€¼ä¸º0
-		int y = 0; // å®šä¹‰å˜é‡yï¼Œèµ‹å€¼ä¸º0
-		int z = 0; // å®šä¹‰å˜é‡zï¼Œèµ‹å€¼ä¸º0
-		boolean a, b; // å®šä¹‰aå’Œbä¸¤ä¸ªå¸ƒå°”å˜é‡
+		int x = 0; // ¶¨Òå±äÁ¿x£¬¸³ÖµÎª0
+		int y = 0; // ¶¨Òå±äÁ¿y£¬¸³ÖµÎª0
+		int z = 0; // ¶¨Òå±äÁ¿z£¬¸³ÖµÎª0
+		boolean a, b; // ¶¨ÒåaºÍbÁ½¸ö²¼¶û±äÁ¿
 		a = x > 0 & y++ > 1;
 		System.out.println(a);
 		System.out.println("y = " + y);

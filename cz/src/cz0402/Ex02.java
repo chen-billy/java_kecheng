@@ -3,11 +3,11 @@ package cz0402;
 public class Ex02 {
 	public static void main(String[] args) throws Exception {
 		Runtime rt = Runtime.getRuntime();
-		// è·å–å½“å‰è™šæ‹Ÿæœºçš„ç›¸å…³ä¿¡æ¯
-		System.out.println("å¤„ç†å™¨çš„ä¸ªæ•°ï¼š" + rt.availableProcessors() + "ä¸ª");
-		System.out.println("é—²ç½®å†…å­˜æ•°é‡ï¼š" + rt.freeMemory() / 1024 / 1024 + "M");
-		System.out.println("æœ€å¤§å¯ç”¨å†…å­˜æ•°é‡ï¼š" + rt.maxMemory() / 1024 / 1024 + "M");
-		// æ‰“å¼€è®°äº‹æœ¬ç¨‹åºå¹¶ä¸”ç­‰å¾…5ç§’é’Ÿåè‡ªåŠ¨å…³é—­
+		// »ñÈ¡µ±Ç°ĞéÄâ»úµÄÏà¹ØĞÅÏ¢
+		System.out.println("´¦ÀíÆ÷µÄ¸öÊı£º" + rt.availableProcessors() + "¸ö");
+		System.out.println("ÏĞÖÃÄÚ´æÊıÁ¿£º" + rt.freeMemory() / 1024 / 1024 + "M");
+		System.out.println("×î´ó¿ÉÓÃÄÚ´æÊıÁ¿£º" + rt.maxMemory() / 1024 / 1024 + "M");
+		// ´ò¿ª¼ÇÊÂ±¾³ÌĞò²¢ÇÒµÈ´ı5ÃëÖÓºó×Ô¶¯¹Ø±Õ
 		Process process = rt.exec("notepad.exe");
 		Thread.sleep(5000);
 		process.destroy();

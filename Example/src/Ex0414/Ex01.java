@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Ex01 {
 	public static void main(String[] args) {
-		Map map = new HashMap();// åˆ›å»ºMapå¯¹è±¡
-		map.put("1", "Jack");// å­˜å‚¨é”®å’Œå€¼
+		Map map = new HashMap();// ´´½¨Map¶ÔÏó
+		map.put("1", "Jack");// ´æ´¢¼üºÍÖµ
 		map.put("2", "Rose");
 		map.put("3", "Lucy");
-		System.out.println("1:" + map.get("1"));// æ ¹æ®é”®è·å–å€¼
+		System.out.println("1:" + map.get("1"));// ¸ù¾İ¼ü»ñÈ¡Öµ
 		System.out.println("2:" + map.get("2"));
 		System.out.println("3:" + map.get("3"));
 	}

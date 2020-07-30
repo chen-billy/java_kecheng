@@ -3,7 +3,7 @@ package Ex0402;
 import java.util.Arrays;
 
 /*
- * å­—ç¬¦ä¸²æ’åºç¨‹åº
+ * ×Ö·û´®ÅÅĞò³ÌĞò
  */
 public class WrapperTest {
 	private static final String SPACE_SEPARATOR = " ";
@@ -11,30 +11,30 @@ public class WrapperTest {
 	public static void main(String[] args) {
 		String numStr = "20 78 9 -7 88 36 29";
 		System.out.println(numStr);
-		// è°ƒç”¨æ–¹æ³•ï¼Œå®ç°å¾—åˆ°ä¸€ä¸ªç”±å°åˆ°å¤§çš„å­—ç¬¦ä¸²
+		// µ÷ÓÃ·½·¨£¬ÊµÏÖµÃµ½Ò»¸öÓÉĞ¡µ½´óµÄ×Ö·û´®
 		numStr = sortStringNumber(numStr);
 		System.out.println(numStr.toString());
 	}
 
-	// è¿”å›ä¸€ä¸ªç”±å°åˆ°å¤§çš„å­—ç¬¦ä¸²"-7 9 20 29 36 78 88"
+	// ·µ»ØÒ»¸öÓÉĞ¡µ½´óµÄ×Ö·û´®"-7 9 20 29 36 78 88"
 	private static String sortStringNumber(String numStr) {
-		// 1,å°†å­—ç¬¦ä¸²å˜æˆå­—ç¬¦æ•°ç»„
+		// 1,½«×Ö·û´®±ä³É×Ö·ûÊı×é
 		String[] str_arr = stringToArray(numStr);
-		// 2,å°†å­—ç¬¦ä¸²æ•°ç»„å˜æˆintæ•°ç»„
+		// 2,½«×Ö·û´®Êı×é±ä³ÉintÊı×é
 		int[] num_arr = toIntArray(str_arr);
-		// 3,å¯¹intæ•°ç»„æ’åº
+		// 3,¶ÔintÊı×éÅÅĞò
 		mySorArray(num_arr);
-		// 4,å°†æ’åºåçš„intæ•°ç»„å˜æˆå­—ç¬¦ä¸²
+		// 4,½«ÅÅĞòºóµÄintÊı×é±ä³É×Ö·û´®
 		String trmp = arrayToString(num_arr);
 		return trmp;
 	}
 
-	// å°†intæ•°ç»„è½¬æ¢æˆString
+	// ½«intÊı×é×ª»»³ÉString
 	public static String arrayToString(int[] num_arr) {
 		StringBuffer sb = new StringBuffer();
-		// é€šè¿‡å¾ªç¯ï¼Œå¾—åˆ°æ¯ä¸€ä¸ªintå…ƒç´ 
+		// Í¨¹ıÑ­»·£¬µÃµ½Ã¿Ò»¸öintÔªËØ
 		for (int x = 0; x < num_arr.length; x++) {
-			// åˆ¤æ–­å½“å‰å…ƒç´ ï¼Œæ˜¯å¦ä¸ºæ•°ç»„æœ€åä¸€ä¸ªå…ƒç´ 
+			// ÅĞ¶Ïµ±Ç°ÔªËØ£¬ÊÇ·ñÎªÊı×é×îºóÒ»¸öÔªËØ
 			if (x != num_arr.length - 1) {
 				sb.append(num_arr[x] + SPACE_SEPARATOR);
 			} else {
@@ -48,14 +48,14 @@ public class WrapperTest {
 		Arrays.sort(num_arr);
 	}
 
-	// å°†Stringæ•°ç»„è½¬æ¢æˆä¸ºintæ•°ç»„
+	// ½«StringÊı×é×ª»»³ÉÎªintÊı×é
 	public static int[] toIntArray(String[] str_arr) {
-		// åˆ›å»ºintæ•°ç»„
+		// ´´½¨intÊı×é
 		int[] arr = new int[str_arr.length];
-		// æŠŠStringæ•°ç»„å…ƒç´ è½¬æ¢æˆintå…ƒç´ ï¼Œå­˜å‚¨åˆ°intæ•°ç»„ä¸­
+		// °ÑStringÊı×éÔªËØ×ª»»³ÉintÔªËØ£¬´æ´¢µ½intÊı×éÖĞ
 		for (int i = 0; i < arr.length; i++) {
-			// å¾—åˆ°æ¯ä¸€ä¸ªå­—ç¬¦ä¸²str_arr[i]
-			// æŠŠå­—ç¬¦ä¸²æ•°å­—è½¬æ¢æˆintç±»å‹Integer.parseIntï¼ˆString strï¼‰
+			// µÃµ½Ã¿Ò»¸ö×Ö·û´®str_arr[i]
+			// °Ñ×Ö·û´®Êı×Ö×ª»»³ÉintÀàĞÍInteger.parseInt£¨String str£©
 			arr[i] = Integer.parseInt(str_arr[i]);
 		}
 		return arr;

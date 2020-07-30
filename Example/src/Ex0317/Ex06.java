@@ -1,18 +1,18 @@
 package Ex0317;
 
 /*
- * finalä¿®é¥°æ–¹æ³•ï¼Œè¢«finalä¿®é¥°çš„æ–¹æ³•ï¼Œæœ€ç»ˆæ–¹æ³•ï¼Œä¸èƒ½è¢«å­ç±»é‡å†™
+ * finalĞŞÊÎ·½·¨£¬±»finalĞŞÊÎµÄ·½·¨£¬×îÖÕ·½·¨£¬²»ÄÜ±»×ÓÀàÖØĞ´
  */
-//å®šä¹‰Animalçˆ¶ç±»
+//¶¨ÒåAnimal¸¸Àà
 class Animal06 {
-	// ä½¿ç”¨finalå…³é”®å­—ä¿®é¥°çš„shoutï¼ˆï¼‰æ–¹æ³•åï¼Œå¦‚æœå­ç±»é‡å†™è¿™ä¸ªæ–¹æ³•ï¼Œç¼–è¯‘æŠ¥é”™
+	// Ê¹ÓÃfinal¹Ø¼ü×ÖĞŞÊÎµÄshout£¨£©·½·¨ºó£¬Èç¹û×ÓÀàÖØĞ´Õâ¸ö·½·¨£¬±àÒë±¨´í
 	// public final void shout() {
 	public void shout() {
 
 	}
 }
 
-//å®šä¹‰Dogç±»ç»§æ‰¿çˆ¶ç±»
+//¶¨ÒåDogÀà¼Ì³Ğ¸¸Àà
 class Dog06 extends Animal06 {
 	public void shout() {
 
@@ -21,6 +21,6 @@ class Dog06 extends Animal06 {
 
 public class Ex06 {
 	public static void main(String[] args) {
-		Dog06 dog = new Dog06();// åˆ›å»ºDogç±»çš„å¯¹è±¡
+		Dog06 dog = new Dog06();// ´´½¨DogÀàµÄ¶ÔÏó
 	}
 }

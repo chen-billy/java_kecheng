@@ -1,20 +1,20 @@
 package Ex0324;
 
 /*
- * Objectç±»ä¸­çš„æ–¹æ³•toStingï¼ˆï¼‰
+ * ObjectÀàÖĞµÄ·½·¨toSting£¨£©
  */
-//å®šä¹‰Animalç±»
+//¶¨ÒåAnimalÀà
 class Animal04 {
-	//å®šä¹‰åŠ¨ç‰©å«çš„æ–¹æ³•
+	//¶¨Òå¶¯Îï½ĞµÄ·½·¨
 	public void shout() {
-		System.out.println("åŠ¨ç‰©å«");
+		System.out.println("¶¯Îï½Ğ");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex04 {
 	public static void main(String[] args) {
 		Animal04 animal = new Animal04();
-		System.out.println(animal.toString());//è°ƒç”¨toStringï¼ˆï¼‰æ–¹æ³•å¹¶æ‰“å°
+		System.out.println(animal.toString());//µ÷ÓÃtoString£¨£©·½·¨²¢´òÓ¡
 	}
 }

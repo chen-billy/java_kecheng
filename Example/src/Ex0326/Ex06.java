@@ -2,13 +2,13 @@ package Ex0326;
 
 public class Ex06 {
 	public static void main(String[] args) throws Exception{
-		int result = divide(4, 0);// è°ƒç”¨divideï¼ˆï¼‰æ–¹æ³•
+		int result = divide(4, 0);// µ÷ÓÃdivide£¨£©·½·¨
 		System.out.println(result);
 	}
 
-	// ä¸‹é¢çš„æ–¹æ³•å®ç°äº†ä¸¤ä¸ªæ•´æ•°ç›¸é™¤,å¹¶ä½¿ç”¨throwå…³é”®å­—å£°æ˜æŠ›å‡ºå¼‚å¸¸
+	// ÏÂÃæµÄ·½·¨ÊµÏÖÁËÁ½¸öÕûÊıÏà³ı,²¢Ê¹ÓÃthrow¹Ø¼ü×ÖÉùÃ÷Å×³öÒì³£
 	public static int divide(int x, int y) throws Exception {
-		int result = x / y;// å®šä¹‰ä¸€ä¸ªå˜é‡resultè®°å½•ä¸¤ä¸ªæ•°ç›¸é™¤çš„ç»“æœ
-		return result;// å°†ç»“æœè¿”å›
+		int result = x / y;// ¶¨ÒåÒ»¸ö±äÁ¿result¼ÇÂ¼Á½¸öÊıÏà³ıµÄ½á¹û
+		return result;// ½«½á¹û·µ»Ø
 	}
 }

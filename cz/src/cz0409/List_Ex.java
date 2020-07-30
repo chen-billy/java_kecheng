@@ -7,30 +7,30 @@ import java.util.LinkedList;
 public class List_Ex {
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
-		list.add("éƒ‘æµ·å½¬");
-		list.add("æ²ˆæ™“æ¯…");
-		list.add("é»„å¿—ç¿”");
-		list.add("é»„ç„±è£");
-		System.out.println("ArrayListé›†åˆï¼š" + list);
+		list.add("Ö£º£±ò");
+		list.add("ÉòÏşÒã");
+		list.add("»ÆÖ¾Ïè");
+		list.add("»ÆìÍÈÙ");
+		System.out.println("ArrayList¼¯ºÏ£º" + list);
 		Iterator it = list.iterator();
 		while (it.hasNext()) {
 			Object obj = it.next();
 			System.out.println(obj);
 		}
-		System.out.println("é›†åˆçš„é•¿åº¦ï¼š" + list.size());
-		System.out.println("ç¬¬3ä¸ªå…ƒç´ æ˜¯ï¼š" + list.get(2));
+		System.out.println("¼¯ºÏµÄ³¤¶È£º" + list.size());
+		System.out.println("µÚ3¸öÔªËØÊÇ£º" + list.get(2));
 		LinkedList link = new LinkedList();
-		link.add("é»„ç„±è£");
-		link.add("æ²ˆæ™“æ¯…");
-		link.add("éƒ‘æµ·å½¬");
-		link.add("é»„å¿—ç¿”");
-		System.out.println("åˆå§‹Linkedé›†åˆï¼š" + link.toString());
+		link.add("»ÆìÍÈÙ");
+		link.add("ÉòÏşÒã");
+		link.add("Ö£º£±ò");
+		link.add("»ÆÖ¾Ïè");
+		System.out.println("³õÊ¼Linked¼¯ºÏ£º" + link.toString());
 		for(Object str: link) {
 			System.out.println(str);
 		}
-		link.add(2, "é™ˆå–†");
-		System.out.println("åŠ äººåLinkedé›†åˆï¼š" + link);
+		link.add(2, "³Â†´");
+		System.out.println("¼ÓÈËºóLinked¼¯ºÏ£º" + link);
 		link.remove(3);
-		System.out.println("åˆ äººåLinkedé›†åˆï¼š" + link);
+		System.out.println("É¾ÈËºóLinked¼¯ºÏ£º" + link);
 	}
 }

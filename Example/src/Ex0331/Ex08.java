@@ -1,54 +1,54 @@
 package Ex0331;
 
 /*
- * StringBufferçš„æ„é€ æ–¹æ³•
- *  public StringBufferï¼ˆï¼‰ç©ºå‚æ•°æ„é€ æ–¹æ³•
- *  public StringBufferï¼ˆString dataï¼‰åˆ›å»ºå¸¦æœ‰å†…å®¹çš„å­—ç¬¦ä¸²ç¼“å†²åŒº
+ * StringBufferµÄ¹¹Ôì·½·¨
+ *  public StringBuffer£¨£©¿Õ²ÎÊı¹¹Ôì·½·¨
+ *  public StringBuffer£¨String data£©´´½¨´øÓĞÄÚÈİµÄ×Ö·û´®»º³åÇø
  * 
- * StringBufferç±»çš„å¸¸ç”¨æ–¹æ³•
- * 	public StringBuffer append(String str)å‘å­—ç¬¦ä¸²ç¼“å†²åŒºçš„æœ«å°¾æ·»åŠ æ–°æ•°æ®ï¼Œè¿”å›å½“å‰çš„StringBufferå¯¹è±¡è‡ªèº«
- * 	public StringBuffer insertï¼ˆint indexï¼Œ String strï¼‰å‘å­—ç¬¦ä¸²ç¼“å†²åŒºæŒ‡å®šçš„ä½ç½®ä¸Šï¼Œæ’å…¥æŒ‡å®šçš„æ•°æ®
- * 	public StringBuffer deleteï¼ˆint startï¼Œ int endï¼‰åˆ é™¤å­—ç¬¦ä¸²ç¼“å†²åŒºæŒ‡å®šèŒƒå›´å†…çš„æ•°æ®
- * 	public StringBuffer deleteCharAtï¼ˆint indexï¼‰åˆ é™¤å­—ç¬¦ä¸²ç¼“å†²åŒºæŒ‡å®šä½ç½®ä¸Šçš„æ•°æ®
- * 	public int lengthï¼ˆï¼‰è·å–å­—ç¬¦ä¸²ç¼“å†²åŒºçš„é•¿åº¦
- * 	public StringBuffer replaceï¼ˆint startï¼Œ int endï¼ŒString strï¼‰æ›¿æ¢å­—ç¬¦ä¸²ç¼“å†²åŒºæŒ‡å®šèŒƒå›´çš„å­—ç¬¦ä¸²
- * 	public StringBuffer setCharAtï¼ˆint indexï¼Œ char chï¼‰æ›¿æ¢å­—ç¬¦ä¸²ç¼“å†²åŒºæŒ‡å®šä½ç½®ä¸Šçš„å­—ç¬¦
- * 	public StringBuffer reverseï¼ˆï¼‰å­—ç¬¦ä¸²ç¼“å†²åŒºæ•°æ®ç¿»è½¬
+ * StringBufferÀàµÄ³£ÓÃ·½·¨
+ * 	public StringBuffer append(String str)Ïò×Ö·û´®»º³åÇøµÄÄ©Î²Ìí¼ÓĞÂÊı¾İ£¬·µ»Øµ±Ç°µÄStringBuffer¶ÔÏó×ÔÉí
+ * 	public StringBuffer insert£¨int index£¬ String str£©Ïò×Ö·û´®»º³åÇøÖ¸¶¨µÄÎ»ÖÃÉÏ£¬²åÈëÖ¸¶¨µÄÊı¾İ
+ * 	public StringBuffer delete£¨int start£¬ int end£©É¾³ı×Ö·û´®»º³åÇøÖ¸¶¨·¶Î§ÄÚµÄÊı¾İ
+ * 	public StringBuffer deleteCharAt£¨int index£©É¾³ı×Ö·û´®»º³åÇøÖ¸¶¨Î»ÖÃÉÏµÄÊı¾İ
+ * 	public int length£¨£©»ñÈ¡×Ö·û´®»º³åÇøµÄ³¤¶È
+ * 	public StringBuffer replace£¨int start£¬ int end£¬String str£©Ìæ»»×Ö·û´®»º³åÇøÖ¸¶¨·¶Î§µÄ×Ö·û´®
+ * 	public StringBuffer setCharAt£¨int index£¬ char ch£©Ìæ»»×Ö·û´®»º³åÇøÖ¸¶¨Î»ÖÃÉÏµÄ×Ö·û
+ * 	public StringBuffer reverse£¨£©×Ö·û´®»º³åÇøÊı¾İ·­×ª
  */
 public class Ex08 {
 	public static void main(String[] args) {
-		System.out.println("1ã€æ·»åŠ --------------------");
+		System.out.println("1¡¢Ìí¼Ó--------------------");
 		add();
-		System.out.println("2ã€åˆ é™¤--------------------");
+		System.out.println("2¡¢É¾³ı--------------------");
 		remove();
-		System.out.println("3ã€ä¿®æ”¹--------------------");
+		System.out.println("3¡¢ĞŞ¸Ä--------------------");
 		alter();
 	}
 
 	public static void add() {
-		StringBuffer sb = new StringBuffer();// å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²ç¼“å†²åŒº
-		sb.append("abcdefg");// åœ¨æœ«å°¾æ·»åŠ å­—ç¬¦ä¸²
-		System.out.println("appendæ·»åŠ ç»“æœï¼š" + sb);
-		sb.insert(2, "123");// åœ¨æŒ‡å®šä½ç½®æ’å…¥å­—ç¬¦ä¸²
-		System.out.println("insertæ·»åŠ ç»“æœï¼š" + sb);
+		StringBuffer sb = new StringBuffer();// ¶¨ÒåÒ»¸ö×Ö·û´®»º³åÇø
+		sb.append("abcdefg");// ÔÚÄ©Î²Ìí¼Ó×Ö·û´®
+		System.out.println("appendÌí¼Ó½á¹û£º" + sb);
+		sb.insert(2, "123");// ÔÚÖ¸¶¨Î»ÖÃ²åÈë×Ö·û´®
+		System.out.println("insertÌí¼Ó½á¹û£º" + sb);
 	}
 
 	public static void remove() {
 		StringBuffer sb = new StringBuffer("abcdefg");
-		sb.delete(1, 5);// æŒ‡å®šèŒƒå›´åˆ é™¤
-		System.out.println("åˆ é™¤æŒ‡å®šä½ç½®ç»“æœï¼š" + sb);
-		sb.deleteCharAt(2);// æŒ‡å®šä½ç½®åˆ é™¤
-		System.out.println("åˆ é™¤æŒ‡å®šä½ç½®ç»“æœï¼š" + sb);
-		sb.delete(0, sb.length());// æ¸…ç©ºç¼“å­˜åŒº
-		System.out.println("æ¸…ç©ºç¼“å­˜åŒºç»“æœï¼š" + sb);
+		sb.delete(1, 5);// Ö¸¶¨·¶Î§É¾³ı
+		System.out.println("É¾³ıÖ¸¶¨Î»ÖÃ½á¹û£º" + sb);
+		sb.deleteCharAt(2);// Ö¸¶¨Î»ÖÃÉ¾³ı
+		System.out.println("É¾³ıÖ¸¶¨Î»ÖÃ½á¹û£º" + sb);
+		sb.delete(0, sb.length());// Çå¿Õ»º´æÇø
+		System.out.println("Çå¿Õ»º´æÇø½á¹û£º" + sb);
 	}
 
 	public static void alter() {
 		StringBuffer sb = new StringBuffer("abcdef");
-		sb.setCharAt(1, 'p');// ä¿®æ”¹æŒ‡å®šä½ç½®å­—ç¬¦
-		System.out.println("ä¿®æ”¹æŒ‡å®šä½ç½®å­—ç¬¦ç»“æœï¼š" + sb);
-		sb.replace(1, 3, "qq");// æ›¿æ¢æŒ‡å®šä½ç½®å­—ç¬¦ä¸²æˆ–å­—ç¬¦
-		System.out.println("æ›¿æ¢æŒ‡å®šä½ç½®å­—ç¬¦ï¼ˆä¸²ï¼‰ç»“æœï¼š" + sb);
-		System.out.println("å­—ç¬¦ä¸²ç¿»è½¬ç»“æœï¼š" + sb.reverse());
+		sb.setCharAt(1, 'p');// ĞŞ¸ÄÖ¸¶¨Î»ÖÃ×Ö·û
+		System.out.println("ĞŞ¸ÄÖ¸¶¨Î»ÖÃ×Ö·û½á¹û£º" + sb);
+		sb.replace(1, 3, "qq");// Ìæ»»Ö¸¶¨Î»ÖÃ×Ö·û´®»ò×Ö·û
+		System.out.println("Ìæ»»Ö¸¶¨Î»ÖÃ×Ö·û£¨´®£©½á¹û£º" + sb);
+		System.out.println("×Ö·û´®·­×ª½á¹û£º" + sb.reverse());
 	}
 }

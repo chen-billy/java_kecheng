@@ -1,50 +1,50 @@
 package Ex0319;
 
 /*
- * æ¥å£ä¹‹é—´çš„ç»§æ‰¿
+ * ½Ó¿ÚÖ®¼äµÄ¼Ì³Ğ
  */
-//å®šä¹‰äº†Animalæ¥å£
+//¶¨ÒåÁËAnimal½Ó¿Ú
 interface Animal03 {
-	// å®šä¹‰å…¨å±€å¸¸é‡ï¼Œé»˜è®¤ä¿®é¥°ç¬¦public static final
-	public static final String ANIMAL_BEHAVIOR = "åŠ¨ç‰©çš„è¡Œä¸º";
+	// ¶¨ÒåÈ«¾Ö³£Á¿£¬Ä¬ÈÏĞŞÊÎ·ûpublic static final
+	public static final String ANIMAL_BEHAVIOR = "¶¯ÎïµÄĞĞÎª";
 
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•breatheï¼ˆï¼‰ä¿®é¥°ç¬¦ï¼Œå›ºå®šä¸ºpublic abstract
+	// ¶¨Òå³éÏó·½·¨breathe£¨£©ĞŞÊÎ·û£¬¹Ì¶¨Îªpublic abstract
 	public abstract void breathe();
 
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•runï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨run£¨£©
 	public abstract void run();
 }
 
-//å®šä¹‰æ¥å£LandAnimalï¼Œç»§æ‰¿Animalæ¥å£
+//¶¨Òå½Ó¿ÚLandAnimal£¬¼Ì³ĞAnimal½Ó¿Ú
 interface LandAnimal03 extends Animal03 {
 	public abstract void liveOnLand();
 }
 
-//å®šä¹‰Dogç±»å‹å®ç°Animalæ¥å£
+//¶¨ÒåDogÀàĞÍÊµÏÖAnimal½Ó¿Ú
 class Dog03 implements LandAnimal03 {
-	// é‡å†™æ¥å£æŠ½è±¡æ–¹æ³•breatheï¼ˆï¼‰
+	// ÖØĞ´½Ó¿Ú³éÏó·½·¨breathe£¨£©
 	public void breathe() {
-		System.out.println(ANIMAL_BEHAVIOR + ":" + "ç‹—åœ¨å‘¼å¸");
+		System.out.println(ANIMAL_BEHAVIOR + ":" + "¹·ÔÚºôÎü");
 	}
 
-	// é‡å†™æ¥å£æŠ½è±¡æ–¹æ³•runï¼ˆï¼‰
+	// ÖØĞ´½Ó¿Ú³éÏó·½·¨run£¨£©
 	public void run() {
-		System.out.println(ANIMAL_BEHAVIOR + ":" + "ç‹—åœ¨å¥”è·‘");
+		System.out.println(ANIMAL_BEHAVIOR + ":" + "¹·ÔÚ±¼ÅÜ");
 	}
 
-	// é‡å†™æ¥å£æŠ½è±¡æ–¹æ³•liveOnLandï¼ˆï¼‰
+	// ÖØĞ´½Ó¿Ú³éÏó·½·¨liveOnLand£¨£©
 	public void liveOnLand() {
-		System.out.println("ç‹—æ˜¯é™†åœ°ä¸Šçš„åŠ¨ç‰©");
+		System.out.println("¹·ÊÇÂ½µØÉÏµÄ¶¯Îï");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex03 {
 	public static void main(String[] args) {
-		Dog03 dog = new Dog03();// åˆ›å»ºDogç±»å¯¹è±¡ï¼Œæ˜¯Animalæ¥å£çš„å®ç°ç±»çš„å¯¹è±¡
-		// ä½¿ç”¨å¯¹è±¡å.å¸¸é‡åçš„æ–¹å¼ï¼Œè¾“å‡ºæ¥å£ä¸­çš„å¸¸é‡
+		Dog03 dog = new Dog03();// ´´½¨DogÀà¶ÔÏó£¬ÊÇAnimal½Ó¿ÚµÄÊµÏÖÀàµÄ¶ÔÏó
+		// Ê¹ÓÃ¶ÔÏóÃû.³£Á¿ÃûµÄ·½Ê½£¬Êä³ö½Ó¿ÚÖĞµÄ³£Á¿
 		// System.out.println(dog.ANIMAL_BEHAVIOR);
-		// æ¥å£å.å¸¸é‡åçš„æ–¹å¼ï¼Œè¾“å‡ºæ¥å£ä¸­çš„å¸¸é‡
+		// ½Ó¿ÚÃû.³£Á¿ÃûµÄ·½Ê½£¬Êä³ö½Ó¿ÚÖĞµÄ³£Á¿
 		// System.out.println(Animal.ANIMAL_BEHAVIOR);
 		dog.breathe();
 		dog.run();

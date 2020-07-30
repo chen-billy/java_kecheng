@@ -1,44 +1,44 @@
 package Ex0317;
 
 /*
- * superå…³é”®å­—
- * å­ç±»ä¸­ï¼Œè®¿é—®çˆ¶ç±»çš„æˆå‘˜
- * çˆ¶ç±»æˆå‘˜å˜é‡ï¼Œå’Œçˆ¶ç±»çš„æˆå‘˜æ–¹æ³•
+ * super¹Ø¼ü×Ö
+ * ×ÓÀàÖĞ£¬·ÃÎÊ¸¸ÀàµÄ³ÉÔ±
+ * ¸¸Àà³ÉÔ±±äÁ¿£¬ºÍ¸¸ÀàµÄ³ÉÔ±·½·¨
  * 
- * é™æ€æ–¹æ³•ä¸­ï¼Œä¸å…è®¸ä½¿ç”¨thiså’Œsuperå…³é”®å­—
+ * ¾²Ì¬·½·¨ÖĞ£¬²»ÔÊĞíÊ¹ÓÃthisºÍsuper¹Ø¼ü×Ö
  */
-//å®šä¹‰Animalä½œä¸ºçˆ¶ç±»
+//¶¨ÒåAnimal×÷Îª¸¸Àà
 class Animal03 {
-	String name = "åŠ¨ç‰©";
+	String name = "¶¯Îï";
 
-	// å®šä¹‰åŠ¨ç‰©å«çš„æ–¹æ³•
+	// ¶¨Òå¶¯Îï½ĞµÄ·½·¨
 	public void shout() {
-		System.out.println("åŠ¨ç‰©å‘å‡ºå«å£°");
+		System.out.println("¶¯Îï·¢³ö½ĞÉù");
 	}
 }
 
-//å®šä¹‰Dogç±»ç»§æ‰¿Animalçˆ¶ç±»
+//¶¨ÒåDogÀà¼Ì³ĞAnimal¸¸Àà
 class Dog03 extends Animal03 {
-	String name = "çŠ¬ç±»";
+	String name = "È®Àà";
 
-	// é‡å†™çˆ¶ç±»çš„æ–¹æ³•shoutï¼ˆï¼‰
+	// ÖØĞ´¸¸ÀàµÄ·½·¨shout£¨£©
 	public void shout() {
-		// è®¿é—®çˆ¶ç±»çš„æ–¹æ³•shoutï¼ˆï¼‰
-		// super.çˆ¶ç±»æ–¹æ³•ï¼ˆï¼‰
+		// ·ÃÎÊ¸¸ÀàµÄ·½·¨shout£¨£©
+		// super.¸¸Àà·½·¨£¨£©
 		super.shout();
 	}
 
-	// å®šä¹‰æ‰“å°nameå±æ€§çš„æ–¹æ³•
+	// ¶¨Òå´òÓ¡nameÊôĞÔµÄ·½·¨
 	public void printName() {
-		System.out.println("name=" + super.name);// è®¿é—®çˆ¶ç±»çš„æˆå‘˜å˜é‡name
+		System.out.println("name=" + super.name);// ·ÃÎÊ¸¸ÀàµÄ³ÉÔ±±äÁ¿name
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex03 {
 	public static void main(String[] args) {
-		Dog03 dog = new Dog03();// åˆ›å»ºDogç±»å¯¹è±¡ï¼Œå­ç±»çš„å¯¹è±¡
-		dog.shout();// è°ƒç”¨Dogç±»ä¸­çš„æ–¹æ³•shout
-		dog.printName();// è°ƒç”¨Dogç±»çš„æ–¹æ³•printName
+		Dog03 dog = new Dog03();// ´´½¨DogÀà¶ÔÏó£¬×ÓÀàµÄ¶ÔÏó
+		dog.shout();// µ÷ÓÃDogÀàÖĞµÄ·½·¨shout
+		dog.printName();// µ÷ÓÃDogÀàµÄ·½·¨printName
 	}
 }

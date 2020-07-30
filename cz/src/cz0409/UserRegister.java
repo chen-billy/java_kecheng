@@ -52,7 +52,7 @@ class User {
 }
 
 class CheckInfo {
-	public static HashSet<User> USER_DATA = new HashSet<User>();// ç”¨æˆ·æ•°æ®
+	public static HashSet<User> USER_DATA = new HashSet<User>();// ÓÃ»§Êı¾İ
 
 	public CheckInfo(HashSet<User> USER_DATA) {
 		this.USER_DATA = USER_DATA;
@@ -64,39 +64,39 @@ class CheckInfo {
 		int state = 1;
 
 		if (!password.equals(rePassWord)) {
-			result.append("ä¸¤æ¬¡è¾“å…¥å¯†ç ä¸ä¸€è‡´ï¼\r\n");
+			result.append("Á½´ÎÊäÈëÃÜÂë²»Ò»ÖÂ£¡\r\n");
 			state = 2;
 		}
 
 		if (biethday.length() != 10) {
-			result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\r\n");
 			state = 2;
 		} else {
 			for (int i = 0; i < biethday.length(); i++) {
 				Character thisChar = biethday.charAt(i);
 				if (i == 4 || i == 7) {
 					if (!(thisChar == '-')) {
-						result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\\r\\n");
+						result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\\r\\n");
 						state = 2;
 					}
 				} else {
 					if (!(Character.isDigit(thisChar))) {
-						result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\\r\\n");
+						result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\\r\\n");
 						state = 2;
 					}
 				}
 			}
 		}
 		if (phone.length() != 11) {
-			result.append("æ‰‹æœºå·ç ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÊÖ»úºÅÂë²»ÕıÈ·£¡\r\n");
 			state = 2;
 		} else if (!(phone.startsWith("13") || phone.startsWith("15") || phone.startsWith("17")
 				|| phone.startsWith("18"))) {
-			result.append("æ‰‹æœºå·ç ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÊÖ»úºÅÂë²»ÕıÈ·£¡\r\n");
 			state = 2;
 		}
 		if (!email.contains("@")) {
-			result.append("é‚®ç®±ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÓÊÏä²»ÕıÈ·£¡\r\n");
 			state = 2;
 		}
 		if (state == 1) {
@@ -110,11 +110,11 @@ class CheckInfo {
 			User newUser = new User(userNAme, rePassWord, dateBirthday, phone, email);
 
 			if (!USER_DATA.add(newUser)) {
-				result.append("ç”¨æˆ·é‡å¤ï¼");
+				result.append("ÓÃ»§ÖØ¸´£¡");
 				state = 2;
 			}
 			if (state == 1) {
-				result.append("æ³¨å†ŒæˆåŠŸï¼");
+				result.append("×¢²á³É¹¦£¡");
 			}
 		}
 		return result.toString();
@@ -122,32 +122,32 @@ class CheckInfo {
 }
 
 public class UserRegister {
-	public static HashSet<User> USER_DATA = new HashSet<User>();// ç”¨æˆ·æ•°æ®
+	public static HashSet<User> USER_DATA = new HashSet<User>();// ÓÃ»§Êı¾İ
 
 	public static void main(String[] args) {
 		initData();
 		Scanner scan = new Scanner(System.in);
-		System.out.print("è¯·è¾“å…¥ç”¨æˆ·å");
+		System.out.print("ÇëÊäÈëÓÃ»§Ãû");
 		String userName = scan.nextLine();
-		System.out.print("è¯·è¾“å…¥å¯†ç ");
+		System.out.print("ÇëÊäÈëÃÜÂë");
 		String password = scan.nextLine();
-		System.out.print("è¯·è¾“å…¥é‡å¤å¯†ç ");
+		System.out.print("ÇëÊäÈëÖØ¸´ÃÜÂë");
 		String repassword = scan.nextLine();
-		System.out.print("å‡ºç”Ÿæ—¥æœŸ");
+		System.out.print("³öÉúÈÕÆÚ");
 		String birthday = scan.nextLine();
-		System.out.print("æ‰‹æœºå·ç ");
+		System.out.print("ÊÖ»úºÅÂë");
 		String telNumber = scan.nextLine();
-		System.out.print("ç”µå­é‚®ç®±");
+		System.out.print("µç×ÓÓÊÏä");
 		String email = scan.nextLine();
 
 		CheckInfo checkInfo = new CheckInfo(USER_DATA);
 		String result = checkInfo.checkAction(userName, password, repassword, birthday, telNumber, email);
-		System.out.println("æ³¨å†Œç»“æœï¼š" + result);
+		System.out.println("×¢²á½á¹û£º" + result);
 	}
 
 	private static void initData() {
-		User user = new User("å¼ æ­£", "zz,123", new Date(), "18810319240", "zhangzheng@itcast.cn");
-		User user1 = new User("å‘¨ç¦", "zq,123", new Date(), "18618121193", "zhouqi@itcast.cn");
+		User user = new User("ÕÅÕı", "zz,123", new Date(), "18810319240", "zhangzheng@itcast.cn");
+		User user1 = new User("ÖÜçù", "zq,123", new Date(), "18618121193", "zhouqi@itcast.cn");
 		USER_DATA.add(user);
 		USER_DATA.add(user1);
 	}

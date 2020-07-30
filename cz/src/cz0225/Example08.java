@@ -1,15 +1,15 @@
 package cz0225;
 
 /*
- * is...else...è¯­å¥çš„ä½¿ç”¨
+ * is...else...Óï¾äµÄÊ¹ÓÃ
  */
 public class Example08 {
 	public static void main(String[] args) {
 		int num = 19;
 		if (num % 2 == 0) {
-			System.out.println("numæ˜¯ä¸€ä¸ªå¶æ•°");
+			System.out.println("numÊÇÒ»¸öÅ¼Êı");
 		} else {
-			System.out.println("numæ˜¯ä¸€ä¸ªå¥‡æ•°");
+			System.out.println("numÊÇÒ»¸öÆæÊı");
 		}
 	}
 }

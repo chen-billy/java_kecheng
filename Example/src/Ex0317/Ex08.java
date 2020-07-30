@@ -1,22 +1,22 @@
 package Ex0317;
 
 /*
- * finalä¿®é¥°æˆå‘˜å˜é‡
+ * finalĞŞÊÎ³ÉÔ±±äÁ¿
  */
-//å®šä¹‰Studentç±»
+//¶¨ÒåStudentÀà
 class Student {
-	final String name = "éŸ©å¼º";// ä¸ºæˆå‘˜å˜é‡èµ‹å€¼
+	final String name = "º«Ç¿";// Îª³ÉÔ±±äÁ¿¸³Öµ
 	
-	// å®šä¹‰introduceæ–¹æ³•ï¼Œæ‰“å°å­¦ç”Ÿä¿¡æ¯
+	// ¶¨Òåintroduce·½·¨£¬´òÓ¡Ñ§ÉúĞÅÏ¢
 	public void introduce() {
-		System.out.println("æˆ‘å«" + name + "æ˜¯ä¼ æ™ºæ’­å®¢å­¦ç”Ÿ");
+		System.out.println("ÎÒ½Ğ" + name + "ÊÇ´«ÖÇ²¥¿ÍÑ§Éú");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex08 {
 	public static void main(String[] args) {
-		Student stu = new Student(); // åˆ›å»ºStudentç±»çš„å¯¹è±¡
-		stu.introduce();// è°ƒç”¨Studentç±»ä¸­çš„æ–¹æ³•
+		Student stu = new Student(); // ´´½¨StudentÀàµÄ¶ÔÏó
+		stu.introduce();// µ÷ÓÃStudentÀàÖĞµÄ·½·¨
 	}
 }

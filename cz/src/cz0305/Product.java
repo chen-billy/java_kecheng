@@ -1,11 +1,11 @@
 package cz0305;
 
 /*
- * å•†å“ç±»
- * æè¿°å•†å“è¿™ä¸ªäº‹ç‰©
+ * ÉÌÆ·Àà
+ * ÃèÊöÉÌÆ·Õâ¸öÊÂÎï
  */
 public class Product {
-	private String proName;// å•†å“å
+	private String proName;// ÉÌÆ·Ãû
 
 	public String getProNmae() {
 		return proName;

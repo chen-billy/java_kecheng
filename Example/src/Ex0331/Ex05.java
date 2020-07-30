@@ -1,22 +1,22 @@
 package Ex0331;
 
 /*
- * Stringç±»çš„åˆ¤æ–­æ“ä½œ
- * 	æ“ä½œå­—ç¬¦ä¸²æ—¶ï¼Œç»å¸¸éœ€è¦å¯¹å­—ç¬¦ä¸²è¿›è¡Œä¸€äº›åˆ¤æ–­ï¼Œå¦‚åˆ¤æ–­å­—ç¬¦å‡½æ•°æ˜¯å¦ä»¥æŒ‡å®šçš„å­—ç¬¦ä¸²å¼€å§‹ã€ç»“æŸï¼Œæ˜¯å¦åŒ…å«æŒ‡å®šçš„å­—ç¬¦ä¸²ï¼Œå­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºç­‰
- * 	public boolean startsWithï¼ˆString strï¼‰åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥å­—ç¬¦ä¸²Strå¼€å¤´
- * 	public boolean endsWithï¼ˆString strï¼‰åˆ¤æ–­æ˜¯å¦ä»¥å­—ç¬¦ä¸²ngç»“å°¾
- * 	public boolean containsï¼ˆString strï¼‰åˆ¤æ–­æ˜¯å¦åŒ…å«å­—ç¬¦ä¸²tri
- * 	public boolean isEmptyï¼ˆï¼‰åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©º
- * 	public boolean equalsï¼ˆString strï¼‰åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰
+ * StringÀàµÄÅĞ¶Ï²Ù×÷
+ * 	²Ù×÷×Ö·û´®Ê±£¬¾­³£ĞèÒª¶Ô×Ö·û´®½øĞĞÒ»Ğ©ÅĞ¶Ï£¬ÈçÅĞ¶Ï×Ö·ûº¯ÊıÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®¿ªÊ¼¡¢½áÊø£¬ÊÇ·ñ°üº¬Ö¸¶¨µÄ×Ö·û´®£¬×Ö·û´®ÊÇ·ñÎª¿ÕµÈ
+ * 	public boolean startsWith£¨String str£©ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔ×Ö·û´®Str¿ªÍ·
+ * 	public boolean endsWith£¨String str£©ÅĞ¶ÏÊÇ·ñÒÔ×Ö·û´®ng½áÎ²
+ * 	public boolean contains£¨String str£©ÅĞ¶ÏÊÇ·ñ°üº¬×Ö·û´®tri
+ * 	public boolean isEmpty£¨£©ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ
+ * 	public boolean equals£¨String str£©ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ
  */
 public class Ex05 {
 	public static void main(String[] args) {
-		String s1 = "String";// å£°æ˜ä¸€ä¸ªå­—ç¬¦ä¸²
+		String s1 = "String";// ÉùÃ÷Ò»¸ö×Ö·û´®
 		String s2 = "Str";
-		System.out.println("åˆ¤æ–­æ˜¯å¦ä»¥å­—ç¬¦ä¸²Strå¼€å¤´ï¼š" + s1.startsWith("Str"));
-		System.out.println("åˆ¤æ–­æ˜¯å¦ä»¥å­—ç¬¦ä¸²ngç»“å°¾ï¼š" + s1.endsWith("ng"));
-		System.out.println("åˆ¤æ–­æ˜¯å¦åŒ…å«å­—ç¬¦ä¸²triï¼š" + s1.contains("tri"));
-		System.out.println("åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºï¼š" + s1.isEmpty());
-		System.out.println("åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼š" + s2.equals(s2));
+		System.out.println("ÅĞ¶ÏÊÇ·ñÒÔ×Ö·û´®Str¿ªÍ·£º" + s1.startsWith("Str"));
+		System.out.println("ÅĞ¶ÏÊÇ·ñÒÔ×Ö·û´®ng½áÎ²£º" + s1.endsWith("ng"));
+		System.out.println("ÅĞ¶ÏÊÇ·ñ°üº¬×Ö·û´®tri£º" + s1.contains("tri"));
+		System.out.println("ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ£º" + s1.isEmpty());
+		System.out.println("ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£º" + s2.equals(s2));
 	}
 }

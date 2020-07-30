@@ -1,10 +1,10 @@
 package Ex0402;
 
 /*
- * æ‹†ç®±ï¼šæ‹†ç®±æŒ‡å°†å¼•ç”¨æ•°æ®ç±»å‹çš„å¯¹è±¡è½¬ä¸ºåŸºæœ¬æ•°æ®ç±»å‹
+ * ²ğÏä£º²ğÏäÖ¸½«ÒıÓÃÊı¾İÀàĞÍµÄ¶ÔÏó×ªÎª»ù±¾Êı¾İÀàĞÍ
  * 
- * Integerç±»çš„æ–¹æ³•
- * 	public int intValueï¼ˆï¼‰ä»¥intç±»å‹è¿”å›è¯¥Integerçš„å€¼
+ * IntegerÀàµÄ·½·¨
+ * 	public int intValue£¨£©ÒÔintÀàĞÍ·µ»Ø¸ÃIntegerµÄÖµ
  */
 public class Ex12 {
 	public static void main(String[] args) {

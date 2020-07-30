@@ -1,7 +1,7 @@
 package cz0225;
 
 /*
- * 鏁版嵁绮惧害涓㈠け
+ * 数据精度丢失
  */
 public class Example02 {
 	public static void main(String[] args) {

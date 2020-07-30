@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * 璋冪敤涓嶅悓鏂规硶
+ * 调用不同方法
  */
 public class Ex22 {
 	public static void main(String[] args) {

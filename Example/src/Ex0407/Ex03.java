@@ -4,14 +4,14 @@ import java.util.*;
 
 public class Ex03 {
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList(); // åˆ›å»ºArrayListé›†åˆ
-		list.add("data_1"); // å‘è¯¥é›†åˆä¸­æ·»åŠ å­—ç¬¦ä¸²
+		ArrayList list = new ArrayList(); // ´´½¨ArrayList¼¯ºÏ
+		list.add("data_1"); // Ïò¸Ã¼¯ºÏÖĞÌí¼Ó×Ö·û´®
 		list.add("data_2");
 		list.add("data_3");
 		list.add("data_4");
-		Iterator it = list.iterator(); // è·å–Iteratorå¯¹è±¡
-		while (it.hasNext()) {// åˆ¤æ–­ArrayListä¸­æ˜¯å¦å­˜åœ¨ä¸‹ä¸€ä¸ªå…ƒç´ 
-			Object obj = it.next();// å–å‡ºArrayListé›†åˆä¸­çš„å…ƒç´ 
+		Iterator it = list.iterator(); // »ñÈ¡Iterator¶ÔÏó
+		while (it.hasNext()) {// ÅĞ¶ÏArrayListÖĞÊÇ·ñ´æÔÚÏÂÒ»¸öÔªËØ
+			Object obj = it.next();// È¡³öArrayList¼¯ºÏÖĞµÄÔªËØ
 			System.out.println(obj);
 		}
 	}

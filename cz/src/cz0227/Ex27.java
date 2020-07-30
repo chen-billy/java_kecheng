@@ -1,11 +1,11 @@
 package cz0227;
 
 /*
- * æ•°ç»„çš„è¶Šç•Œå¼‚å¸¸
+ * Êı×éµÄÔ½½çÒì³£
  */
 public class Ex27 {
 	public static void main(String[] args) {
 		int[] arr = new int[4];
-		System.out.println("arr[0]=" + arr[4]);// é€šè¿‡ç´¢å¼•4è®¿é—®å…ƒç´ ï¼ˆæ•°ç»„è¶Šç•Œï¼‰
+		System.out.println("arr[0]=" + arr[4]);// Í¨¹ıË÷Òı4·ÃÎÊÔªËØ£¨Êı×éÔ½½ç£©
 	}
 }

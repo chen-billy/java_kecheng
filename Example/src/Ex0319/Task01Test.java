@@ -1,18 +1,18 @@
 package Ex0319;
 
 /*
- * æµ‹è¯•ç±»
+ * ²âÊÔÀà
  */
 public class Task01Test {
 	public static void main(String[] args) {
-		// åˆ›å»ºç”µè„‘ç±»å¯¹è±¡
+		// ´´½¨µçÄÔÀà¶ÔÏó
 		Computer c = new Computer();
-		// å‘ç”µè„‘ä¸­æ·»åŠ USBè®¾å¤‡ï¼Œé¼ æ ‡ã€é”®ç›˜å’Œéº¦å…‹é£è®¾å¤‡
+		// ÏòµçÄÔÖĞÌí¼ÓUSBÉè±¸£¬Êó±ê¡¢¼üÅÌºÍÂó¿Ë·çÉè±¸
 		c.add(new Mouse());
 		c.add(new Mic());
 		c.add(new KeyBoard());
-		c.powerOn();// è°ƒç”¨ç”µè„‘çš„å¯åŠ¨æ–¹æ³•
+		c.powerOn();// µ÷ÓÃµçÄÔµÄÆô¶¯·½·¨
 		System.out.println();
-		c.powerOff();// è°ƒç”¨ç”µè„‘çš„å…³æœºæ–¹æ³•
+		c.powerOff();// µ÷ÓÃµçÄÔµÄ¹Ø»ú·½·¨
 	}
 }

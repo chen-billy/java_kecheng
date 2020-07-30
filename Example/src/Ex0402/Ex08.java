@@ -3,13 +3,13 @@ package Ex0402;
 import java.util.Random;
 
 /*
- * ä½¿ç”¨æ„é€ æ–¹æ³•Randomï¼ˆï¼‰äº§ç”Ÿéšæœºæ•°
- * 	public int nextIntï¼ˆint nï¼‰0~nä¹‹é—´çš„éšæœºæ•´æ•°ï¼ŒåŒ…å«0ï¼Œä¸åŒ…å«n
+ * Ê¹ÓÃ¹¹Ôì·½·¨Random£¨£©²úÉúËæ»úÊı
+ * 	public int nextInt£¨int n£©0~nÖ®¼äµÄËæ»úÕûÊı£¬°üº¬0£¬²»°üº¬n
  */
 public class Ex08 {
 	public static void main(String[] args) {
-		Random r = new Random();// ä¸ä¼ å…¥ç§å­
-		// éšæœºäº§ç”Ÿ10ä¸ª[0,100)ä¹‹é—´çš„æ•´æ•°
+		Random r = new Random();// ²»´«ÈëÖÖ×Ó
+		// Ëæ»ú²úÉú10¸ö[0,100)Ö®¼äµÄÕûÊı
 		for (int x = 0; x < 10; x++) {
 			System.out.println(r.nextInt(100));
 		}

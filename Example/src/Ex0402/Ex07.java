@@ -1,23 +1,23 @@
 package Ex0402;
 
 /*
- * Mathç±»ä¸­æ¯”è¾ƒå¸¸è§çš„æ–¹æ³•
- * 	public static int absï¼ˆint aï¼‰è¿”å›å‚æ•°çš„ç»å¯¹å€¼
- * 	public static double ceilï¼ˆdouble aï¼‰è¿”å›å¤§äºå‚æ•°çš„æœ€å°æ•´æ•°
- * 	public static double floorï¼ˆdouble a)è¿”å›å°äºå‚æ•°çš„æœ€å¤§æ•´æ•°
- * 	public static long roundï¼ˆdounle aï¼‰å››èˆäº”å…¥
- * 	public static float maxï¼ˆfloat a, float bï¼‰è¿”å›ä¸¤ä¸ªæ•°çš„è¾ƒå¤§å€¼
- * 	public static double minï¼ˆdouble a, double bï¼‰è¿”å›ä¸¤ä¸ªæ•°çš„è¾ƒå°å€¼
- * 	public static double randomï¼ˆï¼‰è¿”å›ä¸€ä¸ªå¤§äºç­‰äº0.0å°äº1.0éšæœºå°æ•°
+ * MathÀàÖĞ±È½Ï³£¼ûµÄ·½·¨
+ * 	public static int abs£¨int a£©·µ»Ø²ÎÊıµÄ¾ø¶ÔÖµ
+ * 	public static double ceil£¨double a£©·µ»Ø´óÓÚ²ÎÊıµÄ×îĞ¡ÕûÊı
+ * 	public static double floor£¨double a)·µ»ØĞ¡ÓÚ²ÎÊıµÄ×î´óÕûÊı
+ * 	public static long round£¨dounle a£©ËÄÉáÎåÈë
+ * 	public static float max£¨float a, float b£©·µ»ØÁ½¸öÊıµÄ½Ï´óÖµ
+ * 	public static double min£¨double a, double b£©·µ»ØÁ½¸öÊıµÄ½ÏĞ¡Öµ
+ * 	public static double random£¨£©·µ»ØÒ»¸ö´óÓÚµÈÓÚ0.0Ğ¡ÓÚ1.0Ëæ»úĞ¡Êı
  */
 public class Ex07 {
 	public static void main(String[] args) {
-		System.out.println("è®¡ç®—ç»å¯¹å€¼çš„ç»“æœï¼š" + Math.abs(-1));
-		System.out.println("æ±‚å¤§äºå‚æ•°çš„æœ€å°æ•´æ•°ï¼š" + Math.ceil(5.6));
-		System.out.println("æ±‚å°äºå‚æ•°çš„æœ€å¤§æ•´æ•°ï¼š" + Math.floor(-4.2));
-		System.out.println("å¯¹å°æ•°è¿›è¡Œå››èˆäº”å…¥åçš„ç»“æœï¼š" + Math.round(-4.6));
-		System.out.println("æ±‚ä¸¤ä¸ªæ•°çš„è¾ƒå¤§å€¼ï¼š" + Math.max(2.1, -2.1));
-		System.out.println("æ±‚ä¸¤ä¸ªæ•°çš„è¾ƒå°å€¼ï¼š" + Math.min(2.1, -2.1));
-		System.out.println("ç”Ÿæˆä¸€ä¸ªå¤§äºç­‰äº0.0å°äº1.0éšæœºå€¼ï¼š" + Math.random());
+		System.out.println("¼ÆËã¾ø¶ÔÖµµÄ½á¹û£º" + Math.abs(-1));
+		System.out.println("Çó´óÓÚ²ÎÊıµÄ×îĞ¡ÕûÊı£º" + Math.ceil(5.6));
+		System.out.println("ÇóĞ¡ÓÚ²ÎÊıµÄ×î´óÕûÊı£º" + Math.floor(-4.2));
+		System.out.println("¶ÔĞ¡Êı½øĞĞËÄÉáÎåÈëºóµÄ½á¹û£º" + Math.round(-4.6));
+		System.out.println("ÇóÁ½¸öÊıµÄ½Ï´óÖµ£º" + Math.max(2.1, -2.1));
+		System.out.println("ÇóÁ½¸öÊıµÄ½ÏĞ¡Öµ£º" + Math.min(2.1, -2.1));
+		System.out.println("Éú³ÉÒ»¸ö´óÓÚµÈÓÚ0.0Ğ¡ÓÚ1.0Ëæ»úÖµ£º" + Math.random());
 	}
 }

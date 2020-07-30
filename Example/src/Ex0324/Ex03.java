@@ -1,45 +1,45 @@
 package Ex0324;
 
 /*
- * å¤šæ€ä¸­çš„è½¬å‹
+ * ¶àÌ¬ÖĞµÄ×ªĞÍ
  */
-//å®šä¹‰Animalæ¥å£
+//¶¨ÒåAnimal½Ó¿Ú
 interface Animal03 {
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•shoutï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨shout£¨£©
 	public abstract void shout();
 }
 
-//å®šä¹‰Catç±»å®ç°Animalæ¥å£
+//¶¨ÒåCatÀàÊµÏÖAnimal½Ó¿Ú
 class Cat03 implements Animal03 {
-	// å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+	// ÊµÏÖshout£¨£©·½·¨
 	public void shout() {
-		System.out.println("å–µå–µ...");
+		System.out.println("ß÷ß÷...");
 	}
 
-	// å®šä¹‰sleepï¼ˆï¼‰æ–¹æ³•
+	// ¶¨Òåsleep£¨£©·½·¨
 	public void sleep() {
-		System.out.println("çŒ«ç¡è§‰...");
+		System.out.println("Ã¨Ë¯¾õ...");
 	}
 }
 
-//å®šä¹‰Dogç±»å®ç°Animalæ¥å£
+//¶¨ÒåDogÀàÊµÏÖAnimal½Ó¿Ú
 class Dog03 implements Animal03{
-	//å®ç°shoutï¼ˆï¼‰æ–¹æ³•
+	//ÊµÏÖshout£¨£©·½·¨
 	public void shout() {
-		System.out.println("æ±ªæ±ª...");
+		System.out.println("ÍôÍô...");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex03 {
 	public static void main(String[] args) {
-		Dog03 dog = new Dog03();// åˆ›å»ºDogç±»çš„å¯¹è±¡
-		animalShout03(dog);// è°ƒç”¨animalShoutï¼ˆï¼‰æ–¹æ³•ï¼Œå°†catä½œä¸ºå‚æ•°ä¼ å…¥
+		Dog03 dog = new Dog03();// ´´½¨DogÀàµÄ¶ÔÏó
+		animalShout03(dog);// µ÷ÓÃanimalShout£¨£©·½·¨£¬½«cat×÷Îª²ÎÊı´«Èë
 	}
 
-	// å®šä¹‰é™æ€æ–¹æ³•animalShoutï¼ˆï¼‰ï¼Œæ¥æ”¶ä¸€ä¸ªAnimalç±»å‹çš„å‚æ•°
+	// ¶¨Òå¾²Ì¬·½·¨animalShout£¨£©£¬½ÓÊÕÒ»¸öAnimalÀàĞÍµÄ²ÎÊı
 	public static void animalShout03(Animal03 animal) {
-		// å¯¹ä¼ é€’çš„å‚æ•°animalè¿›è¡Œåˆ¤æ–­ï¼Œå¦‚æœæ˜¯Catå¯¹è±¡ï¼Œå¼ºåˆ¶è½¬æˆCatç±»
+		// ¶Ô´«µİµÄ²ÎÊıanimal½øĞĞÅĞ¶Ï£¬Èç¹ûÊÇCat¶ÔÏó£¬Ç¿ÖÆ×ª³ÉCatÀà
 		if(animal instanceof Cat03) {
 			Cat03 cat = (Cat03)animal;
 			cat.shout();

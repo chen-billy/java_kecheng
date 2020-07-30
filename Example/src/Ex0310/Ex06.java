@@ -1,15 +1,15 @@
 package Ex0310;
 
 /*
- * thiså…³é”®å­—
- * ç”¨æ¥å¯¹è±¡å¼•ç”¨
- * åœ¨æ„é€ æ–¹æ³•ä¸­è°ƒç”¨å…¶ä»–æ„é€ æ–¹æ³•
+ * this¹Ø¼ü×Ö
+ * ÓÃÀ´¶ÔÏóÒıÓÃ
+ * ÔÚ¹¹Ôì·½·¨ÖĞµ÷ÓÃÆäËû¹¹Ôì·½·¨
  */
 class Per06 {
 	private String name;
 
 	public Per06() {
-		this("é»˜è®¤åå­—");
+		this("Ä¬ÈÏÃû×Ö");
 	}
 
 	public Per06(String name) {
@@ -17,7 +17,7 @@ class Per06 {
 	}
 
 	public void speak() {
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name);
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name);
 	}
 }
 

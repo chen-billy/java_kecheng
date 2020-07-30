@@ -1,35 +1,35 @@
 package Ex0310;
 
 /*
- * æ„é€ æ–¹æ³•çš„é‡è½½
+ * ¹¹Ôì·½·¨µÄÖØÔØ
  */
 class Per03 {
 	private String name;
 	private int age;
 
-	// å®šä¹‰ä¸¤ä¸ªå‚æ•°çš„æ„é€ æ–¹æ³•
+	// ¶¨ÒåÁ½¸ö²ÎÊıµÄ¹¹Ôì·½·¨
 	public Per03(String con_name, int con_age) {
 		name = con_name;
 		age = con_age;
 	}
 
-	// å®šä¹‰ä¸€ä¸ªå‚æ•°çš„æ„é€ æ–¹æ³•
+	// ¶¨ÒåÒ»¸ö²ÎÊıµÄ¹¹Ôì·½·¨
 	public Per03(String con_name) {
 		name = con_name;
 	}
 
 	public void speak() {
-		// æ‰“å°nameå’Œageçš„å€¼
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name + ",æˆ‘ä»Šå¹´" + age + "å²");
+		// ´òÓ¡nameºÍageµÄÖµ
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name + ",ÎÒ½ñÄê" + age + "Ëê");
 	}
 }
 
 public class Ex03 {
 	public static void main(String[] args) {
-		// åˆ†åˆ«åˆ›å»ºä¸¤ä¸ªå¯¹è±¡p1å’Œp2
-		Per03 p1 = new Per03("å°æ˜");
-		Per03 p2 = new Per03("å°çº¢", 20);
-		// é€šè¿‡å¯¹è±¡p1å’Œp2è°ƒç”¨speakæ–¹æ³•
+		// ·Ö±ğ´´½¨Á½¸ö¶ÔÏóp1ºÍp2
+		Per03 p1 = new Per03("Ğ¡Ã÷");
+		Per03 p2 = new Per03("Ğ¡ºì", 20);
+		// Í¨¹ı¶ÔÏóp1ºÍp2µ÷ÓÃspeak·½·¨
 		p1.speak();
 		p2.speak();
 	}

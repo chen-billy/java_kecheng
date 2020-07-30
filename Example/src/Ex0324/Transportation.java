@@ -1,15 +1,15 @@
 package Ex0324;
 
 /*
- * äº¤é€šå·¥å…·ç±»
+ * ½»Í¨¹¤¾ßÀà
  */
 public abstract class Transportation {
-	private String number;// ç¼–å·
-	private String model;// å‹å·
-	private String admin;// è¿è´§è´Ÿè´£äºº
+	private String number;// ±àºÅ
+	private String model;// ĞÍºÅ
+	private String admin;// ÔË»õ¸ºÔğÈË
 
 	public Transportation() {
-		super();// å¯çœç•¥
+		super();// ¿ÉÊ¡ÂÔ
 	}
 
 	public Transportation(String number, String model, String admin) {
@@ -18,10 +18,10 @@ public abstract class Transportation {
 		this.admin = admin;
 	}
 
-	// è¿è¾“æ–¹æ³•
+	// ÔËÊä·½·¨
 	public abstract void transport();
 
-	// ç¼–å·
+	// ±àºÅ
 	public String getNumber() {
 		return number;
 	}
@@ -30,7 +30,7 @@ public abstract class Transportation {
 		this.number = number;
 	}
 
-	// å‹å·
+	// ĞÍºÅ
 	public String getModel() {
 		return model;
 	}
@@ -39,7 +39,7 @@ public abstract class Transportation {
 		this.model = model;
 	}
 
-	// è´Ÿè´£äºº
+	// ¸ºÔğÈË
 	public String getAdmin() {
 		return admin;
 	}

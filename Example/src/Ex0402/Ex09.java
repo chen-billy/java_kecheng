@@ -3,12 +3,12 @@ package Ex0402;
 import java.util.Random;
 
 /*
- * ä½¿ç”¨æ„é€ æ–¹æ³•Randomï¼ˆlong seedï¼‰äº§ç”Ÿéšæœºæ•°
+ * Ê¹ÓÃ¹¹Ôì·½·¨Random£¨long seed£©²úÉúËæ»úÊı
  */
 public class Ex09 {
 	public static void main(String[] args) {
-		Random r = new Random(13);// åˆ›å»ºå¯¹è±¡æ—¶ä¼ å…¥ç§å­
-		// éšæœºäº§ç”Ÿ10ä¸ª[0,100)ä¹‹é—´çš„æ•´æ•°
+		Random r = new Random(13);// ´´½¨¶ÔÏóÊ±´«ÈëÖÖ×Ó
+		// Ëæ»ú²úÉú10¸ö[0,100)Ö®¼äµÄÕûÊı
 		for (int x = 0; x < 10; x++) {
 			System.out.println(r.nextInt(100));
 		}

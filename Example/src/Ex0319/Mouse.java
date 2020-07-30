@@ -1,16 +1,16 @@
 package Ex0319;
 
 /*
- * é¼ æ ‡
+ * Êó±ê
  */
 public class Mouse implements USB {
 
 	public void turnOn() {
-		System.out.println("é¼ æ ‡å¯åŠ¨äº†");
+		System.out.println("Êó±êÆô¶¯ÁË");
 	}
 
 	public void turnOff() {
-		System.out.println("é¼ æ ‡å…³é—­äº†");
+		System.out.println("Êó±ê¹Ø±ÕÁË");
 	}
 
 }

@@ -1,24 +1,24 @@
 package Ex0310;
 
 /*
- * åƒåœ¾å›æ”¶
+ * À¬»ø»ØÊÕ
  */
 class Per07 {
-	// ä¸‹é¢å®šä¹‰çš„finalizeæ–¹æ³•ä¼šåœ¨å¯¹è±¡åƒåœ¾è¢«å›æ”¶ä¹‹å‰è°ƒç”¨
+	// ÏÂÃæ¶¨ÒåµÄfinalize·½·¨»áÔÚ¶ÔÏóÀ¬»ø±»»ØÊÕÖ®Ç°µ÷ÓÃ
 	public void finalize() {
-		System.out.println("å¯¹è±¡ä½œä¸ºåƒåœ¾å›æ”¶...");
+		System.out.println("¶ÔÏó×÷ÎªÀ¬»ø»ØÊÕ...");
 	}
 }
 
 public class Ex07 {
 	public static void main(String[] args) throws Exception {
-		// ä¸‹é¢æ˜¯åˆ›å»ºäº†ä¸¤ä¸ªPer07å¯¹è±¡
+		// ÏÂÃæÊÇ´´½¨ÁËÁ½¸öPer07¶ÔÏó
 		Per07 p1 = new Per07();
 		Per07 p2 = new Per07();
-		// ä¸‹é¢å°†å˜é‡ç½®ä¸ºnullï¼Œè®©å¯¹è±¡æˆä¸ºåƒåœ¾
+		// ÏÂÃæ½«±äÁ¿ÖÃÎªnull£¬ÈÃ¶ÔÏó³ÉÎªÀ¬»ø
 		p1 = null;
 		p2 = null;
-		// è°ƒç”¨æ–¹æ³•è¿›è¡Œåƒåœ¾å›æ”¶
+		// µ÷ÓÃ·½·¨½øĞĞÀ¬»ø»ØÊÕ
 		System.gc();
 		Thread.sleep(5000);
 	}

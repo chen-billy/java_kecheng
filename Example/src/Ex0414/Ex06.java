@@ -4,14 +4,14 @@ import java.util.*;
 
 public class Ex06 {
 	public static void main(String[] args) {
-		Properties p = new Properties(); //åˆ›å»ºPropertieså¯¹è±¡
+		Properties p = new Properties(); //´´½¨Properties¶ÔÏó
 		p.setProperty("Backgroup-color", "red");
 		p.setProperty("Font-size", "14px");
 		p.setProperty("Language", "chinese");
 		Enumeration names = p.propertyNames();
-		while (names.hasMoreElements()) {// å¾ªç¯éå†æ‰€æœ‰çš„é”®
+		while (names.hasMoreElements()) {// Ñ­»·±éÀúËùÓĞµÄ¼ü
 			String key = (String) names.nextElement();
-			String value = p.getProperty(key);// è·å–å¯¹åº”é”®çš„å€¼
+			String value = p.getProperty(key);// »ñÈ¡¶ÔÓ¦¼üµÄÖµ
 			System.out.println(key + "=" +value);
 		}
 	}

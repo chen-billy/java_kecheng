@@ -1,14 +1,14 @@
 package cz0225;
 
 /*
- * forå¾ªç¯
+ * forÑ­»·
  */
 public class Example14 {
 	public static void main(String[] args) {
-		int sum = 0;// å®šä¹‰å˜é‡sumï¼Œç”¨äºè®°ä½ç´¯åŠ çš„å’Œ
-		for (int i = 1; i <= 4; i++) {// içš„å€¼ä¼šåœ¨1~4ä¹‹é—´å˜åŒ–
-			sum += i;// å®ç°sumå˜é‡ä¸içš„ç´¯åŠ 
+		int sum = 0;// ¶¨Òå±äÁ¿sum£¬ÓÃÓÚ¼Ç×¡ÀÛ¼ÓµÄºÍ
+		for (int i = 1; i <= 4; i++) {// iµÄÖµ»áÔÚ1~4Ö®¼ä±ä»¯
+			sum += i;// ÊµÏÖsum±äÁ¿ÓëiµÄÀÛ¼Ó
 		}
-		System.out.println("sum = " + sum);// æ‰“å°ç´¯åŠ çš„å’Œ
+		System.out.println("sum = " + sum);// ´òÓ¡ÀÛ¼ÓµÄºÍ
 	}
 }

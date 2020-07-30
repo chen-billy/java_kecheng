@@ -12,36 +12,36 @@ class Student {
 		this.name = name;
 	}
 
-	// é‡å†™toStringï¼ˆï¼‰æ–¹æ³•
+	// ÖØĞ´toString£¨£©·½·¨
 	public String toString() {
 		return id + ":" + name;
 	}
 
-	// é‡å†™hasCodeæ–¹æ³•
+	// ÖØĞ´hasCode·½·¨
 	public int hashCode() {
-		return id.hashCode();// è¿”å›idå±æ€§çš„å“ˆå¸Œå€¼
+		return id.hashCode();// ·µ»ØidÊôĞÔµÄ¹şÏ£Öµ
 	}
 
-	// é‡å†™equalsæ–¹æ³•
+	// ÖØĞ´equals·½·¨
 	public boolean equals(Object obj) {
-		if (this == obj) {// åˆ¤æ–­æ˜¯å¦æ˜¯åŒä¸€ä¸ªå¯¹è±¡
-			return true;// å¦‚æœæ˜¯ï¼Œç›´æ¥è¿”å›true
+		if (this == obj) {// ÅĞ¶ÏÊÇ·ñÊÇÍ¬Ò»¸ö¶ÔÏó
+			return true;// Èç¹ûÊÇ£¬Ö±½Ó·µ»Øtrue
 		}
-		if (!(obj instanceof Student)) {// åˆ¤æ–­å¯¹è±¡æ˜¯ä¸ºStudentç±»å‹
-			return false;// å¦‚æœå¯¹è±¡ä¸æ˜¯Studentç±»å‹ï¼Œè¿”å›false
+		if (!(obj instanceof Student)) {// ÅĞ¶Ï¶ÔÏóÊÇÎªStudentÀàĞÍ
+			return false;// Èç¹û¶ÔÏó²»ÊÇStudentÀàĞÍ£¬·µ»Øfalse
 		}
-		Student stu = (Student) obj;// å°†å¯¹è±¡å¼ºè½¬ä¸ºStudentç±»å‹
-		boolean b = this.id.equals(stu.id);// åˆ¤æ–­idå€¼æ˜¯å¦ç›¸åŒ
-		return b;// è¿”å›åˆ¤æ–­ç»“æœ
+		Student stu = (Student) obj;// ½«¶ÔÏóÇ¿×ªÎªStudentÀàĞÍ
+		boolean b = this.id.equals(stu.id);// ÅĞ¶ÏidÖµÊÇ·ñÏàÍ¬
+		return b;// ·µ»ØÅĞ¶Ï½á¹û
 	}
 }
 public class Hs_Ex {
 	public static void main(String[] args) {
 		HashSet set = new HashSet();
-		set.add("éƒ‘æµ·å½¬");
-		set.add("æ²ˆæ™“æ¯…");
-		set.add("é»„å¿—ç¿”");
-		set.add("é»„ç„±è£");
+		set.add("Ö£º£±ò");
+		set.add("ÉòÏşÒã");
+		set.add("»ÆÖ¾Ïè");
+		set.add("»ÆìÍÈÙ");
 		System.out.println(set);
 		Iterator it = set.iterator();
 		while (it.hasNext()) {
@@ -49,10 +49,10 @@ public class Hs_Ex {
 			System.out.println(obj);
 		}
 		HashSet hs = new HashSet();
-		Student stu1 = new Student("1", "éƒ‘æµ·å½¬");
-		Student stu2 = new Student("2", "é»„ç„±è£");
-		Student stu3 = new Student("2", "é»„ç„±è£");
-		Student stu4 = new Student("4", "é»„å¿—ç¿”");
+		Student stu1 = new Student("1", "Ö£º£±ò");
+		Student stu2 = new Student("2", "»ÆìÍÈÙ");
+		Student stu3 = new Student("2", "»ÆìÍÈÙ");
+		Student stu4 = new Student("4", "»ÆÖ¾Ïè");
 		hs.add(stu1);
 		hs.add(stu2);
 		hs.add(stu3);

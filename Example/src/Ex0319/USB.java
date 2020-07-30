@@ -1,10 +1,10 @@
 package Ex0319;
 
 /*
- * å®šä¹‰ä¸€ä¸ªåä¸ºUSBçš„æ¥å£
+ * ¶¨ÒåÒ»¸öÃûÎªUSBµÄ½Ó¿Ú
  */
 public interface USB {
-	public void turnOn();// å¯åŠ¨
+	public void turnOn();// Æô¶¯
 
-	public void turnOff();// å…³é—­
+	public void turnOff();// ¹Ø±Õ
 }

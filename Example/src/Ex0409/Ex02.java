@@ -6,20 +6,20 @@ class Student01 {
 	String id;
 	String name;
 
-	public Student01(String id, String name) {// åˆ›å»ºæ„é€ æ–¹æ³•
+	public Student01(String id, String name) {// ´´½¨¹¹Ôì·½·¨
 		this.id = id;
 		this.name = name;
 	}
 
-	public String toString() {// é‡å†™toStringï¼ˆï¼‰æ–¹æ³•
+	public String toString() {// ÖØĞ´toString£¨£©·½·¨
 		return id + ":" + name;
 	}
 }
 
 public class Ex02{
 	public static void main(String[] args) {
-		HashSet hs = new HashSet();// åˆ›å»ºHashSeté›†åˆ
-		Student01 stu1 = new Student01("1", "Jack");// åˆ›å»ºStudentå¯¹è±¡
+		HashSet hs = new HashSet();// ´´½¨HashSet¼¯ºÏ
+		Student01 stu1 = new Student01("1", "Jack");// ´´½¨Student¶ÔÏó
 		Student01 stu2 = new Student01("2", "Rose");
 		Student01 stu3 = new Student01("2", "Rose");
 		hs.add(stu1);

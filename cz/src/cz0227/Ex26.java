@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * 鏁扮粍闈欐�佸垵濮嬪寲
+ * 数组静态初始化
  */
 public class Ex26 {
 	public static void main(String[] args) {

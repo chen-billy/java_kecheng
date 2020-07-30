@@ -2,26 +2,26 @@ package cz0331;
 
 public class cz1 {
 	public static void main(String[] args) {
-		String str1 = new String();// åˆ›å»ºç©ºå­—ç¬¦ä¸²
-		String str2 = "chenzhe";// åˆ›å»ºè‡ªå·±å§“åæ‹¼éŸ³å­—æ¯çš„å­—ç¬¦ä¸²
-		// åˆ›å»ºå§“åå­—æ¯ä¸ºå­—ç¬¦æ•°ç»„çš„å­—ç¬¦ä¸²
+		String str1 = new String();// ´´½¨¿Õ×Ö·û´®
+		String str2 = "chenzhe";// ´´½¨×Ô¼ºĞÕÃûÆ´Òô×ÖÄ¸µÄ×Ö·û´®
+		// ´´½¨ĞÕÃû×ÖÄ¸Îª×Ö·ûÊı×éµÄ×Ö·û´®
 		char[] char1 = new char[] {'C','Z'};
 		String str3 = new String(char1);
-		//è¾“å‡º
-		System.out.println("ç¬¬ï¼ˆ1ï¼‰é¢˜ï¼š");
+		//Êä³ö
+		System.out.println("µÚ£¨1£©Ìâ£º");
 		System.out.println("a"+str1+"b");
 		System.out.println(str2);
 		System.out.println(str3);
-		System.out.println("ç¬¬ï¼ˆ2ï¼‰é¢˜ï¼š");
-		System.out.println("å­—ç¬¦ä¸²çš„é•¿åº¦ä¸ºï¼š" + str2.length());
-		System.out.println("å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å­—ç¬¦ï¼š" + str2.charAt(0));
-		System.out.println("å­—ç¬¦cç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + str2.indexOf('e'));
-		System.out.println("å­—ç¬¦cæœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + str2.lastIndexOf('e'));
-		System.out.println("å­å­—ç¬¦ä¸²ç¬¬ä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + str2.indexOf("he"));
-		System.out.println("å­å­—ç¬¦ä¸²æœ€åä¸€æ¬¡å‡ºç°çš„ä½ç½®ï¼š" + str2.lastIndexOf("he"));
-		System.out.println("ç¬¬ï¼ˆ3ï¼‰é¢˜ï¼š");
-		System.out.print("å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„åçš„ç»“æœï¼š");
-		char[] char2 = str2.toCharArray();// å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+		System.out.println("µÚ£¨2£©Ìâ£º");
+		System.out.println("×Ö·û´®µÄ³¤¶ÈÎª£º" + str2.length());
+		System.out.println("×Ö·û´®ÖĞµÚÒ»´Î×Ö·û£º" + str2.charAt(0));
+		System.out.println("×Ö·ûcµÚÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + str2.indexOf('e'));
+		System.out.println("×Ö·ûc×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + str2.lastIndexOf('e'));
+		System.out.println("×Ó×Ö·û´®µÚÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + str2.indexOf("he"));
+		System.out.println("×Ó×Ö·û´®×îºóÒ»´Î³öÏÖµÄÎ»ÖÃ£º" + str2.lastIndexOf("he"));
+		System.out.println("µÚ£¨3£©Ìâ£º");
+		System.out.print("½«×Ö·û´®×ª»»Îª×Ö·ûÊı×éºóµÄ½á¹û£º");
+		char[] char2 = str2.toCharArray();// ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
 		for (int i = 0; i < char2.length; i++) {
 			if (i != char2.length - 1) {
 				System.out.print(char2[i] + ",");
@@ -29,17 +29,17 @@ public class cz1 {
 				System.out.println(char2[i]);
 			}
 		}
-		System.out.println("å°†intå€¼è½¬æ¢ä¸ºStringç±»å‹ä¹‹åçš„ç»“æœï¼š" + String.valueOf(12));
-		System.out.println("å°†å­—ç¬¦ä¸²è½¬æ¢æˆå¤§å†™ä¹‹åçš„ç»“æœï¼š" + str2.toUpperCase());
-		System.out.println("ç¬¬ï¼ˆ4ï¼‰é¢˜ï¼š");
+		System.out.println("½«intÖµ×ª»»ÎªStringÀàĞÍÖ®ºóµÄ½á¹û£º" + String.valueOf(12));
+		System.out.println("½«×Ö·û´®×ª»»³É´óĞ´Ö®ºóµÄ½á¹û£º" + str2.toUpperCase());
+		System.out.println("µÚ£¨4£©Ìâ£º");
 		String str4 = "chen";
-		System.out.println("åˆ¤æ–­æ˜¯å¦ä»¥å­—ç¬¦ä¸²chenå¼€å¤´ï¼š" + str2.startsWith(str4));
-		System.out.println("åˆ¤æ–­æ˜¯å¦åŒ…å«å­—ç¬¦ä¸²chenï¼š" + str2.contains(str4));
-		System.out.println("åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼š" + str2.equals(str4));
-		System.out.println("ç¬¬ï¼ˆ5ï¼‰é¢˜ï¼š");
+		System.out.println("ÅĞ¶ÏÊÇ·ñÒÔ×Ö·û´®chen¿ªÍ·£º" + str2.startsWith(str4));
+		System.out.println("ÅĞ¶ÏÊÇ·ñ°üº¬×Ö·û´®chen£º" + str2.contains(str4));
+		System.out.println("ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£º" + str2.equals(str4));
+		System.out.println("µÚ£¨5£©Ìâ£º");
 		String str5 = "chen-zhe";
-		System.out.println("åå­—ï¼š" + str5.substring(5));
-		System.out.print("åˆ†å‰²åçš„å­—ç¬¦ä¸²æ•°ç»„ä¸­çš„å…ƒç´ ä¾æ¬¡ä¸ºï¼š");
+		System.out.println("Ãû×Ö£º" + str5.substring(5));
+		System.out.print("·Ö¸îºóµÄ×Ö·û´®Êı×éÖĞµÄÔªËØÒÀ´ÎÎª£º");
 		String[] char3 = str5.split("-");
 		for (int i = 0; i < char3.length; i++) {
 			if (i != char3.length - 1) {
@@ -48,13 +48,13 @@ public class cz1 {
 				System.out.println(char3[i]);
 			}
 		}
-		System.out.println("ç¬¬ï¼ˆ6ï¼‰é¢˜ï¼š");
+		System.out.println("µÚ£¨6£©Ìâ£º");
 		String str6 = "chen zhe is learning object-oriented programming";
 		String key = "ing";
 		int count = getKeyStringCount(str6, key);
 		System.out.println("count=" +count);
 	}
-	//è·å–å­—ä¸²åœ¨æ•´ä¸²ä¸­å‡ºç°çš„æ¬¡æ•°
+	//»ñÈ¡×Ö´®ÔÚÕû´®ÖĞ³öÏÖµÄ´ÎÊı
 	public static int getKeyStringCount(String str, String Key) {
 		int count = 0;
 		if(!str.contains(Key)) {

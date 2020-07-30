@@ -1,40 +1,40 @@
 package Ex0319;
 
 /*
- * æ¥å£çš„å®šä¹‰å’Œä½¿ç”¨
+ * ½Ó¿ÚµÄ¶¨ÒåºÍÊ¹ÓÃ
  */
-//å®šä¹‰äº†Animalæ¥å£
+//¶¨ÒåÁËAnimal½Ó¿Ú
 interface Animal02 {
-	// å®šä¹‰å…¨å±€å¸¸é‡ï¼Œé»˜è®¤ä¿®é¥°ç¬¦public static final
-	public static final String ANIMAL_BEHAVIOR = "åŠ¨ç‰©çš„è¡Œä¸º";
+	// ¶¨ÒåÈ«¾Ö³£Á¿£¬Ä¬ÈÏĞŞÊÎ·ûpublic static final
+	public static final String ANIMAL_BEHAVIOR = "¶¯ÎïµÄĞĞÎª";
 
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•breatheï¼ˆï¼‰ä¿®é¥°ç¬¦ï¼Œå›ºå®šä¸ºpublic abstract
+	// ¶¨Òå³éÏó·½·¨breathe£¨£©ĞŞÊÎ·û£¬¹Ì¶¨Îªpublic abstract
 	public abstract void breathe();
 
-	// å®šä¹‰æŠ½è±¡æ–¹æ³•runï¼ˆï¼‰
+	// ¶¨Òå³éÏó·½·¨run£¨£©
 	public abstract void run();
 }
 
-//å®šä¹‰Dogç±»å‹å®ç°Animalæ¥å£
+//¶¨ÒåDogÀàĞÍÊµÏÖAnimal½Ó¿Ú
 class Dog02 implements Animal02 {
-	// é‡å†™æ¥å£æŠ½è±¡æ–¹æ³•breatheï¼ˆï¼‰
+	// ÖØĞ´½Ó¿Ú³éÏó·½·¨breathe£¨£©
 	public void breathe() {
-		System.out.println(ANIMAL_BEHAVIOR + ":" + "ç‹—åœ¨å‘¼å¸");
+		System.out.println(ANIMAL_BEHAVIOR + ":" + "¹·ÔÚºôÎü");
 	}
 
-	// é‡å†™æ¥å£æŠ½è±¡æ–¹æ³•runï¼ˆï¼‰
+	// ÖØĞ´½Ó¿Ú³éÏó·½·¨run£¨£©
 	public void run() {
-		System.out.println(ANIMAL_BEHAVIOR + ":" + "ç‹—åœ¨å¥”è·‘");
+		System.out.println(ANIMAL_BEHAVIOR + ":" + "¹·ÔÚ±¼ÅÜ");
 	}
 }
 
-//å®šä¹‰æµ‹è¯•ç±»
+//¶¨Òå²âÊÔÀà
 public class Ex02 {
 	public static void main(String[] args) {
-		Dog02 dog = new Dog02();// åˆ›å»ºDogç±»å¯¹è±¡ï¼Œæ˜¯Animalæ¥å£çš„å®ç°ç±»çš„å¯¹è±¡
-		// ä½¿ç”¨å¯¹è±¡å.å¸¸é‡åçš„æ–¹å¼ï¼Œè¾“å‡ºæ¥å£ä¸­çš„å¸¸é‡
+		Dog02 dog = new Dog02();// ´´½¨DogÀà¶ÔÏó£¬ÊÇAnimal½Ó¿ÚµÄÊµÏÖÀàµÄ¶ÔÏó
+		// Ê¹ÓÃ¶ÔÏóÃû.³£Á¿ÃûµÄ·½Ê½£¬Êä³ö½Ó¿ÚÖĞµÄ³£Á¿
 		// System.out.println(dog.ANIMAL_BEHAVIOR);
-		// æ¥å£å.å¸¸é‡åçš„æ–¹å¼ï¼Œè¾“å‡ºæ¥å£ä¸­çš„å¸¸é‡
+		// ½Ó¿ÚÃû.³£Á¿ÃûµÄ·½Ê½£¬Êä³ö½Ó¿ÚÖĞµÄ³£Á¿
 		// System.out.println(Animal.ANIMAL_BEHAVIOR);
 		dog.breathe();
 		dog.run();

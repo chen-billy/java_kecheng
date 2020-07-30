@@ -1,22 +1,22 @@
 package cz0225;
 
 /*
- * if..else if...elseè¯­å¥çš„ä½¿ç”¨
+ * if..else if...elseÓï¾äµÄÊ¹ÓÃ
  */
 public class Example09 {
 	public static void main(String[] args) {
-		int grade = 75; // å®šä¹‰å­¦ç”Ÿæˆç»©
+		int grade = 75; // ¶¨ÒåÑ§Éú³É¼¨
 		if (grade > 80) {
-			// æ»¡è¶³æ¡ä»¶>80
-			System.out.println("è¯¥æˆç»©çš„ç­‰çº§ä¸ºä¼˜");
+			// Âú×ãÌõ¼ş>80
+			System.out.println("¸Ã³É¼¨µÄµÈ¼¶ÎªÓÅ");
 		} else if (grade > 70) {
-			// ä¸æ»¡è¶³>80,ä½†æ˜¯æ»¡è¶³>70
-			System.out.println("è¯¥æˆç»©çš„ç­‰çº§ä¸ºè‰¯");
+			// ²»Âú×ã>80,µ«ÊÇÂú×ã>70
+			System.out.println("¸Ã³É¼¨µÄµÈ¼¶ÎªÁ¼");
 		} else if (grade > 60) {
-			// ä¸æ»¡è¶³>70,ä½†æ˜¯æ»¡è¶³>60
-			System.out.println("è¯¥æˆç»©çš„ç­‰çº§ä¸ºä¸­");
+			// ²»Âú×ã>70,µ«ÊÇÂú×ã>60
+			System.out.println("¸Ã³É¼¨µÄµÈ¼¶ÎªÖĞ");
 		} else {
-			System.out.println("è¯¥æˆç»©çš„ç­‰çº§ä¸ºå·®");
+			System.out.println("¸Ã³É¼¨µÄµÈ¼¶Îª²î");
 		}
 	}
 }

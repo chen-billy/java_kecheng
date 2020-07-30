@@ -1,12 +1,12 @@
 package cz0303;
 
 /*
- * å®ç°ç±»çš„å°è£…                     
+ * ÊµÏÖÀàµÄ·â×°                     
  */
 class Student {
-	private String name;// å®šä¹‰Stringç±»å‹çš„nameå˜é‡ï¼Œå¹¶ä¸”å°†nameå±æ€§ç§æœ‰åŒ–
-	private int age;// å®šä¹‰intç±»å‹çš„ageå˜é‡ï¼Œå¹¶ä¸”å°†ageå±æ€§ç§æœ‰åŒ–
-	// ä¸‹é¢æ˜¯å…±æœ‰çš„ getXxx å’Œ setXxx æ–¹æ³•
+	private String name;// ¶¨ÒåStringÀàĞÍµÄname±äÁ¿£¬²¢ÇÒ½«nameÊôĞÔË½ÓĞ»¯
+	private int age;// ¶¨ÒåintÀàĞÍµÄage±äÁ¿£¬²¢ÇÒ½«ageÊôĞÔË½ÓĞ»¯
+	// ÏÂÃæÊÇ¹²ÓĞµÄ getXxx ºÍ setXxx ·½·¨
 
 	public String getName() {
 		return name;
@@ -21,24 +21,24 @@ class Student {
 	}
 
 	public void setAge(int stuAge) {
-		// ä¸‹é¢æ˜¯ä¼ å…¥çš„å‚æ•°è¿›è¡Œæ£€æŸ¥
+		// ÏÂÃæÊÇ´«ÈëµÄ²ÎÊı½øĞĞ¼ì²é
 		if (stuAge <= 0) {
-			System.out.println("å¯¹ä¸èµ·ï¼Œæ‚¨è¾“å…¥çš„å¹´é¾„ä¸å’Œæ³•");
+			System.out.println("¶Ô²»Æğ£¬ÄúÊäÈëµÄÄêÁä²»ºÍ·¨");
 		} else {
-			age = stuAge;// å¯¹å±æ€§èµ‹å€¼
+			age = stuAge;// ¶ÔÊôĞÔ¸³Öµ
 		}
 	}
 
 	public void introduce() {
-		// æ–¹æ³•ä¸­æ‰“å°å±æ€§nameå’Œageçš„å€¼
-		System.out.println("å¤§å®¶å¥½ï¼Œæˆ‘å«" + name + "ï¼Œæˆ‘ä»Šå¹´" + age + "å²");
+		// ·½·¨ÖĞ´òÓ¡ÊôĞÔnameºÍageµÄÖµ
+		System.out.println("´ó¼ÒºÃ£¬ÎÒ½Ğ" + name + "£¬ÎÒ½ñÄê" + age + "Ëê");
 	}
 }
 
 public class Ex304 {
 	public static void main(String[] args) {
 		Student w = new Student();
-		w.setName("é™ˆå–†");
+		w.setName("³Â†´");
 		w.setAge(19);
 		w.introduce();
 	}

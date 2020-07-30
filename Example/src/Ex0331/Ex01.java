@@ -1,22 +1,22 @@
 package Ex0331;
 
 /*
- * Stringç±»çš„åˆå§‹åŒ–æ“ä½œ
- * 	1.å­—ç¬¦ä¸²å¸¸é‡ç›´æ¥èµ‹å€¼
- * 	2.Stringç±»çš„æ„é€ æ–¹æ³•
- * 		Stringï¼ˆï¼‰ç©ºå‚æ•°æ„é€ æ–¹æ³•ï¼Œåˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼Œå†…å®¹ä¸ºç©º
- * 		Stringï¼ˆString sï¼‰åˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼ŒæŒ‡å®šä¸€ä¸ªå­—ç¬¦ä¸²å†…å®¹
- * 		Stringï¼ˆChar[] chsï¼‰åˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼ŒæŒ‡å®šä¸€ä¸ªå­—ç¬¦æ•°ç»„ä½œä¸ºå†…å®¹
+ * StringÀàµÄ³õÊ¼»¯²Ù×÷
+ * 	1.×Ö·û´®³£Á¿Ö±½Ó¸³Öµ
+ * 	2.StringÀàµÄ¹¹Ôì·½·¨
+ * 		String£¨£©¿Õ²ÎÊı¹¹Ôì·½·¨£¬´´½¨Ò»¸öStringÀà¶ÔÏó£¬ÄÚÈİÎª¿Õ
+ * 		String£¨String s£©´´½¨Ò»¸öStringÀà¶ÔÏó£¬Ö¸¶¨Ò»¸ö×Ö·û´®ÄÚÈİ
+ * 		String£¨Char[] chs£©´´½¨Ò»¸öStringÀà¶ÔÏó£¬Ö¸¶¨Ò»¸ö×Ö·ûÊı×é×÷ÎªÄÚÈİ
  */
 public class Ex01 {
 	public static void main(String[] args) throws Exception {
-		// å­—ç¬¦ä¸²å¸¸é‡ç›´æ¥èµ‹å€¼
+		// ×Ö·û´®³£Á¿Ö±½Ó¸³Öµ
 		String str1 = "abc";
-		// Stringï¼ˆString sï¼‰åˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼ŒæŒ‡å®šä¸€ä¸ªå­—ç¬¦ä¸²å†…å®¹
+		// String£¨String s£©´´½¨Ò»¸öStringÀà¶ÔÏó£¬Ö¸¶¨Ò»¸ö×Ö·û´®ÄÚÈİ
 		String str2 = new String();
-		// Stringï¼ˆString sï¼‰åˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼ŒæŒ‡å®šä¸€ä¸ªå­—ç¬¦ä¸²å†…å®¹
+		// String£¨String s£©´´½¨Ò»¸öStringÀà¶ÔÏó£¬Ö¸¶¨Ò»¸ö×Ö·û´®ÄÚÈİ
 		String str3 = new String("abcd");
-		// Stringï¼ˆString sï¼‰åˆ›å»ºä¸€ä¸ªStringç±»å¯¹è±¡ï¼ŒæŒ‡å®šä¸€ä¸ªå­—ç¬¦ä¸²å†…å®¹
+		// String£¨String s£©´´½¨Ò»¸öStringÀà¶ÔÏó£¬Ö¸¶¨Ò»¸ö×Ö·û´®ÄÚÈİ
 		char[] charArray = new char[] { 'E', 'F', 'G' };
 		String str4 = new String(charArray);
 		System.out.println(str1);

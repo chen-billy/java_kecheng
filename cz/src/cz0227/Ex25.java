@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * ä¸ºæ•°ç»„ä¸­å…ƒç´ èµ‹å€¼
+ * ÎªÊý×éÖÐÔªËØ¸³Öµ
  */
 public class Ex25 {
 	public static void main(String[] args) {

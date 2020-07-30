@@ -2,22 +2,22 @@ package Ex0326;
 
 public class Ex03 {
 	public static void main(String[] args) {
-		// ä¸‹é¢çš„ä»£ç å®šä¹‰äº†ä¸€ä¸ªtry...catch...finallyè¯­å¥ç”¨äºæ•è·å¼‚å¸¸
+		// ÏÂÃæµÄ´úÂë¶¨ÒåÁËÒ»¸ötry...catch...finallyÓï¾äÓÃÓÚ²¶»ñÒì³£
 		try {
-			int result = divide(4, 0);// è°ƒç”¨divideï¼ˆï¼‰æ–¹æ³•
+			int result = divide(4, 0);// µ÷ÓÃdivide£¨£©·½·¨
 			System.out.println(result);
 		} catch (Exception e) {
-			System.out.println("æ•è·çš„å¼‚å¸¸ä¿¡æ¯ä¸ºï¼š" + e.getMessage());
-			return;// ç»“æŸæ•´ä¸ªæ–¹æ³•
+			System.out.println("²¶»ñµÄÒì³£ĞÅÏ¢Îª£º" + e.getMessage());
+			return;// ½áÊøÕû¸ö·½·¨
 		} finally {
-			System.out.println("è¿›å…¥finallyä»£ç å—");
+			System.out.println("½øÈëfinally´úÂë¿é");
 		}
-		System.out.println("ç¨‹åºç»§ç»­å‘ä¸‹æ‰§è¡Œ...");
+		System.out.println("³ÌĞò¼ÌĞøÏòÏÂÖ´ĞĞ...");
 	}
 
-	// ä¸‹é¢çš„æ–¹æ³•å®ç°äº†ä¸¤ä¸ªæ•´æ•°ç›¸é™¤
+	// ÏÂÃæµÄ·½·¨ÊµÏÖÁËÁ½¸öÕûÊıÏà³ı
 	public static int divide(int x, int y) {
-		int result = x / y;// å®šä¹‰ä¸€ä¸ªå˜é‡resultè®°å½•ä¸¤ä¸ª æ•°ç›¸é™¤çš„ç»“æœ
-		return result;// å°†ç»“æœè¿”å›
+		int result = x / y;// ¶¨ÒåÒ»¸ö±äÁ¿result¼ÇÂ¼Á½¸ö ÊıÏà³ıµÄ½á¹û
+		return result;// ½«½á¹û·µ»Ø
 	}
 }

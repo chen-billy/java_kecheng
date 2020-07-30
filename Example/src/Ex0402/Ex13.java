@@ -1,18 +1,18 @@
 package Ex0402;
 
 /*
- * é€šè¿‡ä¸€ä¸ªæ¡ˆä¾‹æ¥æ¼”ç¤ºparseIntï¼ˆï¼‰æ–¹æ³•çš„ä½¿ç”¨ï¼Œè¯¥æ¡ˆä¾‹å®ç°äº†åœ¨å±å¹•ä¸Šæ‰“å°â€œ*â€çŸ©å½¢ï¼Œå…¶ä¸­å®½å’Œé«˜åˆ†åˆ«è®¾ä¸º20å’Œ10
+ * Í¨¹ıÒ»¸ö°¸ÀıÀ´ÑİÊ¾parseInt£¨£©·½·¨µÄÊ¹ÓÃ£¬¸Ã°¸ÀıÊµÏÖÁËÔÚÆÁÄ»ÉÏ´òÓ¡¡°*¡±¾ØĞÎ£¬ÆäÖĞ¿íºÍ¸ß·Ö±ğÉèÎª20ºÍ10
  * 
- * Integerç±»çš„æ–¹æ³•
- * 	public static int parseIntï¼ˆString aï¼‰å°†å­—ç¬¦ä¸²æ•´æ•°ï¼Œè§£ææˆintç±»å‹
- * StringBufferç±»çš„æ–¹æ³•
- *  public String toSrtingï¼ˆï¼‰è·å–å­—ç¬¦ä¸²ç¼“å†²åŒºä¸­çš„å†…å®¹ï¼Œä»¥å­—ç¬¦ä¸²å½¢å¼è¿”å›
+ * IntegerÀàµÄ·½·¨
+ * 	public static int parseInt£¨String a£©½«×Ö·û´®ÕûÊı£¬½âÎö³ÉintÀàĞÍ
+ * StringBufferÀàµÄ·½·¨
+ *  public String toSrting£¨£©»ñÈ¡×Ö·û´®»º³åÇøÖĞµÄÄÚÈİ£¬ÒÔ×Ö·û´®ĞÎÊ½·µ»Ø
  */
 public class Ex13 {
 	public static void main(String[] args) {
 		int w = Integer.parseInt("20");
 		int h = Integer.parseInt("10");
-		for (int i = 0; i < h; i++) {// è¡Œæ•°
+		for (int i = 0; i < h; i++) {// ĞĞÊı
 			StringBuffer sb = new StringBuffer();
 			for (int j = 0; j < w; j++) {
 				sb.append("*");

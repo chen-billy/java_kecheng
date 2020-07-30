@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * ç”¨æ–¹æ³•æ‰“å°ä¸‰ä¸ªé•¿å®½ä¸åŒçš„çŸ©å½¢
+ * ÓÃ·½·¨´òÓ¡Èı¸ö³¤¿í²»Í¬µÄ¾ØĞÎ
  */
 public class Ex20 {
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Ex20 {
 		printRectangle(6, 10);
 	}
 
-	// æ‰“å°çŸ©å½¢çš„æ–¹æ³•
+	// ´òÓ¡¾ØĞÎµÄ·½·¨
 	public static void printRectangle(int height, int width) {
 		for (int i = 0; i < height; i++) {
 			for (int j = 0; j < width; j++) {

@@ -11,39 +11,39 @@ class Student {
 		this.name = name;
 	}
 
-	// é‡å†™toStringï¼ˆï¼‰æ–¹æ³•
+	// ÖØĞ´toString£¨£©·½·¨
 	public String toString() {
 		return id + ":" + name;
 	}
 
-	// é‡å†™hasCodeæ–¹æ³•
+	// ÖØĞ´hasCode·½·¨
 	public int hashCode() {
-		return id.hashCode();// è¿”å›idå±æ€§çš„å“ˆå¸Œå€¼
+		return id.hashCode();// ·µ»ØidÊôĞÔµÄ¹şÏ£Öµ
 	}
 
-	// é‡å†™equalsæ–¹æ³•
+	// ÖØĞ´equals·½·¨
 	public boolean equals(Object obj) {
-		if (this == obj) {// åˆ¤æ–­æ˜¯å¦æ˜¯åŒä¸€ä¸ªå¯¹è±¡
-			return true;// å¦‚æœæ˜¯ï¼Œç›´æ¥è¿”å›true
+		if (this == obj) {// ÅĞ¶ÏÊÇ·ñÊÇÍ¬Ò»¸ö¶ÔÏó
+			return true;// Èç¹ûÊÇ£¬Ö±½Ó·µ»Øtrue
 		}
-		if (!(obj instanceof Student)) {// åˆ¤æ–­å¯¹è±¡æ˜¯ä¸ºStudentç±»å‹
-			return false;// å¦‚æœå¯¹è±¡ä¸æ˜¯Studentç±»å‹ï¼Œè¿”å›false
+		if (!(obj instanceof Student)) {// ÅĞ¶Ï¶ÔÏóÊÇÎªStudentÀàĞÍ
+			return false;// Èç¹û¶ÔÏó²»ÊÇStudentÀàĞÍ£¬·µ»Øfalse
 		}
-		Student stu = (Student) obj;// å°†å¯¹è±¡å¼ºè½¬ä¸ºStudentç±»å‹
-		boolean b = this.id.equals(stu.id);// åˆ¤æ–­idå€¼æ˜¯å¦ç›¸åŒ
-		return b;// è¿”å›åˆ¤æ–­ç»“æœ
+		Student stu = (Student) obj;// ½«¶ÔÏóÇ¿×ªÎªStudentÀàĞÍ
+		boolean b = this.id.equals(stu.id);// ÅĞ¶ÏidÖµÊÇ·ñÏàÍ¬
+		return b;// ·µ»ØÅĞ¶Ï½á¹û
 	}
 }
 
 public class Ex03 {
 	public static void main(String[] args) {
-		HashSet hs = new HashSet();// åˆ›å»ºHashSetå¯¹è±¡
-		Student stu1 = new Student("1", "Jack");// åˆ›å»ºStudentå¯¹è±¡
+		HashSet hs = new HashSet();// ´´½¨HashSet¶ÔÏó
+		Student stu1 = new Student("1", "Jack");// ´´½¨Student¶ÔÏó
 		Student stu2 = new Student("2", "Rose");
 		Student stu3 = new Student("2", "Rose");
-		hs.add(stu1);// å‘é›†åˆå­˜å…¥å¯¹è±¡
+		hs.add(stu1);// Ïò¼¯ºÏ´æÈë¶ÔÏó
 		hs.add(stu2);
 		hs.add(stu3);
-		System.out.println(hs);// æ‰“å°é›†åˆä¸­çš„å…ƒç´ 
+		System.out.println(hs);// ´òÓ¡¼¯ºÏÖĞµÄÔªËØ
 	}
 }

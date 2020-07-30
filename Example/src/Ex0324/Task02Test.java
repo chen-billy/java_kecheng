@@ -1,23 +1,23 @@
 package Ex0324;
 
 /*
- * å®šä¹‰æµ‹è¯•ç±»
+ * ¶¨Òå²âÊÔÀà
  */
 public class Task02Test {
 	public static void main(String[] args) {
-		// å¿«é€’ä»»åŠ¡ç±»å¯¹è±¡
+		// ¿ìµİÈÎÎñÀà¶ÔÏó
 		SendTask task = new SendTask("HYX600235", 76.34);
-		// è°ƒç”¨é€å‰å‡†å¤‡æ–¹æ³•
+		// µ÷ÓÃËÍÇ°×¼±¸·½·¨
 		task.sendBefore();
 		System.out.println("====================");
-		// åˆ›å»ºäº¤é€šå·¥å…·å¯¹è±¡
-		Ztransportation t = new Ztransportation("Z0265", "å¤§å¥”", "å°éŸ©");
-		// åˆ›å»ºGPSå·¥å…·å¯¹è±¡
+		// ´´½¨½»Í¨¹¤¾ß¶ÔÏó
+		Ztransportation t = new Ztransportation("Z0265", "´ó±¼", "Ğ¡º«");
+		// ´´½¨GPS¹¤¾ß¶ÔÏó
 		Phone p = new Phone();
-		// å°†äº¤é€šå·¥å…·ä¸GPSå·¥å…·ä¼ å…¥é€è´§æ–¹æ³•
+		// ½«½»Í¨¹¤¾ßÓëGPS¹¤¾ß´«ÈëËÍ»õ·½·¨
 		task.send(t, p);
 		System.out.println("====================");
-		// è°ƒç”¨é€åæ“ä½œæ–¹æ³•
+		// µ÷ÓÃËÍºó²Ù×÷·½·¨
 		task.sendAfter(t);
 		t.upKeep();
 	}

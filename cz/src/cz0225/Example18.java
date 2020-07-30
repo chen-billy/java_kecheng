@@ -1,16 +1,16 @@
 package cz0225;
 
 /*
- * continueè¯­å¥
+ * continueÓï¾ä
  */
 public class Example18 {
 	public static void main(String[] args) {
-		int sum = 0;// å®šä¹‰å˜é‡sumï¼Œç”¨äºè®°ä½å’Œ
+		int sum = 0;// ¶¨Òå±äÁ¿sum£¬ÓÃÓÚ¼Ç×¡ºÍ
 		for (int i = 1; i <= 100; i++) {
-			if (i % 2 == 0) {// iæ˜¯ä¸€ä¸ªå¶æ•°ï¼Œä¸ç´¯åŠ 
-				continue;// ç»“æŸæœ¬æ¬¡å¾ªç¯
+			if (i % 2 == 0) {// iÊÇÒ»¸öÅ¼Êı£¬²»ÀÛ¼Ó
+				continue;// ½áÊø±¾´ÎÑ­»·
 			}
-			sum += i;// å®ç°sumå’Œiçš„ç´¯åŠ 
+			sum += i;// ÊµÏÖsumºÍiµÄÀÛ¼Ó
 		}
 		System.out.println("sum = " + sum);
 	}

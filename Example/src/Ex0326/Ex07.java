@@ -2,9 +2,9 @@ package Ex0326;
 
 public class Ex07 extends Exception{
 	public Ex07() {
-		super();// è°ƒç”¨Ex07æ— å‚çš„æ„é€ æ–¹æ³•
+		super();// µ÷ÓÃEx07ÎŞ²ÎµÄ¹¹Ôì·½·¨
 	}
 	public Ex07(String message) {
-		super(message);// è°ƒç”¨Ex07æœ‰å‚çš„æ„é€ æ–¹æ³•
+		super(message);// µ÷ÓÃEx07ÓĞ²ÎµÄ¹¹Ôì·½·¨
 	}
 }

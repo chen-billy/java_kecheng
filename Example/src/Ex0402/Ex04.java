@@ -1,17 +1,17 @@
 package Ex0402;
 
 /*
- * Runtimeç±»çš„åŸºæœ¬ä½¿ç”¨
- * 	public int availableProcessorsï¼ˆï¼‰å‘Javaè™šæ‹Ÿæœºè¿”å›å¯ç”¨å¤„ç†å™¨çš„æ•°ç›®
- *  public long freeMemory()è¿”å›Javaè™šæ‹Ÿæœºä¸­çš„ç©ºé—²å†…å­˜é‡
- *  public long maxMemory()è¿”å›Javaè™šæ‹Ÿæœºè¯•å›¾ä½¿ç”¨çš„æœ€å¤§å†…å­˜é‡
- * 	public static Runtime getRuntimeï¼ˆï¼‰è¿”å›ä¸å½“å‰Javaåº”ç”¨ç¨‹åºç›¸å…³çš„è¿è¡Œæ—¶å¯¹è±¡
+ * RuntimeÀàµÄ»ù±¾Ê¹ÓÃ
+ * 	public int availableProcessors£¨£©ÏòJavaĞéÄâ»ú·µ»Ø¿ÉÓÃ´¦ÀíÆ÷µÄÊıÄ¿
+ *  public long freeMemory()·µ»ØJavaĞéÄâ»úÖĞµÄ¿ÕÏĞÄÚ´æÁ¿
+ *  public long maxMemory()·µ»ØJavaĞéÄâ»úÊÔÍ¼Ê¹ÓÃµÄ×î´óÄÚ´æÁ¿
+ * 	public static Runtime getRuntime£¨£©·µ»ØÓëµ±Ç°JavaÓ¦ÓÃ³ÌĞòÏà¹ØµÄÔËĞĞÊ±¶ÔÏó
  */
 public class Ex04 {
 	public static void main(String[] args) {
-		Runtime rt = Runtime.getRuntime();// è·å–Runtimeç±»å¯¹è±¡
-		System.out.println("å¤„ç†å™¨çš„ä¸ªæ•°ï¼š" + rt.availableProcessors() + "ä¸ª");
-		System.out.println("é—²ç½®å†…å­˜æ•°é‡ï¼š" + rt.freeMemory() / 1024 / 1024 + "M");
-		System.out.println("æœ€å¤§å¯ç”¨å†…å­˜æ•°é‡ï¼š" + rt.maxMemory() / 1024 / 1024 + "M");
+		Runtime rt = Runtime.getRuntime();// »ñÈ¡RuntimeÀà¶ÔÏó
+		System.out.println("´¦ÀíÆ÷µÄ¸öÊı£º" + rt.availableProcessors() + "¸ö");
+		System.out.println("ÏĞÖÃÄÚ´æÊıÁ¿£º" + rt.freeMemory() / 1024 / 1024 + "M");
+		System.out.println("×î´ó¿ÉÓÃÄÚ´æÊıÁ¿£º" + rt.maxMemory() / 1024 / 1024 + "M");
 	}
 }

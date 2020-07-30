@@ -5,34 +5,34 @@ public class Ex14 {
 		String week = "Friday";
 		switch (week) {
 		case "Monday":
-			System.out.println("æ˜ŸæœŸä¸€");
+			System.out.println("ĞÇÆÚÒ»");
 			break;
 
 		case "Tuesday":
-			System.out.println("æ˜ŸæœŸäºŒ");
+			System.out.println("ĞÇÆÚ¶ş");
 			break;
 
 		case "Wednesday":
-			System.out.println("æ˜ŸæœŸä¸‰");
+			System.out.println("ĞÇÆÚÈı");
 			break;
 
 		case "Thursday":
-			System.out.println("æ˜ŸæœŸå››");
+			System.out.println("ĞÇÆÚËÄ");
 			break;
 
 		case "Friday":
-			System.out.println("æ˜ŸæœŸäº”");
+			System.out.println("ĞÇÆÚÎå");
 			break;
 
 		case "Saturday":
-			System.out.println("æ˜ŸæœŸå…­");
+			System.out.println("ĞÇÆÚÁù");
 			break;
 
 		case "Sunday":
-			System.out.println("æ˜ŸæœŸæ—¥");
+			System.out.println("ĞÇÆÚÈÕ");
 			break;
 		default:
-			System.out.println("æ‚¨è¾“å…¥æœ‰è¯¯...");
+			System.out.println("ÄúÊäÈëÓĞÎó...");
 		}
 	}
 }

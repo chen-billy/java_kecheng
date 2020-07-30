@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * è·å–æ•°ç»„ä¸­çš„æœ€å¤§å€¼
+ * »ñÈ¡Êı×éÖĞµÄ×î´óÖµ
  */
 public class Ex30 {
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Ex30 {
 		System.out.println("max=" + max);
 	}
 
-	// è·å–æœ€å¤§å€¼çš„æ–¹æ³•
+	// »ñÈ¡×î´óÖµµÄ·½·¨
 	public static int getMax(int[] arr) {
 		int max = arr[0];
 		for (int x = 1; x < arr.length; x++) {

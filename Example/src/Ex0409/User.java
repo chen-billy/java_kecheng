@@ -2,13 +2,13 @@ package Ex0409;
 
 import java.util.Date;
 
-//ç”¨æˆ·ä¿¡æ¯
+//ÓÃ»§ĞÅÏ¢
 public class User {
-	private String userName;// ç”¨æˆ·å
-	private String password;// å¯†ç 
-	private Date biethDay;// ç”Ÿæ—¥
-	private String telNumber;// æ‰‹æœºå·ç 
-	private String email;// é‚®ç®±
+	private String userName;// ÓÃ»§Ãû
+	private String password;// ÃÜÂë
+	private Date biethDay;// ÉúÈÕ
+	private String telNumber;// ÊÖ»úºÅÂë
+	private String email;// ÓÊÏä
 
 	public User() {
 	}
@@ -21,28 +21,28 @@ public class User {
 		this.email = email;
 	}
 
-	// é‡å†™hashCodeä¸equalsæ–¹æ³•
-	public int hashCode() {// é‡å†™hashCodeæ–¹æ³•ï¼Œä»¥ç”¨æˆ·åä½œä¸ºæ˜¯å¦é‡å¤çš„ä¾æ®
+	// ÖØĞ´hashCodeÓëequals·½·¨
+	public int hashCode() {// ÖØĞ´hashCode·½·¨£¬ÒÔÓÃ»§Ãû×÷ÎªÊÇ·ñÖØ¸´µÄÒÀ¾İ
 		return userName.hashCode();
 	}
 
 	public boolean equals(Object obj) {
-		if (this == obj) {// åˆ¤æ–­æ˜¯å¦æ˜¯åŒä¸€ä¸ªå¯¹è±¡
-			return true;// å¦‚æœæ˜¯åŒä¸€ä¸ªå¯¹è±¡ï¼Œç›´æ¥è¿”å›true
+		if (this == obj) {// ÅĞ¶ÏÊÇ·ñÊÇÍ¬Ò»¸ö¶ÔÏó
+			return true;// Èç¹ûÊÇÍ¬Ò»¸ö¶ÔÏó£¬Ö±½Ó·µ»Øtrue
 		}
-		if (obj == null) {// åˆ¤æ–­è¿™ä¸ªå¯¹è±¡æ˜¯å¦ä¸ºç©º
-			return false;// å¦‚æœå¯¹è±¡æ˜¯ç©ºçš„ï¼Œç›´æ¥è¿”å›false
+		if (obj == null) {// ÅĞ¶ÏÕâ¸ö¶ÔÏóÊÇ·ñÎª¿Õ
+			return false;// Èç¹û¶ÔÏóÊÇ¿ÕµÄ£¬Ö±½Ó·µ»Øfalse
 		}
-		if (getClass() != obj.getClass()) {// åˆ¤æ–­è¿™ä¸ªå¯¹è±¡æ˜¯å¦æ˜¯Userç±»å‹
-			return false;// å¦‚æœä¸æ˜¯ï¼Œç›´æ¥è¿”å›false
+		if (getClass() != obj.getClass()) {// ÅĞ¶ÏÕâ¸ö¶ÔÏóÊÇ·ñÊÇUserÀàĞÍ
+			return false;// Èç¹û²»ÊÇ£¬Ö±½Ó·µ»Øfalse
 		}
-		User other = (User) obj;// å°†å¯¹è±¡å¼ºè½¬ä¸ºUserç±»å‹
-		if (userName == null) {// åˆ¤æ–­é›†åˆä¸­ç”¨æˆ·æ˜¯å¦ä¸ºç©º
-			if (other.userName != null) {// åˆ¤æ–­é›†åˆä¸­ç”¨æˆ·åæ˜¯å¦ä¸ºç©º
-				return false;// é›†åˆä¸­ç”¨æˆ·åä¸ºç©ºä¸”å¯¹è±¡ä¸­ç”¨æˆ·åä¸ä¸ºç©ºï¼Œåˆ™è¿”å›false
+		User other = (User) obj;// ½«¶ÔÏóÇ¿×ªÎªUserÀàĞÍ
+		if (userName == null) {// ÅĞ¶Ï¼¯ºÏÖĞÓÃ»§ÊÇ·ñÎª¿Õ
+			if (other.userName != null) {// ÅĞ¶Ï¼¯ºÏÖĞÓÃ»§ÃûÊÇ·ñÎª¿Õ
+				return false;// ¼¯ºÏÖĞÓÃ»§ÃûÎª¿ÕÇÒ¶ÔÏóÖĞÓÃ»§Ãû²»Îª¿Õ£¬Ôò·µ»Øfalse
 			}
-		} else if (!userName.equals(other.userName)) {// åˆ¤æ–­ç”¨æˆ·åæ˜¯å¦ç›¸åŒ
-			return false;// å¦‚æœä¸åŒï¼Œè¿”å›false
+		} else if (!userName.equals(other.userName)) {// ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñÏàÍ¬
+			return false;// Èç¹û²»Í¬£¬·µ»Øfalse
 		}
 		return true;
 	}

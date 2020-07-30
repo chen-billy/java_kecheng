@@ -1,7 +1,7 @@
 package cz0227;
 
 /*
- * å®šä¹‰æ•°ç»„ä»¥åŠè®¿é—®æ•°ç»„ä¸­çš„å…ƒç´ 
+ * ¶¨ÒåÊı×éÒÔ¼°·ÃÎÊÊı×éÖĞµÄÔªËØ
  */
 public class Ex24 {
 	public static void main(String[] args) {
@@ -10,6 +10,6 @@ public class Ex24 {
 		System.out.println("arr[0]=" + arr[0]);
 		System.out.println("arr[1]=" + arr[1]);
 		System.out.println("arr[2]=" + arr[2]);
-		System.out.println("æ•°ç»„çš„é•¿åº¦æ˜¯ï¼š" + arr.length);
+		System.out.println("Êı×éµÄ³¤¶ÈÊÇ£º" + arr.length);
 	}
 }

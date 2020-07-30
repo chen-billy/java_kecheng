@@ -1,18 +1,18 @@
 package Ex0402;
 
 /*
- * public static long currentTimMillisï¼ˆï¼‰
- * 	æ–¹æ³•è¿”å›ä¸€ä¸ªlongç±»å‹çš„å€¼ï¼Œè¯¥å€¼è¡¨ç¤ºå½“å‰æ—¶é—´ä¸1970å¹´1æœˆ1æ—¥0ç‚¹0åˆ†0ç§’ä¹‹é—´çš„æ—¶é—´å·®ï¼Œå•ä½æ˜¯æ¯«ç§’ï¼Œé€šå¸¸ä¹Ÿå°†è¯¥å€¼ä½œæ—¶é—´æ•°
+ * public static long currentTimMillis£¨£©
+ * 	·½·¨·µ»ØÒ»¸ölongÀàĞÍµÄÖµ£¬¸ÃÖµ±íÊ¾µ±Ç°Ê±¼äÓë1970Äê1ÔÂ1ÈÕ0µã0·Ö0ÃëÖ®¼äµÄÊ±¼ä²î£¬µ¥Î»ÊÇºÁÃë£¬Í¨³£Ò²½«¸ÃÖµ×÷Ê±¼äÊı
  */
 public class Ex02 {
 	public static void main(String[] args) {
-		// è®¡ç®—ç¨‹åºåœ¨è¿›è¡Œæ±‚å’Œæ“ä½œæ—¶æ‰€æ¶ˆè€—çš„æ—¶é—´
-		long startTime = System.currentTimeMillis();// å¾ªç¯å¼€å§‹æ—¶çš„å½“å‰æ—¶é—´
+		// ¼ÆËã³ÌĞòÔÚ½øĞĞÇóºÍ²Ù×÷Ê±ËùÏûºÄµÄÊ±¼ä
+		long startTime = System.currentTimeMillis();// Ñ­»·¿ªÊ¼Ê±µÄµ±Ç°Ê±¼ä
 		int sum = 0;
 		for (int i = 0; i < 100000000; i++) {
 			sum += i;
 		}
-		long endTime = System.currentTimeMillis();// å¾ªç¯ç»“æŸçš„å½“å‰æ—¶é—´
-		System.out.println("ç¨‹åºè¿è¡Œçš„æ—¶é—´ä¸ºï¼š" + (endTime - startTime) + "æ¯«ç§’");
+		long endTime = System.currentTimeMillis();// Ñ­»·½áÊøµÄµ±Ç°Ê±¼ä
+		System.out.println("³ÌĞòÔËĞĞµÄÊ±¼äÎª£º" + (endTime - startTime) + "ºÁÃë");
 	}
 }

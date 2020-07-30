@@ -1,17 +1,17 @@
 package cz0225;
 
 /*
- * breakè¯­å¥
+ * breakÓï¾ä
  */
 public class Example16 {
 	public static void main(String[] args) {
-		int x = 1;// å®šä¹‰å˜é‡xï¼Œåˆå§‹å€¼ä¸º1
-		while (x <= 4) {// å¾ªç¯æ¡ä»¶
-			System.out.println("x = " + x);// æ¡ä»¶æˆç«‹ï¼Œæ‰“å°xçš„å€¼
+		int x = 1;// ¶¨Òå±äÁ¿x£¬³õÊ¼ÖµÎª1
+		while (x <= 4) {// Ñ­»·Ìõ¼ş
+			System.out.println("x = " + x);// Ìõ¼ş³ÉÁ¢£¬´òÓ¡xµÄÖµ
 			if (x == 3) {
 				break;
 			}
-			x++;// xè¿›è¡Œè‡ªå¢
+			x++;// x½øĞĞ×ÔÔö
 		}
 	}
 }

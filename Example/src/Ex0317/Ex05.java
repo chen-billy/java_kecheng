@@ -1,7 +1,7 @@
 package Ex0317;
 
 /*
- * final淇グ绫伙紝鏈�缁堢被锛屼笉鑳借缁ф壙
+ * final修饰类，最终类，不能被继承
  */
 /*final*/ class Animal05 {
 
@@ -13,6 +13,6 @@ class Dog05 extends Animal05 {
 
 public class Ex05 {
 	public static void main(String[] args) {
-		Dog05 dog = new Dog05();// 鍒涘缓Dog绫荤殑瀵硅薄
+		Dog05 dog = new Dog05();// 创建Dog类的对象
 	}
 }

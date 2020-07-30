@@ -3,16 +3,16 @@ package Ex0402;
 import java.util.Random;
 
 /*
- * Randomç±»ä¸­çš„å¸¸ç”¨æ–¹æ³•
- * 	public float nextFloatï¼ˆï¼‰éšæœºç”Ÿæˆ0.0~1.0ä¹‹é—´çš„floatå°æ•°
- * 	public int nextIntï¼ˆint nï¼‰éšæœºç”Ÿæˆ0~nä¹‹é—´çš„intæ•´æ•°ï¼ˆåŒ…å«0ï¼Œä¸åŒ…å«n)
- * 	public double nextDoubleï¼ˆï¼‰éšæœºç”Ÿæˆ0.0~1.0ä¹‹é—´çš„doubleå°æ•°
+ * RandomÀàÖĞµÄ³£ÓÃ·½·¨
+ * 	public float nextFloat£¨£©Ëæ»úÉú³É0.0~1.0Ö®¼äµÄfloatĞ¡Êı
+ * 	public int nextInt£¨int n£©Ëæ»úÉú³É0~nÖ®¼äµÄintÕûÊı£¨°üº¬0£¬²»°üº¬n)
+ * 	public double nextDouble£¨£©Ëæ»úÉú³É0.0~1.0Ö®¼äµÄdoubleĞ¡Êı
  */
 public class Ex10 {
 	public static void main(String[] args) {
-		Random r1 = new Random();// åˆ›å»ºRandomå®ä¾‹å¯¹è±¡
-		System.out.println("äº§ç”Ÿfloatç±»å‹éšæœºæ•°ï¼š" + r1.nextFloat());
-		System.out.println("äº§ç”Ÿ0~100ä¹‹é—´intç±»å‹éšæœºæ•°ï¼š" + r1.nextInt(100));
-		System.out.println("äº§ç”Ÿdoubleç±»å‹çš„éšæœºæ•°ï¼š" + r1.nextDouble());
+		Random r1 = new Random();// ´´½¨RandomÊµÀı¶ÔÏó
+		System.out.println("²úÉúfloatÀàĞÍËæ»úÊı£º" + r1.nextFloat());
+		System.out.println("²úÉú0~100Ö®¼äintÀàĞÍËæ»úÊı£º" + r1.nextInt(100));
+		System.out.println("²úÉúdoubleÀàĞÍµÄËæ»úÊı£º" + r1.nextDouble());
 	}
 }

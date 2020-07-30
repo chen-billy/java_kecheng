@@ -1,25 +1,25 @@
 package Ex0319;
 
 /*
- * æŠ½è±¡ç±»çš„ä½¿ç”¨
+ * ³éÏóÀàµÄÊ¹ÓÃ
  */
-//å®šä¹‰æŠ½è±¡ç±»Animal
+//¶¨Òå³éÏóÀàAnimal
 abstract class Animal01 {
 	public abstract void shout();
 }
 
-//å®šä¹‰Dogç±»ç»§æ‰¿AnimalæŠ½è±¡ç±»
+//¶¨ÒåDogÀà¼Ì³ĞAnimal³éÏóÀà
 class Dog01 extends Animal01 {
-	// é‡å†™çˆ¶ç±»çš„æŠ½è±¡æ–¹æ³•ï¼Œå®ç°æŠ½è±¡æ–¹æ³•
+	// ÖØĞ´¸¸ÀàµÄ³éÏó·½·¨£¬ÊµÏÖ³éÏó·½·¨
 	public void shout() {
-		System.out.println("æ±ªæ±ª...");
+		System.out.println("ÍôÍô...");
 	}
 }
 
-//å®šä¹‰çš„æµ‹è¯•ç±»
+//¶¨ÒåµÄ²âÊÔÀà
 public class Ex01 {
 	public static void main(String[] args) {
-		Dog01 dog = new Dog01();// åˆ›å»ºDogç±»çš„å¯¹è±¡ï¼Œåˆ›å»ºçš„æ˜¯æŠ½è±¡ç±»çš„å­ç±»å¯¹è±¡
+		Dog01 dog = new Dog01();// ´´½¨DogÀàµÄ¶ÔÏó£¬´´½¨µÄÊÇ³éÏóÀàµÄ×ÓÀà¶ÔÏó
 		dog.shout();
 	}
 }

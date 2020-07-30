@@ -1,6 +1,6 @@
 package cz0227;
 /*
- * æ–¹æ³•çš„é‡è½½
+ * ·½·¨µÄÖØÔØ
  */
 public class Ex23 {
 	public static void main(String[] args) {

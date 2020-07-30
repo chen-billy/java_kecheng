@@ -7,61 +7,61 @@ import java.util.Date;
 import java.util.HashSet;
 
 public class CheckInfo {
-	public static HashSet<User> USER_DATA = new HashSet<User>();// ç”¨æˆ·æ•°æ®
+	public static HashSet<User> USER_DATA = new HashSet<User>();// ÓÃ»§Êı¾İ
 
 	public CheckInfo(HashSet<User> USER_DATA) {
 		this.USER_DATA = USER_DATA;
 	}
 
-	// æ ¡éªŒç”¨æˆ·ä¿¡æ¯ï¼Œè¿”å›ç™»å½•çŠ¶æ€ä¿¡æ¯
+	// Ğ£ÑéÓÃ»§ĞÅÏ¢£¬·µ»ØµÇÂ¼×´Ì¬ĞÅÏ¢
 	public String checkAction(String userNAme, String password, String rePassWord, String biethday, String phone,
 			String email) {
 		StringBuilder result = new StringBuilder();
-		// 1 ä»£è¡¨æˆåŠŸ 2 ä»£è¡¨å¤±è´¥
+		// 1 ´ú±í³É¹¦ 2 ´ú±íÊ§°Ü
 		int state = 1;
-		// å¯†ç åˆ¤æ–­
+		// ÃÜÂëÅĞ¶Ï
 		if (!password.equals(rePassWord)) {
-			result.append("ä¸¤æ¬¡è¾“å…¥å¯†ç ä¸ä¸€è‡´ï¼\r\n");
+			result.append("Á½´ÎÊäÈëÃÜÂë²»Ò»ÖÂ£¡\r\n");
 			state = 2;
 		}
-		// ç”Ÿæ—¥åˆ¤æ–­
-		if (biethday.length() != 10) {// å­—ç¬¦ä¸²é•¿åº¦ä¸ä¸º10ï¼Œåˆ™è®¤ä¸ºæ ¼å¼é”™è¯¯
-			result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\r\n");
+		// ÉúÈÕÅĞ¶Ï
+		if (biethday.length() != 10) {// ×Ö·û´®³¤¶È²»Îª10£¬ÔòÈÏÎª¸ñÊ½´íÎó
+			result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\r\n");
 			state = 2;
 		} else {
 			for (int i = 0; i < biethday.length(); i++) {
 				Character thisChar = biethday.charAt(i);
 				if (i == 4 || i == 7) {
-					if (!(thisChar == '-')) {// éªŒè¯ç¬¬4ä½å’Œç¬¬7ä½æ˜¯å¦æ˜¯ç¬¦å·
-						result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\r\n");
+					if (!(thisChar == '-')) {// ÑéÖ¤µÚ4Î»ºÍµÚ7Î»ÊÇ·ñÊÇ·ûºÅ
+						result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\r\n");
 						state = 2;
 					}
-				} else {// éªŒè¯é™¤äº†ç¬¬4ä½å’Œç¬¬7ä½çš„å­—ç¬¦æ˜¯å¦æ˜¯0~9çš„æ•°å­—
+				} else {// ÑéÖ¤³ıÁËµÚ4Î»ºÍµÚ7Î»µÄ×Ö·ûÊÇ·ñÊÇ0~9µÄÊı×Ö
 					if (!(Character.isDigit(thisChar))) {
-						result.append("ç”Ÿæ—¥æ ¼å¼ä¸æ­£ç¡®ï¼\r\n");
+						result.append("ÉúÈÕ¸ñÊ½²»ÕıÈ·£¡\r\n");
 						state = 2;
 					}
 				}
 			}
 		}
-		// æ‰‹æœºå·åˆ¤æ–­
-		if (phone.length() != 11) {// åˆ¤æ–­æ‰‹æœºå·é•¿åº¦ä¸ç­‰äº11ä½åˆ™è®¤ä¸ºæ­¤æ‰‹æœºå·æ— æ•ˆ
-			result.append("æ‰‹æœºå·ç ä¸æ­£ç¡®ï¼\r\n");
+		// ÊÖ»úºÅÅĞ¶Ï
+		if (phone.length() != 11) {// ÅĞ¶ÏÊÖ»úºÅ³¤¶È²»µÈÓÚ11Î»ÔòÈÏÎª´ËÊÖ»úºÅÎŞĞ§
+			result.append("ÊÖ»úºÅÂë²»ÕıÈ·£¡\r\n");
 			state = 2;
-			// é»˜è®¤æœ‰æ•ˆæ‰‹æœºå·ä¸º13ã€15ã€17å’Œ18å¼€å¤´çš„æ‰‹æœºå·
+			// Ä¬ÈÏÓĞĞ§ÊÖ»úºÅÎª13¡¢15¡¢17ºÍ18¿ªÍ·µÄÊÖ»úºÅ
 		} else if (!(phone.startsWith("13") || phone.startsWith("15") || phone.startsWith("17")
 				|| phone.startsWith("18"))) {
-			result.append("æ‰‹æœºå·ç ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÊÖ»úºÅÂë²»ÕıÈ·£¡\r\n");
 			state = 2;
 		}
-		// é‚®ç®±åˆ¤æ–­
+		// ÓÊÏäÅĞ¶Ï
 		if (!email.contains("@")) {
-			result.append("é‚®ç®±ä¸æ­£ç¡®ï¼\r\n");
+			result.append("ÓÊÏä²»ÕıÈ·£¡\r\n");
 			state = 2;
 		}
-		// å¦‚æœä»¥ä¸Šä¿¡æ¯æ£€éªŒæ— è¯¯ï¼Œåˆ™å°†æ–°ç”¨æˆ·åŠ å…¥åˆ°é›†åˆ
+		// Èç¹ûÒÔÉÏĞÅÏ¢¼ìÑéÎŞÎó£¬Ôò½«ĞÂÓÃ»§¼ÓÈëµ½¼¯ºÏ
 		if (state == 1) {
-			// æ ¼å¼åŒ–æ—¥æœŸè¿”å›Dateå¯¹è±¡
+			// ¸ñÊ½»¯ÈÕÆÚ·µ»ØDate¶ÔÏó
 			DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 			Date dateBirthday = null;
 			try {
@@ -70,13 +70,13 @@ public class CheckInfo {
 				e.printStackTrace();
 			}
 			User newUser = new User(userNAme, rePassWord, dateBirthday, phone, email);
-			// å°†ç”¨æˆ·æ·»åŠ åˆ°åˆ—è¡¨ä¸­ï¼ŒåŒæ—¶å¯æ ¹æ®HashSetåˆ¤æ–­å‡ºç”¨æˆ·åæœ‰æ²¡æœ‰é‡å¤
+			// ½«ÓÃ»§Ìí¼Óµ½ÁĞ±íÖĞ£¬Í¬Ê±¿É¸ù¾İHashSetÅĞ¶Ï³öÓÃ»§ÃûÓĞÃ»ÓĞÖØ¸´
 			if (!USER_DATA.add(newUser)) {
-				result.append("ç”¨æˆ·é‡å¤ï¼");
+				result.append("ÓÃ»§ÖØ¸´£¡");
 				state = 2;
 			}
 			if (state == 1) {
-				result.append("æ³¨å†ŒæˆåŠŸï¼");
+				result.append("×¢²á³É¹¦£¡");
 			}
 		}
 		return result.toString();

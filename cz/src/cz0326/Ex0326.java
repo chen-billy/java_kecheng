@@ -7,14 +7,14 @@ public class Ex0326 {
 			double r1 = divide(a, 2);
 			System.out.println(r1);
 		} catch (Exception e) {
-			System.out.println("æ•è·çš„å¼‚å¸¸ä¿¡æ¯ä¸ºï¼š" + e.fillInStackTrace());
+			System.out.println("²¶»ñµÄÒì³£ĞÅÏ¢Îª£º" + e.fillInStackTrace());
 		}
 
 		try {
 			double r2 = divide(a, 0);
 			System.out.println(r2);
 		} catch (Exception e) {
-			System.out.println("æ•è·çš„å¼‚å¸¸ä¿¡æ¯ä¸ºï¼š" + e.fillInStackTrace());
+			System.out.println("²¶»ñµÄÒì³£ĞÅÏ¢Îª£º" + e.fillInStackTrace());
 		}
 	}
 

@@ -1,36 +1,36 @@
 package Ex0331;
 
 /*
- * è®°å½•ä¸€ä¸ªå­—ç¬¦ä¸²åœ¨æ•´ä¸²å‡ºç°çš„æ¬¡æ•°
- * æ€è·¯ï¼š
- * 	1.å®šä¹‰ä¸€ä¸ªæ•´ä¸²ï¼Œå®šä¹‰ä¸€ä¸ªziä¸²
- * 	2.è·å–å­ä¸²åœ¨æ•´ä¸²ä¸­å‡ºç°çš„æ¬¡æ•°
+ * ¼ÇÂ¼Ò»¸ö×Ö·û´®ÔÚÕû´®³öÏÖµÄ´ÎÊı
+ * Ë¼Â·£º
+ * 	1.¶¨ÒåÒ»¸öÕû´®£¬¶¨ÒåÒ»¸özi´®
+ * 	2.»ñÈ¡×Ó´®ÔÚÕû´®ÖĞ³öÏÖµÄ´ÎÊı
  */
 public class StringTest {
 	public static void main(String[] args) {
-		String str = "nbaernbatnbaynbauinbaopnba";// æ•´ä¸²
-		String key = "nba";// å­ä¸²
+		String str = "nbaernbatnbaynbauinbaopnba";// Õû´®
+		String key = "nba";// ×Ó´®
 		int count = getKeyStringCount(str, key);
 		System.out.println("count=" + count);
 	}
 	/*
-	 * è·å–å­—ä¸²åœ¨æ•´ä¸²ä¸­å‡ºç°çš„æ¬¡æ•°
+	 * »ñÈ¡×Ö´®ÔÚÕû´®ÖĞ³öÏÖµÄ´ÎÊı
 	 */
 	public static int getKeyStringCount(String str, String Key) {
-		// å®šä¹‰è®¡æ•°å™¨ï¼Œè®°å½•å‡ºç°çš„æ¬¡æ•°
+		// ¶¨Òå¼ÆÊıÆ÷£¬¼ÇÂ¼³öÏÖµÄ´ÎÊı
 		int count = 0;
-		// å¦‚æœæ•´ä¸²ä¸­ä¸åŒ…å«å­ä¸²ï¼Œåˆ™ç›´æ¥è¿”å›count
+		// Èç¹ûÕû´®ÖĞ²»°üº¬×Ó´®£¬ÔòÖ±½Ó·µ»Øcount
 		if (!str.contains(Key)) {
 			return count;
 		}
-		// å®šä¹‰å˜é‡è®°å½•keyå‡ºç°çš„ä½ç½®
+		// ¶¨Òå±äÁ¿¼ÇÂ¼key³öÏÖµÄÎ»ÖÃ
 		int index = 0;
 		/*
-		 * 1.æŸ¥æ‰¾å­ä¸²åœ¨æ•´ä¸²ä¸­å‡ºç°çš„ä½ç½®
-		 * 2.å°†å‡ºç°çš„ä½ç½®è®°å½•åœ¨indexå˜é‡ä¸­
+		 * 1.²éÕÒ×Ó´®ÔÚÕû´®ÖĞ³öÏÖµÄÎ»ÖÃ
+		 * 2.½«³öÏÖµÄÎ»ÖÃ¼ÇÂ¼ÔÚindex±äÁ¿ÖĞ
 		 */
 		while ((index = str.indexOf(Key)) != -1) {
-			//æˆªå–æ•´ä¸²ï¼Œä»å­ä¸²å‡ºç°ä½ç½®åé¢å¼€å§‹ï¼Œåˆ°æ•´ä¸²æœ«å°¾
+			//½ØÈ¡Õû´®£¬´Ó×Ó´®³öÏÖÎ»ÖÃºóÃæ¿ªÊ¼£¬µ½Õû´®Ä©Î²
 			str = str.substring(index + Key.length());
 			count++;
 		}
